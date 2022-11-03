@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /uploads/zoom_to_go_2022_09_09.pdf
+Disallow: /uploads/zoom_to_go_2022_09_20.pdf
+Disallow: /uploads/zoom_to_go_2022_10_09.pdf
+Disallow: /uploads/zoom_to_go_2022_10_26.pdf
+Disallow: /uploads/Blog_Samples_Yuri_Tricys.html

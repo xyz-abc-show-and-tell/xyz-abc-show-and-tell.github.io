@@ -6,3 +6,4 @@ Disallow: /uploads/zoom_to_go_2022_10_26.pdf
 Disallow: /uploads/Blog_Samples_Yuri_Tricys.html
 Disallow: /uploads/resume_various_jobs_yuri_tricys_2023.pdf
 Disallow: /uploads/*
+Disallow: /uploads/permission_to_assign.pdf

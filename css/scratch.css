@@ -1,0 +1,89 @@
+
+
+* what did we put into the fluid-type generator for each size
+https://fluidtypography.com/#app-get-started
+** h1 San Francisco pro
+*** sizes 414 - 1280 [because we have a fixed width on our content size]
+*** fonts 34 - 42
+*** line height 1.25 - 1.1
+*** result
+#+BEGIN_SRC css tangle:no
+h1{
+font-size: 2em;
+font-size: clamp(2.125rem, 0.924vw + 1.886rem, 2.625rem);line-height: clamp(2.656rem, 0.427vw + 2.546rem, 2.888rem);
+}
+#+END_SRC
+** h2 San Francisco pro [.875 h1 at small screen, 0.65 at large screen] 
+*** sizes 414 - 1280 [because we have a fixed width on our content size]
+*** fonts 29.75 - 27.3
+*** line height 1.25 - 1.1
+*** result
+#+BEGIN_SRC css tangle:no
+h2{
+font-size:1.73em;
+font-size: clamp(1.706rem, -0.283vw + 1.933rem, 1.859rem);line-height: clamp(1.877rem, -0.827vw + 2.538rem, 2.324rem);
+}
+#+END_SRC
+** h3 San Francisco pro [.875 h2 at small screen, 0.875 at large screen] 
+*** sizes 414 - 1280 [because we have a fixed width on our content size]
+*** fonts 26.03 - 23.88
+*** line height 1.25 - 1.1
+*** result
+#+BEGIN_SRC css tangle:no
+h3{
+font-size:1.51em;
+font-size: clamp(1.493rem, -0.248vw + 1.691rem, 1.627rem);line-height: clamp(1.642rem, -0.724vw + 2.221rem, 2.034rem);
+}
+#+END_SRC
+** h4 San Francisco pro [.88 h3 at small screen, 0.88 at large screen]
+*** sizes 414 - 1280 [because we have a fixed width on our content size]
+*** fonts 22.9 - 22.01
+*** line height 1.2 - 1.05  
+*** result
+#+BEGIN_SRC css tangle:no
+h4{
+font-size:1.34em;
+font-size: clamp(1.376rem, -0.103vw + 1.458rem, 1.431rem);line-height: clamp(1.444rem, -0.505vw + 1.848rem, 1.717rem);
+}
+
+#+END_SRC
+** h5,h6 Francisco pro [.9 h3 at small screen, 9 at large screen]
+*** sizes 414 - 1280 [because we have a fixed width on our content size]
+*** fonts 20.61 - 19.89
+*** line height 1.2 - 1.05  
+*** result
+#+BEGIN_SRC css tangle:no
+h5,h6{
+font-size:1.2em;
+font-size: clamp(1.243rem, -0.083vw + 1.31rem, 1.288rem);line-height: clamp(1.305rem, -0.444vw + 1.661rem, 1.546rem);
+}
+#+END_SRC
+** p, li, td, code, pre, samp,input, a 
+*** sizes 414 - 1280 [because we have a fixed width on our content size]
+*** fonts 16 - 18
+*** line height 1.4 - 1.5
+*** result
+#+BEGIN_SRC css tangle:no
+p, li, td, code, pre, samp,input{
+font-size:1em;
+font-size: clamp(1rem, 0.231vw + 0.94rem, 1.125rem);line-height: clamp(1.4rem, 0.531vw + 1.263rem, 1.688rem);
+}
+#+END_SRC 
+
+** org-mode export font-sizes [workable]
+#+HTML_HEAD_EXTRA: <style>p, li, td, code, pre, samp,input,a {color:#000000;font-weight:400;font-size:1em;font-size: clamp(1rem, 0.231vw + 0.94rem, 1.125rem);line-height: clamp(1.4rem, 0.531vw + 1.263rem, 1.688rem);}</style>
+#+HTML_HEAD_EXTRA: <style type="text/css">h1,h2,h3,h4,h5,h6,.level_1,.level_2,.level_3{font-family:Helvetica, sans-serif;color:#333333;font-weight:600;}.level_1:hover{cursor:pointer;text-decoration:underline;}.level_2{font-weight: 525;color: #414244;}.level_2:hover{cursor:pointer;text-decoration:underline;}.todo{text-decoration:underline;text-decoration-color:black;color:#008800;background:transparent;}details details{padding-bottom:0.25em;}ul{padding-bottom:0.5em;}a, li > a{color:#1a68e7;text-decoration: none;font-weight: 411;}</style>
+#+HTML_HEAD_EXTRA: <style>h1{font-size: 2em; font-size: clamp(2.125rem, 0.924vw + 1.886rem, 2.625rem);line-height: clamp(2.656rem, 0.427vw + 2.546rem, 2.888rem);}</style>
+#+HTML_HEAD_EXTRA: <style>h2, .level_1{font-size:1.73em; margin-bottom:0.3em;font-size: clamp(1.706rem, -0.283vw + 1.933rem, 1.859rem);line-height: clamp(1.877rem, -0.827vw + 2.538rem, 2.324rem);}</style>
+#+HTML_HEAD_EXTRA: <style>h3, .level_2{font-size:1.51em; margin-bottom:0.2em;font-size: clamp(1.493rem, -0.248vw + 1.691rem, 1.627rem);line-height: clamp(1.642rem, -0.724vw + 2.221rem, 2.034rem);}</style>
+#+HTML_HEAD_EXTRA: <style>h4, .level_3{font-size:1.34em;margin-bottom:0.1em;font-size: clamp(1.376rem, -0.103vw + 1.458rem, 1.431rem);line-height: clamp(1.444rem, -0.505vw + 1.848rem, 1.717rem);}</style>
+#+HTML_HEAD_EXTRA: <style>h5, .level_4, h6, .level_5{font-size:1.2em;margin-bottom:0.1em;font-size: clamp(1.243rem, -0.083vw + 1.31rem, 1.288rem);line-height: clamp(1.305rem, -0.444vw + 1.661rem, 1.546rem);}</style>
+*** compressedish
+#+HTML_HEAD_EXTRA: <style>p, li, td, code, pre, samp,input,a {color:#000000;font-weight:400;font-size:1em;font-size: clamp(1rem, 0.231vw + 0.94rem, 1.125rem);line-height: clamp(1.4rem, 0.531vw + 1.263rem, 1.688rem);}h1,h2,h3,h4,h5,h6,.level_1,.level_2,.level_3{font-family:Helvetica, sans-serif;color:#333333;font-weight:600;}.level_1:hover{cursor:pointer;text-decoration:underline;}.level_2{font-weight: 525;color: #414244;}.level_2:hover{cursor:pointer;text-decoration:underline;}.todo{text-decoration:underline;text-decoration-color:black;color:#008800;background:transparent;}details details{padding-bottom:0.25em;}ul{padding-bottom:0.5em;}a, li > a{color:#1a68e7;text-decoration: none;font-weight: 411;}h1{font-size: 2em; font-size: clamp(2.125rem, 0.924vw + 1.886rem, 2.625rem);line-height: clamp(2.656rem, 0.427vw + 2.546rem, 2.888rem);}h2, .level_1{font-size:1.73em; margin-bottom:0.3em;font-size: clamp(1.706rem, -0.283vw + 1.933rem, 1.859rem);line-height: clamp(1.877rem, -0.827vw + 2.538rem, 2.324rem);}h3, .level_2{font-size:1.51em; margin-bottom:0.2em;font-size: clamp(1.493rem, -0.248vw + 1.691rem, 1.627rem);line-height: clamp(1.642rem, -0.724vw + 2.221rem, 2.034rem);}h4, .level_3{font-size:1.34em;margin-bottom:0.1em;font-size: clamp(1.376rem, -0.103vw + 1.458rem, 1.431rem);line-height: clamp(1.444rem, -0.505vw + 1.848rem, 1.717rem);}h5, .level_4, h6, .level_5{font-size:1.2em;margin-bottom:0.1em;font-size: clamp(1.243rem, -0.083vw + 1.31rem, 1.288rem);line-height: clamp(1.305rem, -0.444vw + 1.661rem, 1.546rem);}</style>
+
+
+
+
+
+* youtube
+<iframe class="youtube_frame" src="https://youtube.com/embed/fXzdD2KC2Qs?rel=0"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

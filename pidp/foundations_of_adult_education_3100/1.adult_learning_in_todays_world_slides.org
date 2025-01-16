@@ -1,0 +1,106 @@
+#+REVEAL_THEME:blood
+#+OPTIONS: toc:nil num:nil
+#+REVEAL_TITLE_SLIDE: <h3 style="color:blue;"> Adult Learning In Today's World</h3>
+#+ATTR_REVEAL: :frag (appear)
+#+HTML_HEAD_EXTRA: <style type="text/css">#sec-title-slide>h3{color:#00f500 !important; margin:-50px 0px !important;.present{margin:-50px 0px !important;}.reveal .controls{color:#00f500 !important;} .reveal a:hover .r-frame {color:#00f500 !important;} .reveal a {color:#00f500 !important;} .reveal a:hover{color:#00f500 !important;} .reveal .roll span:after{background:#007e00 !important;} .reveal .progress {color:#00f500 !important;} </style>
+#+HTML_HEAD_EXTRA: <link rel="stylesheet" type="text/css" href="https://buildhello.ca/orientation/blood.css" />
+#+HTML_HEAD_EXTRA: <meta name="robots" content="noindex, nofollow">
+
+
+* List some aspects of globalization  
+** ^
+"We have moved from connected to hyperconnected" ~ Friedman
+- increased outsourcing and manufacturing to low-income, low-wage countries
+- "goods and services and information and ideas are brokered around the world"
+- "The world is becoming one big shopping mall"
+** ^
+- "The rise of corporate social responsibility" and movements towards sustainability are linked to globalization
+- "students are consuumers who shop the world for tutors"
+- "institutions of higher education become commerician enterprises in pursuit of market and market-like activities"
+* List some aspects of the knowledge society  
+** ^
+- "companies moving to workers, workers moving to companies"
+- "From brain drain to brain circulation"
+- "competancies: deep understanding, flexibility, and capacity to make creative connections"
+- "prosperity of individuals and companies depends on human and intellectual capital"
+** ^
+- "Women makeup 70% of the 1.3 billion absolutely poor, more than half the population over 15 are illiterate"
+- "can't learn what you need to know for your career in the first 2 or 3 decades"
+- "Most professional preparation is outdated before one gets situated in career"
+- "Students should be prepared for lifelong learning for jobs that do not even exist yet"
+* Give some examples of how modern day technology influence learning?  
+** ^
+"teachers in california experimenting with flipped classrooms, where students watch videos then demonstrate knowledge"
+"Wider access to knowledge through internet"
+"Moocs positively impact national rate of change of intellectual human capital"
+** ^
+"Friedman says MOOCS will transform higher-ed into credential system, where students prove they did the work"
+"informal learning possible adults tap exploding learning resources"
+"in 2014, some populations still missing participation in communications revolution"
+* List some aspects of the impacts of demographics on education
+** ^
+"equalizing opportunities in education most important overcoming social injustice, strengthening economic growth"
+"global illiteracy plagues world especially among women"
+"Older people outnumber children for the first time in history"
+** ^
+"need for better data on education providers, trainers, and training delivery"
+"diversity in social mobility hourglass among immigrants creates challenges for educational planning"
+"diversity presents challenges aligning learning needs and learning styles across demogaphics"
+* Describe some characteristics of the quintessential adult learner
+** ^
+"Adults are those whose age, social roles, or self-perception, define them as adults"
+"The resource of highest value in adult education is the learner's experience" [lindman]
+"adult development more focused on social roles and psychosocial tasks (establish intimacy or generativity)" [the quality of being able to produce or create something new, often involving nurturing and guiding the next generation.]
+** ^
+"adult learners mostly motivated by wanting to improve their position in life"
+* Describe participation in adult learning activities [2009 UNESCO report]
+** ^
+nordic > 50%
+anglo saxon 35% - 50%
+northern european 20% - 35%
+southern europe < 20%
+** ^
+startling high numbers [estimated 90 million, paulston & boeke, 2006]
+"2009 UNESCO global report, 18% adulst over 25 not completed primary school"
+* List common adult participation programs
+** ^
+ESL: english second language 
+ABE: adult basic education
+GED: general education development 
+CPE: continuing professional education
+* Profile average adult learner
+** ^
+- just as often woman as man
+- under 40
+- completed highschool
+- employed above average income
+** ^
+- white collar 
+- married, kids, suburban
+* List some settings where learning occurs
+** ^
+formal: sponsored by educational institutions
+nonformal: organized by institutions, agencies, and community groups [secondary mission]
+informal: embedded in everyday life
+** ^
+- traditional students 15%, remainder include adult learners, employees, low-income students, student parents
+- 70% of learning takes place in the work place
+- self-directed learning explosion
+- tacit knowledge [implicit howto navigate knowledge - high-society]
+* what are the components of informal learning?
+** ^
+self-directed [howto]
+incidental [occupational, read map to get to office]
+tacit [interpersonal, implicit social experience]
+integrative [nonconscious learning, awake in the night with the solution]
+* What is the learning society?
+** ^
+place-bound application of the concept of lifelong learning, possibly nation or community wide initiative
+overarching concept to guide policy in some countrys
+* Talk again about the knowledge society
+** ^
+wherein knowledge and education are commodities of value has eclipsed the industrial society where labour and machines were of greatest value
+* Why is the adult learner different from the child learner?
+** ^
+Due to position and social context, the adult learner has qualitatively different learning needs and interests from children
+

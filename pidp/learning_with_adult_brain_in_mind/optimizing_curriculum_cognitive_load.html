@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title></title>
+<meta name="author" content="Yuri Tricys"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/dracula.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdn.jsdelivr.net/npm/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<style type="text/css">#sec-title-slide{display:flex !important;flex-wrap:wrap;align-content:center;justify-content:center;}#sec-title-slide>h3{color:#bd93f9 !important; margin:-80px 0px 0px 0px !important;.present{margin:-50px 0px !important;}.reveal .controls{color:#00f500 !important;} .reveal a:hover .r-frame {color:#00f500 !important;} .reveal a {color:#00f500 !important;} .reveal a:hover{color:#00f500 !important;} .reveal .roll span:after{background:#007e00 !important;} .reveal .progress {color:#00f500 !important;} .figure{display:flex;flex-wrap:wrap;}</style>
+<link rel="stylesheet" type="text/css" href="https://buildhello.ca/orientation/dracula.css" />
+<style type="text/css">.slides{width:1200px !important; height:800px !important}</style>
+<style type="text/css">.present h2{text-align:left;margin-top:1.4em;margin-bottom:-0.1em;font-size:1.5em;}</style>
+<style type="text/css">#slide2{margin-bottom:0.5em;margin-top:1.7em;}</style>
+<style type="text/css">#slide0,#slide4{display:none;}</style>
+<style type="text/css">#slide5 {text-align:left;margin-top:1.4em;margin-bottom:-0.1em;font-size:1.5em;}</style>
+<style type="text/css">h4 {display:none;}</style>
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide" data-background="./media/art_think_tynchox.gif" data-background-size="cover" data-background-repeat="none" data-background-opacity="0.8"><div style="display:grid;grid-template-rows:1fr 1fr 1fr;grid-template-columns:1fr 1fr 1fr 1fr; height:250px;width:900px;padding:10px 10px;background-color:black;opacity:0.8;border-radius:15px;"><h3 style="grid-row:2;grid-column:1/-1">Optimizing Curriculum for Cognitive Load</h3><div style="grid-row:3;grid-column:1/-1;display:flex;flex-wrap:wrap;align-self:end;justify-self:start;color:#76c4d6;font-size:0.5em;width:auto;"><span style="color:#66f859;width:auto;height:auto;display:inline-block;">Yuri Tricys&nbsp;&#8226;&nbsp;March 29th, 2025</span></div></div>
+</section>
+
+
+<section>
+<section id="slide-slide0" data-background="./media/cognitive_presention.png" data-background-size="contain" data-background-transition="slide">
+<h2 id="slide0">Land Acknowledgement</h2>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<div style="margin-top:2em;margin-bottom:1.5em;grid-row:1/3;grid-column:-1/1;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;width:100%;height:100%;">
+<img style="width:25%;height:auto;" src="./media/squamish.png">
+<img style="width:25%;height:auto;" src="./media/musquem.png">
+<img style="width:25%;height:auto;" src="./media/TWN_LOGO-VECTOR-no-text-copy.png">
+</div>
+
+<p style="grid-row:3;grid-column:1/-1;width:100%; text-align:left;font-size:0.6em;">VCC, the provider for this course, is located on the unceded and ancestral territories of the Musquem, Squamish, and Tsleil-Waututh Nations, which have been stewarded by them since time immemorial.<br><br>I'm grateful for the opportunity to take this course on these territories.</p>  
+
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-slide1" data-background="./media/cognitive_presention.png" data-background-size="contain" data-background-transition="slide">
+<h2 id="slide1">Personal Introduction</h2>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<img style="display:block;grid-row:1/3;grid-column:4;width:80%;height:auto;" src="./media/20220215_205135.webp" >
+
+<p style="grid-row:1;grid-column:1/4;width:100%; text-align:left;">A little bit about me: my name is Yuri Tricys. I'm a Canadian from Lithuanian and African American descent.</p>
+
+<p style="grid-row:2;grid-column:1/4;width:100%;text-align:left;">I'm a web developer, researcher, and consultant.</p>
+
+<p style="grid-row:3;grid-column:-1/1;width:100%;text-align:left">I come from a varied educational background, having studied formal sciences, history, literature, economics, and during the last 12 years the computer sciences.</p>
+</div>
+
+</section>
+<section id="slide-slide1-split" data-background="./media/cognitive_presention.png" data-background-size="contain" data-background-transition="slide">
+
+
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<div style="grid-row:1/3;grid-column:3/5;display:flex;flex-wrap:wrap;align-content:start;justify-content:center;justify-self:center;width:80%;height:auto;padding-top:1.5em;">
+<img style="width:100%;" src="./media/hyperspace.gif" >
+<span style="width:100%;font-size:0.5em;align-self:center;justify-self:center;text-align:center;margin:0.5em auto 0em auto;">Flow State</span>
+</div>
+
+<div style="display:flex;flex-wrap:wrap;justify-content:left;align-content:start;grid-row:1;grid-column:1/3;width:100%;padding-top:1.5em;">
+
+<p style="width:100%; text-align:left; font-size:0.8em;">Today I'm going to talk about <span style="color:#76c4d6;font-family:inherit;font-size:inherit;display:inline-block;">Cognitive</span> <span style="color:#76c4d6;font-family:inherit;font-size:inherit;display:inline-block;">Load Theory</span>, a topic you may know about already, given the context of this presentation.<br><br>
+
+But we're going to talk about it alongside the concept of <span style="color:#76c4d6;font-family:inherit;font-size:inherit;display:inline-block;">flow</span>, or <span style="color:#76c4d6;font-family:inherit;font-size:inherit;display:inline-block;">flow state</span>, and ultimately ...<br><br>
+
+curriculum development, and the computer sciences.
+</p>
+
+</div>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-slide2" data-background="./media/cognitive_presention.png" data-background-size="contain" data-background-transition="slide">
+<h2 id="slide2">Facts About the Brain</h2>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<img style="display:block;grid-row:1/3;grid-column:3/5;self-justify:end;justify-self:end;margin-left:auto;width:78%;height:auto;margin-right:0;" src="./media/ai_think_mathew_butler.gif" >
+
+<div style="display:flex;flex-wrap:wrap;justify-content:left;align-content:start;grid-row:1/5;grid-column:1/3;width:100%;">
+<ul style="width:100%; text-align:left;font-size:0.9em;">
+<li>6,200 thoughts per day <br><span style="font-size:0.4em">(Tseng & Poppenk, 2020)</span></li>
+<li>Short-term memory, 7 pieces of info, 20 seconds <br> <span style="font-size:0.4em">(Shelby Burr, n.d., southtree.com)</span></li>
+<li>2.5 million gigabytes of memory <br><span style="font-size:0.4em">(Shelby Burr, n.d., southtree.com)</span></li>
+</ul>
+</div>
+</div>
+
+</section>
+<section id="slide-org462451e" data-background="./media/cognitive_presention.png" data-background-size="contain" data-background-transition="slide">
+<h4 id="org462451e">whatever</h4>
+
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<img style="display:block;grid-row:1/3;grid-column:3/5;self-justify:end;justify-self:end;margin-left:auto;width:80%;height:auto;" src="./media/neuron_synapsis.gif" >
+
+<div style="display:flex;flex-wrap:wrap;justify-content:left;align-content:start;grid-row:1/5;grid-column:1/3;width:100%;">
+
+ 
+<ul style="width:100%; text-align:left;font-size:0.8em;">
+<li>86 billion neurons <span style="font-size:0.5em">(Herculano-Houzel, 2009)</span></li>
+<li>More than 125 trillion synaptic connections <span style="font-size:0.5em">(Stanford Medical Center, 2010)</span></li>
+<li>Makes up about 2% of the body's weight <span style="font-size:0.5em;">(Raichle & Gusnard, 2002)</span></li>
+<li>Uses around 20% of total caloric intake <span style="font-size:0.5em;">(Raichle & Gusnard, 2002)</span></li>
+</ul>
+</div>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-slide3" data-background="./media/cognitive_presention.png" data-background-size="contain" data-background-transition="slide">
+<h2 id="slide3">Cognitive Load Theory</h2>
+
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<img style="display:block;grid-row:1/3;grid-column:3/5;self-justify:end;justify-self:end;margin-left:auto;width:100%;height:auto;" src="./media/202209_BlogArticleImage_3FormsofCognitiveLoad.webp" >
+
+
+<div style="display:flex;flex-wrap:wrap;justify-content:left;align-content:start;grid-row:1;grid-column:1/3;width:100%;">
+
+<p style="width:100%; text-align:left;">Cognitive Load theory identifies three types of cognitive load.</p>
+
+<ul style="margin-top:0.25em;width:100%; text-align:left;">
+
+<li>Intrinsic</li>
+<li>Extraneous</li>
+<li>Germane</li>
+</ul>
+
+</div>
+
+
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-slide4" data-background="./media/3-form-cogntive-load.jpg" data-background-size="contain" data-background-transition="slide">
+<h2 id="slide4">Full Screen</h2>
+</section>
+<section id="slide-slide5" data-background="./media/cognitive_presention.png" data-background-size="contain" data-background-transition="slide">
+<h3 id="slide5">Intrinsic Cognitive Load:</h3>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<img style="display:block;grid-row:1/3;grid-column:3/5;self-justify:end;justify-self:end;margin-left:auto;width:100%;height:auto;" src="./media/202209_BlogArticleImage_3FormsofCognitiveLoad.webp" >
+
+
+<div style="display:flex;flex-wrap:wrap;justify-content:left;align-content:start;grid-row:1;grid-column:1/3;width:100%;">
+
+<p style="width:100%; text-align:left; font-size:0.6em;">
+Intrinsic cognitive load refers to the inherent complexity of a task or information being learned.<br><br>
+It's determined by the number of interacting elements that must be processed simultaneously.<br><br>
+For example, working on a complex computer science program might involve understanding complex directory structures, build pipelines, tooling chains, switches, and conditions, and multiple programs, each with many variables and values -- as well as other varied aspects of the 'problem space' that work together to generate the program's output.
+</p>
+</div>
+
+</div>
+</section>
+<section id="slide-slide5" data-background="./media/cognitive_presention.png" data-background-size="contain" data-background-transition="slide">
+<h3 id="slide5">Extraneous Cognitive Load:</h3>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+
+<img style="display:block;grid-row:1/3;grid-column:3/5;self-justify:end;justify-self:end;margin-left:auto;width:100%;height:auto;" src="./media/202209_BlogArticleImage_3FormsofCognitiveLoad.webp" >
+
+
+<div style="display:flex;flex-wrap:wrap;justify-content:left;align-content:start;grid-row:1;grid-column:1/3;width:100%;">
+
+<p style="width:100%; text-align:left; font-size:0.6em;">
+Refers to the mental effort caused by unnecessary or distracting elements in the learning or task environment, such as poorly designed interfaces or confusing instructions.<br><br>
+</p>
+
+
+<ul style="margin-top:0.25em;width:100%; text-align:left;font-size:0.6em;">
+
+<li>Noise</li>
+<li>Threats</li>
+<li>Social activities</li> 
+<li>Visually confusing elements in the environment, like lighting</li>
+</ul>
+
+</div>
+
+
+</div>
+</section>
+<section id="slide-slide5" data-background="./media/cognitive_presention.png" data-background-size="contain" data-background-transition="slide">
+<h3 id="slide5">Germane Cognitive Load:</h3>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<img style="display:block;grid-row:1/3;grid-column:3/5;self-justify:end;justify-self:end;margin-left:auto;width:100%;height:auto;" src="./media/202209_BlogArticleImage_3FormsofCognitiveLoad.webp" >
+
+<div style="display:flex;flex-wrap:wrap;justify-content:left;align-content:start;grid-row:1;grid-column:1/3;width:100%;">
+
+<p style="width:100%; text-align:left; font-size:0.6em;">
+Refers to the effort required to create new knowledge schemas or automate processes.<br><br>
+We're talking here about encoding knowledge into long-term memory, which includes identifying it, categorizing it, and then encoding it.<br><br>
+The brain is creating new synaptic connections between neurons, and more broadly, neural networks.
+</p>
+</div>
+
+</div>
+
+</section>
+<section id="slide-slide5" data-background="./media/cognitive_presention.png" data-background-size="contain" data-background-transition="slide">
+<h3 id="slide5">Cognitive Load Threshold</h3>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<img style="display:block;grid-row:1/3;grid-column:3/5;self-justify:end;justify-self:end;margin-left:auto;width:100%;height:auto;" src="./media/202209_BlogArticleImage_3FormsofCognitiveLoad.webp" >
+
+<div style="display:flex;flex-wrap:wrap;justify-content:left;align-content:start;grid-row:1;grid-column:1/3;width:100%;">
+
+<p style="width:100%; text-align:left; font-size:0.6em;">
+Cognitive load threshold is a theoretical threshold that identifies the difference between cognitive load and cognitive overload.<br><br>  
+It's theoretical because it can't be identified in any precise way.<br><br> 
+But we can presume it to be different for every individual, and different also for different individuals across different circumstances.<br><br>
+What we can say is that when the cognitive load of any given individual passes their cognitive load threshold <br><br> 
+They become cognitively overloaded.
+</p>
+</div>
+
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-slide5" data-background="./media/cognitive_presention.png" data-background-size="contain" data-background-transition="slide">
+<h2 id="slide5">The Overloaded Brain</h2>
+
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+
+<img style="display:block;grid-row:1/3;grid-column:3/5;self-justify:end;justify-self:end;margin-left:auto;width:100%;height:auto;" src="./media/art_think_tynchox.gif" >
+
+<div style="display:flex;flex-wrap:wrap;justify-content:left;align-content:start;grid-row:1;grid-column:1/3;width:100%;">
+
+<p style="width:100%; text-align:left; font-size:0.6em;">Bernadine Cocks and several other researchers in 2013 published <span style="color:#76c4d6;font-family:inherit;font-size:inherit;display:inline-block;">"Breaking the Camel's Back: Can Cognitive </span> <span style="color:#76c4d6;font-family:inherit;font-size:inherit;display:inline-block;">Overload Be Quantified in the Human</span> <span style="color:#76c4d6;font-family:inherit;font-size:inherit;display:inline-block;">Brain?"</span><br><br>
+
+Their research looks for a precise difference between cognitive load and cognitive overload.<br><br>
+
+They tested subjects with <span style="color:#76c4d6;font-family:inherit;font-size:inherit;display:inline-block;">Stroop tasks</span>, under different levels of cognitive load and distraction, such as audio stimulus, while scanning their brains with a neuroscanner.<br><br>   
+They then used statistical methods such as fourier transformations and paired t-tests to measure error rates and reaction times.    
+
+</p>
+</div>
+
+</div>
+
+</section>
+<section id="slide-orgbe44382" data-background="./media/cognitive_presention.png" data-background-size="contain" data-background-transition="slide">
+<h4 id="orgbe44382">whatever</h4>
+
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<div style="display:flex;flex-wrap:wrap;justify-content:left;align-content:start;grid-row:1;grid-column:1/5;width:100%;">
+
+<p style="width:100%; text-align:left; font-size:0.6em;">
+
+While their sample-size was small, their results suggested "<span style="color:#76c4d6;font-family:inherit;font-size:inherit;display:inline-block;">performance decrements</span> of up to <span style="color:#76c4d6;font-family:inherit;font-size:inherit;display:inline-block;">56% for error rates</span> and <span style="color:#76c4d6;font-family:inherit;font-size:inherit;display:inline-block;">81% for reaction times</span>" <span style="font-size:0.5em">(Cocks et al., 2013)</span><br><br>
+
+They were not successful in identifying what we could call a precise cognitive load threshold, or devising a unit of cognitive load, <br><br>
+
+but they did find localized areas in the brain that were visible when scanned as the brain moved from normal to overloaded cognitive load. <br><br>
+
+We're not going to go into further detail here, but we do see quantifiable performance deficiencies in overloaded indivuals. 
+</p>
+</div>
+
+</div>
+
+</section>
+<section id="slide-org6bcaa51" data-background="./media/cognitive_presention.png" data-background-size="contain" data-background-transition="slide">
+<h4 id="org6bcaa51">whatever</h4>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+
+<div style="display:flex;flex-wrap:wrap;justify-content:left;align-content:start;grid-row:1;grid-column:1/5;width:100%;">
+
+<p style="width:100%; text-align:left; font-size:0.6em;">
+
+Another research paper, by Sewall, Santhosh, and O'Sullivan, in 2020, titled 
+
+<span style="color:#76c4d6;font-family:inherit;font-size:inherit;display:inline-block;">"How do attending physicians </span> <span style="color:#76c4d6;font-family:inherit;font-size:inherit;display:inline-block;">describe cognitive overload among their workplace learners?"</span>,<br><br>  
+
+gives some insights into how to recognize cognitive load in students.<br><br> 
+
+Sewall et al., 2019, conducted what they call a 'secondary qualitative analysis of transcripts of interviews' among health care workplace teachers to identify signs of cognitive overload.<br><br>
+
+Their results are helpful in spotting cognitive overload in students. 
+
+</div>
+
+</div>
+
+</section>
+<section id="slide-org21bed69" data-background="./media/cognitive_presention.png" data-background-size="contain" data-background-transition="slide">
+<h4 id="org21bed69">whatever</h4>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+
+<div style="display:flex;flex-wrap:wrap;justify-content:left;align-content:start;grid-row:1;grid-column:1/5;width:100%;">
+
+<p style="width:100%; text-align:left; font-size:0.6em;">
+Sewall et al., 2020 found cognitively overloaded workers had the following characteristics:
+</p> 
+
+<ul style="margin-top:0.25em;width:100%; text-align:left;">
+<li>Poor performance on workplace tasks</li>
+<li>Non-verbal physical manifestations</li>
+<li>Verbal utterances</li> 
+<li>Non-optimal interpersonal interactions</li>
+</ul>
+
+</div>
+
+</div>
+</section>
+</section>
+<section>
+<section id="slide-slide6" data-background="./media/cognitive_presention.png" data-background-size="contain" data-background-transition="slide">
+<h2 id="slide6">The Flow State</h2>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+
+<div style="grid-row:1/3;grid-column:4/6;display:flex;flex-wrap:wrap;align-content:start;justify-content:center;justify-self:center;width:100%;height:auto;padding-top:0em;">
+<img style="width:100%;" src="./media/hyperspace.gif" >
+<span style="width:100%;font-size:0.5em;align-self:center;justify-self:center;text-align:center;margin:0.5em auto 0em auto;">Flow State</span>
+</div>
+
+<div style="display:flex;flex-wrap:wrap;justify-content:left;align-content:start;grid-row:1;grid-column:1/4;width:100%;">
+
+<p style="width:100%; text-align:left; font-size:0.6em;">
+Steven Kotler, author of <span style="color:#76c4d6;font-family:inherit;font-size:inherit;display:inline-block;">'The Rise of Superman: Decoding the Science of Ultimate</span> <span style="color:#76c4d6;font-family:inherit;font-size:inherit;display:inline-block;">Human Performance.'</span> <br><br>   
+
+describes the flow state as an optimal state of consciousness where individuals feel and perform their best.<br><br> 
+
+In this state, people experience moments of <span style="color:#76c4d6;font-family:inherit;font-size:inherit;display:inline-block;">rapt attention</span>
+and <span style="color:#76c4d6;font-family:inherit;font-size:inherit;display:inline-block;">total absorption</span>, becoming so focused on the task at hand that everything else disappears.<br><br>
+
+<span style="color:#76c4d6;font-family:inherit;font-size:inherit;display:inline-block;">Action</span> and <span style="color:#76c4d6;font-family:inherit;font-size:inherit;display:inline-block;">awareness</span> merge, and the sense of self vanishes.
+
+</p> 
+
+</div>
+
+</div>
+
+</section>
+<section id="slide-orga1a2a2f" data-background="./media/cognitive_presention.png" data-background-size="contain" data-background-transition="slide">
+<h4 id="orga1a2a2f">whatever</h4>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<div style="grid-row:1/3;grid-column:3/5;display:flex;flex-wrap:wrap;align-content:start;justify-content:center;justify-self:center;width:80%;height:auto;padding-top:3em;">
+<img style="width:100%;" src="./media/hyperspace.gif" >
+<span style="width:100%;font-size:0.5em;align-self:center;justify-self:center;text-align:center;margin:0.5em auto 0em auto;">Flow State</span>
+</div>
+
+
+<div style="display:flex;flex-wrap:wrap;justify-content:left;align-content:start;grid-row:1/5;grid-column:1/3;width:100%;padding-top:2em;">
+
+<p style="width:100%; text-align:left; font-size:0.6em;margin-bottom:2em;">
+Signs you might be in a state of flow:
+</p> 
+
+<ol style="margin-top:0.25em;width:100%; text-align:left;font-size:0.6em;">
+<li>Challenge-skills balance</li>
+<li>Total concentration</li>
+<li>Clear goals</li>
+<li>Immediate feedback</li>
+<li>Transformation of time</li>
+<li>Feeling intrinsically rewarded</li>
+<li>Effortlessness</li>
+<li>Loss of self-consciousness</li>
+<li>Feeling of total control</li>
+</ol>
+
+
+</div>
+
+<p style="padding-left:2.5em;margin-top:2em;grid-row:6;grid-column:1/-1;width:100%; text-align:left; font-size:0.6em;"><span style="font-size:0.5em">(Csikszentmihalyi, 1990)</span></p> 
+
+</div>
+
+
+</section>
+<section id="slide-org6167c82" data-background="./media/cognitive_presention.png" data-background-size="contain" data-background-transition="slide">
+<h4 id="org6167c82">whatever</h4>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+
+<div style="grid-row:1/3;grid-column:3/5;display:flex;flex-wrap:wrap;align-content:start;justify-content:center;justify-self:center;width:80%;height:auto;padding-top:4em;">
+<img style="width:100%;" src="./media/hyperspace.gif" >
+<span style="width:100%;font-size:0.5em;align-self:center;justify-self:center;text-align:center;margin:0.5em auto 0em auto;">Flow State</span>
+</div>
+
+<div style="display:flex;flex-wrap:wrap;justify-content:left;align-content:start;grid-row:1;grid-column:1/3;width:100%;padding-top:2.5em;">
+
+<p style="width:100%; text-align:left; font-size:0.6em;">
+A well-known study, by Cranston and Keller (2013), "showed that people in flow state reported increasing their productivity by <span style="color:#76c4d6;font-family:inherit;font-size:inherit;display:inline-block;">500%</span>." <span style="font-size:0.5em">(Alameda et al., 2022)</span><br><br>
+
+Other benefits of being in the state of flow, described by Steven Kotler, include: 
+</p> 
+
+<ul style="margin-top:0.25em;width:100%; text-align:left;font-size:0.6em;">
+<li>Higher intrinsic motivation</li>
+<li>Enhanced pattern recognition</li>
+<li>Heightened senses</li>
+<li>More information processed per second</li>
+<li>Creativity increases <span style="color:#76c4d6;font-family:inherit;font-size:inherit;display:inline-block;">500 - 700%</span></li>
+<li>Learning speed increases <span style="color:#76c4d6;font-family:inherit;font-size:inherit;display:inline-block;">240% to 500%</span></li>
+<li>Heightened problem solving abilities</li>
+</ul>
+
+</div>
+
+<p style="margin-top:2.5em;grid-row:6;grid-column:1/-1;width:100%; text-align:left; font-size:0.6em;"><span style="font-size:0.5em">Big Think. (2015, February 27). The Neurochemistry of Flow States, with Steven Kotler [Video]. YouTube. <a href="https://www.youtube.com/watch?v=aHp2hkue8RQ" target="_blank">https://www.youtube.com/watch?v=aHp2hkue8RQ</a></span></p>
+
+</div>
+
+</section>
+<section id="slide-orgeaa8a7d" data-background="./media/cognitive_presention.png" data-background-size="contain" data-background-transition="slide">
+<h4 id="orgeaa8a7d">whatever</h4>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<div style="display:flex;flex-wrap:wrap;justify-content:left;align-content:start;grid-row:1;grid-column:1/5;width:100%;padding-top:1.7em">
+
+<p style="width:100%; text-align:left; font-size:0.5em;">
+Flow is a big deal in computer programming, which is a high-cognitive load activity. Again, according to Kotler, flow requires a <span style="color:#76c4d6;font-family:inherit;font-size:inherit;display:inline-block;">4% higher level of difficulty</span> than you're accustom to, to push the body into flow state. <span style="font-size:0.5em">(Jim Kwik, 2020)</span><br><br> 
+Computer programming is difficult, typically it satisfies the 4% criteria.
+</p> 
+
+<p style="width:100%; text-align:left; font-size:0.7em;padding:1em;border-radius:0.8em;line-height:1.7;background-color:#fffbef;color:#000000;">
+"Joel Spoesky once said, “Productivity depends on being able to juggle a lot of little details in short term memory all at once. Any kind of interruption can cause these details to come crashing down. When you resume work, you can’t remember any of the details (like local variable names you were using, or where you were up to in implementing that search algorithm) and you have to keep looking these things up, which slows you down a lot until you get back up to speed.”" (Popper, 2018) 
+</p> 
+
+
+</div>
+
+</div>
+
+</section>
+<section id="slide-orgadf0ebc" data-background="./media/cognitive_presention.png" data-background-size="contain" data-background-transition="slide">
+<h4 id="orgadf0ebc">whatever</h4>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<div style="grid-row:1/3;grid-column:3/5;display:flex;flex-wrap:wrap;align-content:start;justify-content:center;justify-self:center;width:80%;height:auto;padding-top:4em;">
+<img style="width:100%;" src="./media/hyperspace.gif" >
+<span style="width:100%;font-size:0.5em;align-self:center;justify-self:center;text-align:center;margin:0.5em auto 0em auto;">Flow State</span>
+</div>
+
+<div style="display:flex;flex-wrap:wrap;justify-content:left;align-content:start;grid-row:1;grid-column:1/3;width:100%;padding-top:2.5em;">
+
+<p style="width:100%; text-align:left; font-size:0.6em;">
+Ben Popper, at Stack Overflow wrote an article in 2018, titled, <span style="color:#76c4d6;font-family:inherit;font-size:inherit;display:inline-block;">Developer Flow State and Its Impact on </span> <span style="color:#76c4d6;font-family:inherit;font-size:inherit;display:inline-block;">Productivity</span>.
+
+<br><br>
+He tells us how easy it is for a developer to get knocked out of flow-state.
+</p> 
+
+
+<ul style="margin-top:0.25em;width:100%; text-align:left;font-size:0.6em;">
+<li>Workers experience 87 interruptions per day</li>
+<li>Programmers take 10-15 minutes to start editing code after an interruption.</li>
+<li>1 uninterrupted 2-hour coding session per day</li>
+<li>"The average roadblock costs more than 40 minutes to resolve, taking you out of the developer flow state."</li>
+</ul>
+
+</div>
+
+<p style="padding-left:2em;margin-top:2.5em;grid-row:6;grid-column:1/-1;width:100%; text-align:left; font-size:0.6em;"><span style="font-size:0.5em">(Popper, 2018)</span></p>
+
+</div>
+
+
+</section>
+<section id="slide-org66ae451" data-background="./media/cognitive_presention.png" data-background-size="contain" data-background-transition="slide">
+<h4 id="org66ae451">whatever</h4>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<div style="display:flex;flex-wrap:wrap;justify-content:left;align-content:start;grid-row:1;grid-column:1/5;width:100%;padding-top:2.5em;">
+
+<p style="width:100%; text-align:left; font-size:0.7em;">
+
+Raiza Sali, 2020 <br><br>
+
+22 known flow state triggers<br><br>
+
+<a href="https://www.raizasali.com/post/flow-triggers-for-hacking-flow">https://www.raizasali.com/post/flow-triggers-for-hacking-flow</a>
+
+</p> 
+
+</div>
+
+</div>
+</section>
+</section>
+<section>
+<section id="slide-slide7" data-background="./media/cognitive_presention.png" data-background-size="contain" data-background-transition="slide">
+<h2 id="slide7">Cognitive Loading</h2>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<img style="display:block;grid-row:1/3;grid-column:3/5;justify-self:end;margin: 0em auto 0em auto;width:90%;height:auto;" src="./media/upload_mind_barain.gif" >
+
+<div style="display:flex;flex-wrap:wrap;justify-content:left;align-content:start;grid-row:1/5;grid-column:1/3;width:100%;padding-top:1em;">
+
+<p style="width:100%; text-align:left; font-size:0.6em;">
+<span style="color:#76c4d6;font-family:inherit;">Cognitive Load</span> is <span style="color:#76c4d6;font-family:inherit;">instrinsic</span>, <span style="color:#76c4d6;font-family:inherit;">extraneous</span>, and <span style="color:#76c4d6;font-family:inherit;">germane</span><br><br>
+<span style="color:#76c4d6;font-family:inherit;">Cognitive Loading</span> is getting from <span style="color:#76c4d6;font-family:inherit;">nothing</span> to <span style="color:#76c4d6;font-family:inherit;">intrinsic</span>.
+ 
+<br><br> 
+In computer science, and web development, it's about loading the problem the space.<br><br> 
+</p> 
+
+</div>
+
+</div>
+
+</section>
+<section id="slide-orgbe7e2ff" data-background="./media/cognitive_presention.png" data-background-size="contain" data-background-transition="slide">
+<h4 id="orgbe7e2ff">whatever</h4>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+
+<img style="display:block;grid-row:1/3;grid-column:4;justify-self:end;margin: 0em auto 0em auto;width:50%;height:auto;padding-top:2em;" src="./media/3-o-clock.png">
+
+
+<div style="display:flex;flex-wrap:wrap;justify-content:left;align-content:start;grid-row:1;grid-column:1/4;width:100%;padding-top:1.5em;">
+
+<p style="width:100%; text-align:left; font-size:0.5em;">
+In my case, when I first started programming heavily, around 12 years ago, it would take anywhere from <span style="color:#76c4d6;font-family:inherit;">2 - 4 hours</span> to get into the zone.<br><br>
+Today, after more than a decade focused on optimizing work flow for flow-state, it can still take me <span style="color:#76c4d6;font-family:inherit;">1 hour</span> to <span style="color:#76c4d6;font-family:inherit;">1.5 hours</span> get from Cognitive Loading to Instrinsicly Loaded, though that number comes down if I <span style="color:#76c4d6;font-family:inherit;">stay on a specific problem</span> and come back to <span style="color:#76c4d6;font-family:inherit;">across multiple days</span>. 
+</p> 
+
+<p style="width:100%; text-align:left; font-size:0.5em;">
+Here are some intrinsic ways I make that happen:
+</p> 
+
+<ol style="margin-top:0.25em;width:100%; text-align:left;font-size:0.6em;">
+<li>Know the code base</li>
+<li>Keep a log book, document coding sessions</li>
+<li>Know your advanced SDKs (software development tool kits), servers, compilers, linters, APIs, etc ...</li>
+<li>Know your customized developer tools and environments (Text editor proficiency)</li>
+<li>Documentation for custom features</li>
+<li>AI in the SDK</li>
+<li>Custom snippets</li>
+</ol>
+
+</div>
+
+</div>
+</section>
+</section>
+<section>
+<section id="slide-slide8" data-background="./media/cognitive_presention.png" data-background-size="contain" data-background-transition="slide">
+<h2 id="slide8">Optimizing Curriculum</h2>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<div style="display:flex;flex-wrap:wrap;justify-content:left;align-content:start;grid-row:1;grid-column:1/4;width:100%;padding-top:2.5em;">
+
+<p style="width:100%; text-align:left; font-size:0.6em;">
+When we're talking about <span style="color:#76c4d6;font-family:inherit;">optimizing</span> curriculum for <span style="color:#76c4d6;font-family:inherit;">flow-state</span>, minimal <span style="color:#76c4d6;font-family:inherit;">cognitive load</span>, and minimal <span style="color:#76c4d6;font-family:inherit;">cognitive loading</span>, we're talking about extraneous load.<br><br>
+Changes we can make to the structure of the classes and problem sets, and to the environment, that enable students to <span style="color:#76c4d6;font-family:inherit;">get into flow</span>, <span style="color:#76c4d6;font-family:inherit;">stay focused</span>, and optimize for <span style="color:#76c4d6;font-family:inherit;">low cognitive load</span>.
+</p> 
+
+<p style="width:100%; text-align:left; font-size:0.6em;">
+So let's talk about those two things in the next two slides and then wrap up.
+</p> 
+
+</div>
+
+</div>
+</section>
+</section>
+<section>
+<section id="slide-slide7" data-background="./media/cognitive_presention.png" data-background-size="contain" data-background-transition="slide">
+<h2 id="slide7">Optimizing Curriculum for Cognitive Load</h2>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<div style="display:flex;flex-wrap:wrap;justify-content:left;align-content:start;grid-row:1/5;grid-column:1/-1;width:100%;padding-top:1em;">
+
+<p style="width:100%; text-align:left; font-size:0.6em;">
+Weinstein et al., in their 2018 paper <span style="color:#76c4d6;font-family:inherit;">"Teaching the science of learning"</span>, introduce six characteristic processes of <span style="color:#76c4d6;font-family:inherit;">Cognitive Learning Theory</span> that will be helpful in conceptualizing how we can write curricula for cognitive load. <br><br>
+They are:
+
+</p> 
+
+<ol style="margin-top:0.25em;width:100%; text-align:left;font-size:0.6em;">
+<li>Spaced practice - offset quizzes/assignments</li>
+<li>Interleaving - switching between problem types and/or subjects</li>
+<li>Retrieval - flash cards</li>
+<li>Elaboration - anchoring to existing memory</li>
+<li>Concrete examples - simplify problems, or provide partly solved problems</li>
+<li>Dual coding - multiple formats for the same problem</li>
+</ol>
+
+</div>
+
+</div>
+
+</section>
+<section id="slide-org3830493" data-background="./media/cognitive_presention.png" data-background-size="contain" data-background-transition="slide">
+<h4 id="org3830493">whatever</h4>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<div style="display:flex;flex-wrap:wrap;justify-content:left;align-content:start;grid-row:1/5;grid-column:1/-1;width:100%;padding-top:2.5em;">
+
+<p style="width:100%; text-align:left; font-size:0.6em;">
+
+Shaffer et al., in 2003, wrote what I consider to be a seminal paper titled, <span style="color:#76c4d6;font-family:inherit;">“Applying Cognitive Load Theory to Computer Science Education”</span> <span style="font-size:0.5em;">(Shaffer et al., 2003)</span>.<br><br>
+
+They offer several suggestion to optimize curriculum design for cognitive load:
+
+</p> 
+
+<ul style="margin-top:0.25em;width:100%; text-align:left;font-size:0.6em;">
+<li>Partition information into small segments</li>
+<li>Simultaneous presentation of concepts and procedures</li>
+<li>Presentation of heuristic approaches and strategies, independent of domain reference</li>
+<li>Broad practice using partially completed examples</li>
+<li>Gradual withdrawal of supporting information from practice tasks</li>
+<li>Decomposition of practice tasks into small steps, then gradual integration into a complete skill</li>
+<li>Goal free problem solving</li>
+<li>Careful integration of text and graphics</li>
+<li>Visual and aural sources for learning</li>
+</ul>
+
+</div>
+
+<p style="padding-left:2.5em;margin-top:1.5em;grid-row:6;grid-column:1/-1;width:100%; text-align:left; font-size:0.6em;"><span style="font-size:0.5em">(Shaffer et al., 2003)</span></p>
+
+
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-slide8" data-background="./media/cognitive_presention.png" data-background-size="contain" data-background-transition="slide">
+<h2 id="slide8">Optimizing Curriculum for Cognitive Loading</h2>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<div style="display:flex;flex-wrap:wrap;justify-content:left;align-content:start;grid-row:1/5;grid-column:1/-1;width:100%;padding-top:1em;">
+
+<p style="width:100%; text-align:left; font-size:0.6em;">
+Optimizing for Cognitive Loading is really about minimizing energy spent loading a problem space into working memory, like a web development project, .<br><br> 
+
+In my personal experience, I found the fastest way to gain proficiency in a particular problem space -- which includes navigating the problem space, recalling features of it, and solving problems in it -- is to work in the space throughout the day. <br><br>
+
+I found <span style="color:#76c4d6;font-family:inherit;">4 consecutive shifts of 8 - 12 hrs</span> optimal, with <span style="color:#76c4d6;font-family:inherit;">2 or 3 days off</span> afterward. <br><br>
+
+</p> 
+
+</div>
+
+</div>
+
+</section>
+<section id="slide-org34176a0" data-background="./media/cognitive_presention.png" data-background-size="contain" data-background-transition="slide">
+<h4 id="org34176a0">whatever</h4>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<div style="display:flex;flex-wrap:wrap;justify-content:left;align-content:start;grid-row:1/5;grid-column:1/-1;width:100%;padding-top:1em;">
+
+<p style="width:100%; text-align:left; font-size:0.6em;">
+ 
+In management, the rule of thumb is to spend <span style="color:#76c4d6;font-family:inherit;">no more than 4 hrs a day</span> on the computer. Managers need to connect with workers, and stay in the client loop. It's a people job.<br><br> 
+
+But in high-productivity coding, what is often referred to as <span style="color:#76c4d6;font-family:inherit;">10x coding</span>, the trick is to hit it with everything you've got, and then go away for a few days.<br><br>
+ 
+To be honest, 10x-ers often turn those into <span style="color:#76c4d6;font-family:inherit;">20 hr shifts.</span><br><br>
+In my experiece, flow state seems to appear <span style="color:#76c4d6;font-family:inherit;">after 4 hrs on the computer.</span></p> 
+
+</div>
+
+</div>
+
+</section>
+<section id="slide-slide5" data-background="./media/cognitive_presention.png" data-background-size="contain" data-background-transition="slide">
+<h3 id="slide5">Stacking Blocks</h3>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<div style="display:flex;flex-wrap:wrap;justify-content:left;align-content:start;grid-row:1/5;grid-column:1/-1;width:100%;padding-top:1em;">
+
+<p style="width:100%; text-align:left; font-size:0.6em;">
+One of the most interesting strategies, then ... to optimizing curriculum for <span style="color:#76c4d6;font-family:inherit;">minimal cognitive loading</span>, and <span style="color:#76c4d6;font-family:inherit;">optimal flow-state</span>, is to do the <span style="color:#76c4d6;font-family:inherit;">reverse of interleaving</span> and <span style="color:#76c4d6;font-family:inherit;">spaced practice</span>, as it applies across subjects.<br><br>
+In the next slide we will look at a sample student schedule, and talk more about optimizing for cognitive loading.
+</p> 
+
+</div>
+
+</div>
+</section>
+<section id="slide-slide4" data-background="./media/sample_schedule_2.jpg" data-background-size="cover" data-background-transition="slide">
+<h4 id="slide4">whatever</h4>
+
+</section>
+<section id="slide-org296e0ed" data-background="./media/cognitive_presention.png" data-background-size="contain" data-background-transition="slide">
+<h4 id="org296e0ed">whatever</h4>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<div style="display:flex;flex-wrap:wrap;justify-content:left;align-content:start;grid-row:1/5;grid-column:1/-1;width:100%;padding-top:1em;">
+
+<p style="width:100%; text-align:left; font-size:0.6em;">
+So once again, one way to optimize for cognitive loading is to <span style="color:#76c4d6;font-family:inherit;">block stack</span>, to keep students focused on the <span style="color:#76c4d6;font-family:inherit;">same problem space</span> throughout a given day.<br><br> 
+
+This kind of strategy is applied often in the wild in <span style="color:#76c4d6;font-family:inherit;">boot camps</span> and <span style="color:#76c4d6;font-family:inherit;">hackathons</span>, for similar reasons. <br><br>
+
+In a traditional college setting, a college could offer a <span style="color:#76c4d6;font-family:inherit;">design lab</span> in the morning for 2 hours, a break, <span style="color:#76c4d6;font-family:inherit;">exercise</span>, followed by a <span style="color:#76c4d6;font-family:inherit;">front-end framework-focused</span>
+hands-on class in the early afternoon, and a <span style="color:#76c4d6;font-family:inherit;">database-focused back-end</span> class in the early evening.
+
+</p> 
+
+</div>
+
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-slide10" data-background="./media/cognitive_presention.png" data-background-size="contain" data-background-transition="slide">
+<h2 id="slide10">Summary</h2>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<div style="display:flex;flex-wrap:wrap;justify-content:left;align-content:start;grid-row:1/5;grid-column:1/-1;width:100%;padding-top:1em;">
+
+<p style="width:100%; text-align:left; font-size:0.6em;">
+In summary, the brain is a complex organism with billions of neurons that consumes <span style="color:#76c4d6;font-family:inherit;">20% of caloric intake</span> to create new synaptic connections between neurons and neural regions.<br><br> 
+
+<span style="color:#76c4d6;font-family:inherit;">Cognitive load theory</span>, explains brain functionality with such terms as <span style="color:#76c4d6;font-family:inherit;">intrinsic load</span>, <span style="color:#76c4d6;font-family:inherit;">extraneous load</span>, and <span style="color:#76c4d6;font-family:inherit;">germane load</span>.<br><br>
+
+When the brain is overloaded, error rates can increase beyond <span style="color:#76c4d6;font-family:inherit;">56%</span> and reaction times decrease beyond <span style="color:#76c4d6;font-family:inherit;">81%</span>. Workers and students can start to show <span style="color:#76c4d6;font-family:inherit;">visible and verbal behavioral abnormalities.</span><br><br> 
+
+<span style="color:#76c4d6;font-family:inherit;">Flow state</span> is a <span style="color:#76c4d6;font-family:inherit;">high-performance trance-like state</span> that induces almost the opposite behavior. <br><br> 
+
+People in flow state can be over <span style="color:#76c4d6;font-family:inherit;">500% more performant</span>. They can learn more than <span style="color:#76c4d6;font-family:inherit;">2x faster</span>. Their creativity can increase by <span style="color:#76c4d6;font-family:inherit;">500 to 700%.</span> <br><br>
+
+</p> 
+
+</div>
+
+</div>
+
+</section>
+<section id="slide-org47fb071" data-background="./media/cognitive_presention.png" data-background-size="contain" data-background-transition="slide">
+<h4 id="org47fb071">whatever</h4>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<div style="display:flex;flex-wrap:wrap;justify-content:left;align-content:start;grid-row:1/5;grid-column:1/-1;width:100%;padding-top:1em;">
+
+<p style="width:100%; text-align:left; font-size:0.6em;">
+<span style="color:#76c4d6;font-family:inherit;">Cognitive loading</span> occurs when <span style="color:#76c4d6;font-family:inherit;">intrinsic cognitive load</span> is added.<br><br> 
+<span style="color:#76c4d6;font-family:inherit;">Curriculum</span> can be optimized for both cognitive load and cognitive loading, to induce more learning, and higher probabilities of going into <span style="color:#76c4d6;font-family:inherit;">flow state</span>, which is important in web development..<br><br>
+There are multiple strategies to optimize curriculum for cognitive load, including <span style="color:#76c4d6;font-family:inherit;">partially pre-solving problems</span>. 
+</p> 
+
+</div>
+
+</div>
+
+</section>
+<section id="slide-org50486e0" data-background="./media/cognitive_presention.png" data-background-size="contain" data-background-transition="slide">
+<h4 id="org50486e0">whatever</h4>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<div style="display:flex;flex-wrap:wrap;justify-content:left;align-content:start;grid-row:1/5;grid-column:1/-1;width:100%;padding-top:1em;">
+
+<p style="width:100%; text-align:left; font-size:0.6em;">
+One way to <span style="color:#76c4d6;font-family:inherit;">optimize curriculum design</span> for <span style="color:#76c4d6;font-family:inherit;">cognitive loading</span>, is to <span style="color:#76c4d6;font-family:inherit;">block stack</span>, which ensures <span style="color:#76c4d6;font-family:inherit;">students stay focused</span> on one problem space, so they do not have to re-spend the large energy requirements to load problem spaces into instrinsic memory. 
+
+</p> 
+
+</div>
+
+</div>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+
+</script>
+</body>
+</html>

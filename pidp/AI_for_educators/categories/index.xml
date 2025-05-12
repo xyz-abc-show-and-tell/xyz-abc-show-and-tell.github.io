@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on AI in the Classroom: An Introduction to AI for Educators</title>
+    <link>https://xyz-abc-show-and-tell.github.io/pidp/AI_for_educators/categories/</link>
+    <description>Recent content in Categories on AI in the Classroom: An Introduction to AI for Educators</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 12 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xyz-abc-show-and-tell.github.io/pidp/AI_for_educators/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Education</title>
+      <link>https://xyz-abc-show-and-tell.github.io/pidp/AI_for_educators/categories/education/</link>
+      <pubDate>Mon, 12 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://xyz-abc-show-and-tell.github.io/pidp/AI_for_educators/categories/education/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

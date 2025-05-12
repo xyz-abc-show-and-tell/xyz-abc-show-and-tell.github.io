@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on AI in the Classroom: An Introduction to AI for Educators</title>
-    <link>https://xyz-abc-show-and-tell.github.io/pidp/AI_for_educators/tags/</link>
+    <link>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/tags/</link>
     <description>Recent content in Tags on AI in the Classroom: An Introduction to AI for Educators</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 12 May 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://xyz-abc-show-and-tell.github.io/pidp/AI_for_educators/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI</title>
-      <link>https://xyz-abc-show-and-tell.github.io/pidp/AI_for_educators/tags/ai/</link>
+      <link>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/tags/ai/</link>
       <pubDate>Mon, 12 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://xyz-abc-show-and-tell.github.io/pidp/AI_for_educators/tags/ai/</guid>
+      <guid>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/tags/ai/</guid>
       <description></description>
     </item>
     <item>
       <title>Teaching</title>
-      <link>https://xyz-abc-show-and-tell.github.io/pidp/AI_for_educators/tags/teaching/</link>
+      <link>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/tags/teaching/</link>
       <pubDate>Mon, 12 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://xyz-abc-show-and-tell.github.io/pidp/AI_for_educators/tags/teaching/</guid>
+      <guid>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/tags/teaching/</guid>
       <description></description>
     </item>
   </channel>

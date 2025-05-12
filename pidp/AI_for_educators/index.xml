@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>AI in the Classroom: An Introduction to AI for Educators</title>
-    <link>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/</link>
+    <link>http://localhost:1313/pidp/ai_for_educators/</link>
     <description>Recent content on AI in the Classroom: An Introduction to AI for Educators</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 12 May 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/pidp/ai_for_educators/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI For Educators: An Asynchronous Event</title>
-      <link>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/docs/ai-for-educators/</link>
+      <link>http://localhost:1313/pidp/ai_for_educators/docs/ai-for-educators/</link>
       <pubDate>Mon, 12 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/docs/ai-for-educators/</guid>
+      <guid>http://localhost:1313/pidp/ai_for_educators/docs/ai-for-educators/</guid>
       <description>&lt;h2 id=&#34;ai-tool-selection&#34;&gt;AI Tool Selection&lt;/h2&gt;&#xA;&lt;h2 id=&#34;trusting-ai&#34;&gt;Trusting AI&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;ai-products&#34;&gt;AI Products&lt;/h2&gt;&#xA;&lt;h2 id=&#34;choosing-your-product&#34;&gt;Choosing Your Product&lt;/h2&gt;&#xA;&lt;h2 id=&#34;a-caution-about-dependency&#34;&gt;A Caution About Dependency&lt;/h2&gt;</description>
     </item>
     <item>
       <title>Frequently asked questions (FAQ)</title>
-      <link>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/docs/faq/</link>
+      <link>http://localhost:1313/pidp/ai_for_educators/docs/faq/</link>
       <pubDate>Mon, 24 Jan 2022 14:00:00 +0000</pubDate>
-      <guid>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/docs/faq/</guid>
+      <guid>http://localhost:1313/pidp/ai_for_educators/docs/faq/</guid>
       <description>&lt;p&gt;Browse this FAQ page to find answers to frequently asked questions that have not been covered elsewhere&#xA;in the documentation.&lt;/p&gt;</description>
     </item>
     <item>
       <title>About</title>
-      <link>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/about/</link>
+      <link>http://localhost:1313/pidp/ai_for_educators/about/</link>
       <pubDate>Mon, 12 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/about/</guid>
+      <guid>http://localhost:1313/pidp/ai_for_educators/about/</guid>
       <description>&lt;h4 style=&#34;text-align:left;&#34;&gt;YURI TRICYS &lt;/h4&gt;&#xD;&#xA;&lt;h4 style=&#34;text-align:left;&#34;&gt;FULL STACK WEB DEVELOPMENT | RESEARCH | TECHNICAL WRITING | DATA SCIENCE | INSTRUCTION&lt;/h4&gt;&#xD;&#xA;&lt;br&gt; &#xD;&#xA;&lt;p class=&#34;profile-container&#34;&gt;&lt;img src=&#34;../img/20220215_205135.webp&#34; class=&#34;profile_pic inline-image&#34; alt=&#34;image-here&#34; title=&#34;image title&#34; align=&#34;center&#34;&gt;Yuri is a professional freelance web-technology consultant with 11 years experience working with JavaScript, PHP, and WordPress. In the past, he worked professionally as a consultant in a private and public sector facing consultancy on multi-national high-level projects. More recently he&#39;s worked on Hugo websites for 7 years, custom HTML emails for 4 years, and React and NextJS for 1 year. In 2023 he wrote JavaScript courses for one of America&#39;s fastest growing technology education startups.&lt;br&gt;&lt;br&gt;He&#39;s currently pursuing the Provincial Instructor&#39;s Diploma Program, in British Columbia Canada, while developing the Reading World Magazine news aggregator.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Documentation on AI in the Classroom: An Introduction to AI for Educators</title>
-    <link>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/docs/</link>
+    <link>http://localhost:1313/pidp/ai_for_educators/docs/</link>
     <description>Recent content in Documentation on AI in the Classroom: An Introduction to AI for Educators</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 12 May 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/docs/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/pidp/ai_for_educators/docs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI For Educators: An Asynchronous Event</title>
-      <link>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/docs/ai-for-educators/</link>
+      <link>http://localhost:1313/pidp/ai_for_educators/docs/ai-for-educators/</link>
       <pubDate>Mon, 12 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/docs/ai-for-educators/</guid>
+      <guid>http://localhost:1313/pidp/ai_for_educators/docs/ai-for-educators/</guid>
       <description>&lt;h2 id=&#34;ai-tool-selection&#34;&gt;AI Tool Selection&lt;/h2&gt;&#xA;&lt;h2 id=&#34;trusting-ai&#34;&gt;Trusting AI&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;ai-products&#34;&gt;AI Products&lt;/h2&gt;&#xA;&lt;h2 id=&#34;choosing-your-product&#34;&gt;Choosing Your Product&lt;/h2&gt;&#xA;&lt;h2 id=&#34;a-caution-about-dependency&#34;&gt;A Caution About Dependency&lt;/h2&gt;</description>
     </item>
     <item>
       <title>Frequently asked questions (FAQ)</title>
-      <link>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/docs/faq/</link>
+      <link>http://localhost:1313/pidp/ai_for_educators/docs/faq/</link>
       <pubDate>Mon, 24 Jan 2022 14:00:00 +0000</pubDate>
-      <guid>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/docs/faq/</guid>
+      <guid>http://localhost:1313/pidp/ai_for_educators/docs/faq/</guid>
       <description>&lt;p&gt;Browse this FAQ page to find answers to frequently asked questions that have not been covered elsewhere&#xA;in the documentation.&lt;/p&gt;</description>
     </item>
   </channel>

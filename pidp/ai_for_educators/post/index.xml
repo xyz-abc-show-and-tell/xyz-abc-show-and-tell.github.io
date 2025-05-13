@@ -1,20 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Teaching on AI in the Classroom: An Introduction to AI for Educators</title>
-    <link>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/tags/teaching/</link>
-    <description>Recent content in Teaching on AI in the Classroom: An Introduction to AI for Educators</description>
+    <title>Posts on AI in the Classroom: An Introduction to AI for Educators</title>
+    <link>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/post/</link>
+    <description>Recent content in Posts on AI in the Classroom: An Introduction to AI for Educators</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 12 May 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/tags/teaching/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>AI Overview &amp; Forum</title>
-      <link>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/docs/ai-info-and-forum/</link>
-      <pubDate>Mon, 12 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/docs/ai-info-and-forum/</guid>
-      <description>&lt;h2 id=&#34;synchronous-presentation-may-20th-630pm-pstwith-yuri-tricys&#34;&gt;Synchronous Presentation [May 20th, @6:30pm PST][With Yuri Tricys]&lt;/h2&gt;&#xA;&lt;p&gt;Hello All,&lt;/p&gt;&#xA;&lt;p&gt;Please join me for my presentation on AI products for teachers, Tuesday May 20, 6:30pm.&lt;/p&gt;&#xA;&lt;p&gt;Zoom Link:&lt;/p&gt;&#xA;&lt;p&gt;Below is a collection of articles I prepared for you on the topic of AI and teaching (with the assistance of AI, and Hugo).&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-integration-of-artificial-intelligence-ai-in-education&#34;&gt;The integration of Artificial Intelligence (AI) in education&lt;/h2&gt;&#xA;&lt;p&gt;The integration of Artificial Intelligence (AI) in education is transforming the way teachers teach and students learn. The following topics explore the various aspects of AI in education, from personalized learning and AI-powered adaptive learning to AI ethics and teacher training. Understanding these concepts is crucial for educators to effectively harness the potential of AI and create a more inclusive, engaging, and effective learning environment.&lt;/p&gt;</description>
-    </item>
+    <lastBuildDate>Sun, 11 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI-Powered Adaptive Learning: Personalizing Education for Every Student</title>
       <link>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/post/ai-powered-adaptive-learning/</link>
@@ -70,6 +63,13 @@
       <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
       <guid>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/post/teacher-training-for-ai-integration/</guid>
       <description>&lt;p&gt;In today&amp;rsquo;s rapidly evolving educational landscape, artificial intelligence (AI) is no longer just a futuristic concept but a present reality that teachers must navigate. Effective professional development for AI integration has become essential for educators who want to stay current and leverage these powerful tools.&lt;/p&gt;&#xA;&lt;p&gt;Research shows that while AI education is often prioritized in national strategies, it remains underdeveloped in teacher training programs (European Schoolnet, 2024). The gap between policy and practice creates challenges for educators seeking to meaningfully incorporate AI into their classrooms. According to a study applying the TPACK (Technological Pedagogical Content Knowledge) framework to AI learning, &amp;ldquo;much of the current discussion of artificial intelligence, including its use in educational settings, has been built on a fundamental misunderstanding of these technologies&amp;rdquo; (Arizona State University, 2023). This highlights the need for structured, comprehensive AI literacy programs for teachers.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/post/notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/post/notes/</guid>
+      <description>&lt;p&gt;&#xA;In today&amp;#39;s diverse classrooms, meeting the individual needs of each student remains one of education&amp;#39;s greatest challenges. AI-powered adaptive learning systems offer promising solutions by creating personalized educational experiences that evolve with each learner&amp;#39;s progress.&lt;/p&gt;&#xA;&lt;p&gt;&#xA;## What Makes Adaptive Learning Powerful&lt;/p&gt;&#xA;&lt;p&gt;&#xA;Adaptive learning platforms use artificial intelligence to analyze student performance data, identify knowledge gaps, and customize learning pathways in real-time. These systems continuously adjust content difficulty, pacing, and instructional methods based on individual student responses and progress.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

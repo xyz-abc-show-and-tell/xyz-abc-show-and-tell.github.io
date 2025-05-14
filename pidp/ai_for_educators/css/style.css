@@ -1393,12 +1393,13 @@ width:100% !important;
 }
 
 body {
-font-size: 0.75rem;
+font-size: 12px;
+font-size: 1rem;
 }
 
 .widget__item {
-font-size: 1rem;
 font-size: 12px;
+font-size: 1rem;
 }
 
 }//end max-width: 767px

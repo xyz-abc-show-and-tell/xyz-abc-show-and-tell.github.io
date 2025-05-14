@@ -49,6 +49,8 @@ body {
 	line-height: 1.6;
 	word-wrap: break-word;
 	background: #f7f7f7;
+background: #fafafa;
+
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -134,7 +136,7 @@ textarea {
 
 .btn:hover {
 	color: #fff;
-	background: #0869b4;
+	background: #9a9683;
 }
 
 /* Animation */
@@ -194,7 +196,7 @@ a {
 }
 
 a:hover {
-	color: #0869b4;
+	color: #9a9683;
 }
 
 hr {
@@ -301,7 +303,7 @@ blockquote {
 	margin: 0 0 20px;
 	margin: 0 0 1.25rem;
 	line-height: 1.6;
-	border-left: 5px solid #0869b4;
+	border-left: 5px solid #9a9683;
 }
 
 blockquote p:last-child {
@@ -435,7 +437,7 @@ select {
 	font-size: .875rem;
 	font-weight: 700;
 	line-height: 1;
-	color: #0869b4;
+	color: #9a9683;
 	border-top: 1px solid #ebebeb;
 word-break:break-word;
 }
@@ -443,7 +445,7 @@ word-break:break-word;
 .divider {
 	height: 5px;
 	margin: 0;
-	background: #0869b4;
+	background: #9a9683;
 	border: 0;
 }
 
@@ -480,7 +482,7 @@ word-break:break-word;
 }
 
 :focus > .menu__btn-title {
-	box-shadow: inset 0 0 1px 3px #0869b4;
+	box-shadow: inset 0 0 1px 3px #9a9683;
 }
 
 button:not(:-moz-focusring):focus > .menu__btn-title {
@@ -493,16 +495,16 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .js .menu__btn--active {
-	color: #0869b4;
+	color: #9a9683;
 }
 
 .menu__list {
 	list-style: none;
-	background: #cd4189;
+	background: #1f1f1f;
 }
 
 .menu__item:hover {
-	background: #0869b4;
+	background: #9a9683;
 }
 
 .menu__item:first-child {
@@ -510,7 +512,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .menu__item--active {
-	background: #0869b4;
+	background: #9a9683;
 }
 
 .menu__link {
@@ -551,7 +553,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 
 @media screen and (min-width: 767px) {
 	.menu {
-		border-bottom: 5px solid #0869b4;
+		border-bottom: 5px solid #9a9683;
 	}
 
 	.menu__btn {
@@ -605,7 +607,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .meta a:hover {
-	color: #0869b4;
+	color: #9a9683;
 }
 
 .meta__item {
@@ -662,13 +664,13 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 .warning a,
 .authorbox__description a {
 	font-weight: 700;
-	color: #0869b4;
+	color: #9a9683;
 }
 
 .content a:hover,
 .warning a:hover,
 .authorbox__description a:hover {
-	color: #0869b4;
+	color: #9a9683;
 	text-decoration: underline;
 }
 
@@ -750,7 +752,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .tags__item:hover {
-	background: #0869b4;
+	background: #9a9683;
 }
 
 .tags__link,
@@ -765,7 +767,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 	height: 32px;
 	padding: 8px;
 	margin-right: 6px;
-	background: #0869b4;
+	background: #9a9683;
 	fill: #fff;
 }
 
@@ -827,7 +829,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 .toc__menu a {
 	display: block;
 	padding: 5px 10px;
-	color: #0869b4;
+	color: #9a9683;
 	border-bottom: 1px solid #ebebeb;
 }
 
@@ -915,7 +917,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 .pagination__item:hover,
 .pagination__item--current {
 	color: #fff;
-	background: #0869b4;
+	background: #9a9683;
 }
 
 /* Pager (prev/next links) navigation */
@@ -1037,7 +1039,7 @@ input[type=reset] {
 
 input[type=submit]:hover,
 input[type=reset]:hover {
-	background: #0869b4;
+	background: #9a9683;
 }
 
 textarea {
@@ -1066,14 +1068,20 @@ textarea {
 	font-size: 16px;
 	font-size: 1rem;
 	text-transform: uppercase;
-	border-bottom: 3px solid #0869b4;
+	border-bottom: 3px solid #9a9683;
 }
 
 .widget__item {
 	display: block;
 	padding: 5px 0;
 	border-bottom: 1px dotted #ebebeb;
+	font-size: 1rem;
 }
+
+.widget__link {
+text-decoration:underline;
+}
+
 
 .widget__item:first-child {
 	padding-top: 0;
@@ -1150,7 +1158,7 @@ textarea {
 
 .widget-languages__link:hover .widget-languages__link-btn {
 	color: #fff;
-	background: #0869b4;
+	background: #9a9683;
 }
 
 .widget-languages__link-btn {
@@ -1359,6 +1367,14 @@ max-width:90%;
 }
 
 
+.blockquote { font-style: italic; color: #555555; border:none; position: relative; background: #EDEDED; display:flex; flex-wrap:wrap; justify-items:start; justify-content:start; text-align:left; width:100%; height:auto; margin-bottom:1.5em; padding:0.9em; line-height:1.7; font-family: Arial, Helvetica, "Open Sans", sans-serif; border-radius:15px;}
+
+@media screen and (min-width: 561px){.blockquote{padding:1.5em}}
+
+@media screen and (min-width: 1200){.blockquote{padding:2em}}
+
+
+
 @media screen and (max-width: 767px) {
 
 .profile_pic {
@@ -1377,7 +1393,15 @@ width:100% !important;
 }
 
 body {
-	font-size: 0.75rem;
+font-size: 0.75rem;
 }
+
+.widget__item {
+font-size: 0.75rem;
+
+}
+
 }//end max-width: 767px
+
+
 

@@ -1397,8 +1397,8 @@ font-size: 0.75rem;
 }
 
 .widget__item {
-font-size: 0.75rem;
-
+font-size: 1rem;
+font-size: 12px;
 }
 
 }//end max-width: 767px

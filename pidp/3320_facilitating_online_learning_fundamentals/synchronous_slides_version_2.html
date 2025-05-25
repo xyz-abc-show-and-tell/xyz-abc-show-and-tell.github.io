@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title></title>
+<meta name="author" content=""/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/dracula.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdn.jsdelivr.net/npm/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<style type="text/css">#sec-title-slide{display:flex !important;flex-wrap:wrap;align-content:center;justify-content:center;}#sec-title-slide>h3{color:#bd93f9 !important; margin:-80px 0px 0px 0px !important;.present{margin:-50px 0px !important;}.reveal .controls{color:#00f500 !important;} .reveal a:hover .r-frame {color:#00f500 !important;} .reveal a {color:#00f500 !important;} .reveal a:hover{color:#00f500 !important;} .reveal .roll span:after{background:#007e00 !important;} .reveal .progress {color:#00f500 !important;} .figure{display:flex;flex-wrap:wrap;}</style>
+<link rel="stylesheet" type="text/css" href="https://buildhello.ca/orientation/dracula.css" />
+<style type="text/css">.slides{width:1200px !important; height:800px !important}</style>
+<style type="text/css">.present h2{text-align:left;margin-top:1.4em;margin-bottom:-0.1em;font-size:1.5em;}</style>
+<style type="text/css">#slide2{}</style>
+<style type="text/css">#slide0{display:none;}</style>
+<style type="text/css">#slide5 {}</style>
+<style type="text/css">h4 {display:none;}</style>
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide" data-background="./media/exploring_ai_for_educators.png" data-background-size="cover" data-background-repeat="none" data-background-opacity="0.95"><div style="display:grid;grid-template-rows:1fr 1fr 1fr;grid-template-columns:1fr 1fr 1fr 1fr; height:auto;width:900px;padding:10px 10px;background-color:transparent;opacity:0.8;border-radius:15px;align-self:start;justify-self:start;"><div style="grid-row:1;grid-column:1/-1;display:flex;flex-wrap:wrap;align-self:start;justify-self:start;color:#76c4d6;font-size:0.5em;width:auto;"><span style="color:#66f859;width:auto;height:auto;display:inline-block;">Yuri Tricys&nbsp;&#8226;&nbsp;May 27th, 2025</span></div></div>
+</section>
+
+
+<section>
+<section id="slide-slide0" data-background="./media/slide_deck_background_template.png" data-background-size="contain" data-background-transition="slide">
+<h2 id="slide0">Land Acknowledgement</h2>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<div style="margin-top:2em;margin-bottom:1.5em;grid-row:1/3;grid-column:-1/1;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;width:100%;height:100%;">
+<img style="width:25%;height:auto;" src="./media/squamish.png">
+<img style="width:25%;height:auto;" src="./media/musquem.png">
+<img style="width:25%;height:auto;" src="./media/TWN_LOGO-VECTOR-no-text-copy.png">
+</div>
+
+<p style="grid-row:3;grid-column:1/-1;width:100%; text-align:left;font-size:0.6em;">VCC, the provider for this course, is located on the unceded and ancestral territories of the Musquem, Squamish, and Tsleil-Waututh Nations, which have been stewarded by them since time immemorial.<br><br>I'm grateful for the opportunity to take this course on these territories.</p>  
+
+</div>
+</section>
+</section>
+<section>
+<section id="slide-slide1" data-background="./media/slide_deck_background_template.png" data-background-size="contain" data-background-transition="slide">
+<h2 id="slide1">Introduction</h2>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<img style="display:block;grid-row:1/3;grid-column:4;width:80%;height:auto;" src="./media/20220215_205135.webp" >
+
+<p style="grid-row:1;grid-column:1/4;width:100%; text-align:left;">A little bit about me: my name is Yuri Tricys. I'm a Canadian from Lithuanian and African American descent.</p>
+
+<p style="grid-row:2;grid-column:1/4;width:100%;text-align:left;">I'm a web developer, researcher, and consultant.</p>
+
+<p style="grid-row:3;grid-column:-1/1;width:100%;text-align:left">I come from a varied educational background, having studied formal sciences, history, literature, economics, and during the last 12 years web development.</p>
+</div>
+
+</section>
+<section id="slide-slide1-split" data-background="./media/slide_deck_background_template.png" data-background-size="contain" data-background-transition="slide">
+
+
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<div style="display:flex;flex-wrap:wrap;justify-content:left;align-content:start;grid-row:1;grid-column:1/-1;width:100%;padding-top:1.5em;">
+
+<p style="width:100%; text-align:left; font-size:0.8em;">Today I'm going to talk about talk about <span style="color:#76c4d6;font-family:inherit;font-size:inherit;display:inline-block;">AI</span> in general, and then we are going to do some collabarative discussion about AI and teaching<br><br>
+I've prepared some questions we can discuss in the collobarative part of our discussion. <br><br>
+</p>
+
+</div>
+</div>
+
+
+</section>
+<section id="slide-slide1-split" data-background="./media/slide_deck_background_template.png" data-background-size="contain" data-background-transition="slide">
+
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<div style="grid-row:1/3;grid-column:3/5;display:flex;flex-wrap:wrap;align-content:start;justify-content:center;justify-self:center;width:80%;height:auto;padding-top:1.5em;">
+</div>
+
+<div style="display:flex;flex-wrap:wrap;justify-content:left;align-content:start;grid-row:1;grid-column:1/-1;width:100%;padding-top:1.5em;">
+
+<ol style="width:100%; text-align:left; font-size:1.1em;line-height:2;">
+<li>Is AI an impediment to learning? Does it slow student learning?</li>
+<li>How might we guide students to learn more with AI as a tool?</li>
+<li>What rules might educators want to enforce (if any) with respect to student's use of AI?</li>
+</ol>
+
+</div>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-slide2" data-background="./media/slide_deck_background_template.png" data-background-size="contain" data-background-transition="slide">
+<h2 id="slide2">Overview of AI industry and models</h2>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<div style="grid-row:1/3;grid-column:1/-1;justify-self:start;">
+<p>
+Here is a link to a webpage with logos from a few of the current AI companies. There's near to 100 company logos here, but there are a lot more companies that are using AI in their product offerings.<br>
+The point I want to make, is that many of these companies are to some extent resellers. They may be using propietary data for training, or fine tuning the models -- or even using a variety of models -- but for the most part there are only a handful of 'big' AI providers, who are training models on billions of paramaters. 
+
+<a href="https://xyz-abc-show-and-tell.github.io/pidp/3320_facilitating_online_learning_fundamentals/logo_page.html" target="_blank" rel="noopener">https://xyz-abc-show-and-tell.github.io/pidp/3320_facilitating_online_learning_fundamentals/logo_page.html</a>
+</p>
+
+<p> We're going to talk about those big providers in this presentation.</p>
+
+</div>
+
+</div>
+
+
+</section>
+<section id="slide-slide2-split" data-background="./media/slide_deck_background_template.png" data-background-size="contain" data-background-transition="slide">
+</section>
+</section>
+<section>
+<section id="slide-slide3" data-background="./media/slide_deck_background_template.png" data-background-size="contain" data-background-transition="slide">
+<h2 id="slide3">OpenAI</h2>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<img style="display:block;grid-row:1/3;grid-column:3/5;justify-self:center;margin-left:2%;width:15%;height:auto;" src="./media/open_ai_blossom.svg" >
+
+<div style="grid-row:1/3;grid-column:1/3;justify-self:start;">
+  <ul style="text-align:left;font-size:0.9em;">
+    <li>Founded: 2016</li>
+    <li>Market Cap: $300B</li>
+    <li>Employees: 500 - 2000</li>
+    <li>Projected Revenue 2025: $12.7B</li>
+  </ul>
+</div>
+
+<div style="grid-row:3/5;grid-column:1/-1;justify-self:start;text-align:left;font-size:0.9em;">
+  <p>Generative Pre-trained Transformer architecture. Models are trained on diverse internet data and fine-tuning with reinforcement learning from human feedback.</p>
+</div>
+</div>
+
+</section>
+<section id="slide-slide3-split" data-background="./media/slide_deck_background_template.png" data-background-size="contain" data-background-transition="slide">
+
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<img style="display:block;grid-row:1/3;grid-column:4/5;justify-self:center;align-self:center;margin-left:2%;width:15%;height:auto;" src="./media/open_ai_blossom.svg" >
+
+<p style="grid-row:1/3;grid-column:1/4;justify-self:start;text-align:left;">
+Most recent flagship model, GPT-4o (“o” for “omni”), fast response, produces images, video, text [formely video and images required seperate models, like dal-e-3 series]
+</p>
+
+<div style="grid-row:3/5;grid-column:1/-1;justify-self:start;text-align:left;font-size:0.9em;">
+<p>Broad consumer and developer adoption, focusing on general-purpose AI. Foundational/Technical Papers:<br>
+Attention Is All You Need (Vaswani et al., 2017): <a style="word-break:break-word;" href="https://arxiv.org/abs/1706.03762" target="_blank" rel="noopener">https://arxiv.org/abs/1706.03762</a> <br>
+GPT-4 Technical Report (2023): <a style="word-break:break-word;" href="https://arxiv.org/abs/2303.08774" target="_blank" rel="noopener">https://arxiv.org/abs/2303.08774</a>
+
+</p>
+</div>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-slide4" data-background="./media/slide_deck_background_template.png" data-background-size="contain" data-background-transition="slide">
+<h2 id="slide4">Google Gemini</h2>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<img style="display:block;grid-row:1/3;grid-column:3/5;justify-self:center;margin-left:2%;width:50%;height:auto;" src="./media/Google_Gemini_logo.svg.png" >
+
+<div style="grid-row:1/3;grid-column:1/3;justify-self:start;">
+  <ul style="text-align:left;font-size:0.9em;">
+    <li>Founded:2023</li>
+    <li>Market Cap: $1.9T (ABC)</li>
+    <li>Employees: 180,000+</li>
+    <li>Projected 2025 Revenue: $1-9B</li>
+  </ul>
+</div>
+
+<div style="grid-row:3/5;grid-column:1/-1;justify-self:start;text-align:left;font-size:0.9em;">
+<p>Gemini project: large-scale collaboration led by Google DeepMind. Specialized "Flash" models for low-latency applications.</p>
+<p>Papers:
+Gemini: A Family of Highly Capable Multimodal Models (2023): <a style="word-break:break-word;" href="https://arxiv.org/abs/2312.11805" target="_blank" rel="noopener">https://arxiv.org/abs/2312.11805</a>
+  </p>
+</div>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-slide5" data-background="./media/slide_deck_background_template.png" data-background-size="contain" data-background-transition="slide">
+<h2 id="slide5">Meta Llama</h2>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<img style="display:block;grid-row:1/3;grid-column:3/5;justify-self:center;margin-left:2%;width:50%;height:auto;" src="./media/LLAMA_4_e56cbcf279.webp" >
+
+<div style="grid-row:1/3;grid-column:1/3;justify-self:start;">
+  <ul style="text-align:left;font-size:0.9em;">
+    <li>Founded: 2023</li>
+    <li>Market Cap: $1.2T (Meta)</li>
+    <li>Employees: 70,000</li>
+    <li>Projected 2025 Revenue: ?</li>  
+</ul>
+</div>
+
+<div style="grid-row:3/5;grid-column:1/-1;justify-self:start;text-align:left;font-size:0.9em;">
+  <p>Released Llama in various sizes to democratize access. Trained on publicly available datasets.</p>
+  <p>Papers:
+LLaMA: Open and Efficient Foundation Language Models (2023): <a style="word-break:break-word;" href="https://arxiv.org/abs/2302.13971" target="_blank" rel="noopener">https://arxiv.org/abs/2302.13971</a>
+  </p>
+</div>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-slide6" data-background="./media/slide_deck_background_template.png" data-background-size="contain" data-background-transition="slide">
+<h2 id="slide6">Anthropic</h2>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<img style="display:block;grid-row:1/3;grid-column:3/5;justify-self:center;margin-left:2%;width:30%;height:auto;" src="./media/anthropic.jpg" >
+
+<div style="grid-row:1/3;grid-column:1/3;justify-self:start;">
+  <ul style="text-align:left;font-size:0.9em;">
+    <li>Founded: 2021</li>
+    <li>Market Cap: $18–20B</li>
+    <li>Employees: 400 - 500</li>
+    <li>Projected 2025 Revenue: $1.2B</li>
+  </ul>
+</div>
+
+<div style="grid-row:3/5;grid-column:1/-1;justify-self:start;text-align:left;font-size:0.9em;">
+  <p>The founding team left OpenAI. OpenAI is a public benefit corporation prioritizing social good. Flagship model: Claude (Shannon). Focus on AI safety.</p>
+  <p>Papers:
+"Concrete Problems in AI Safety" (2016): <a style="word-break:break-word;" href="https://arxiv.org/abs/1606.06565" target="_blank" rel="noopener">https://arxiv.org/abs/1606.06565</a>
+  </p>
+</div>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-slide7" data-background="./media/slide_deck_background_template.png" data-background-size="contain" data-background-transition="slide">
+<h2 id="slide7">Baidu ERNIE</h2>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<img style="display:block;grid-row:1/3;grid-column:3/5;justify-self:center;margin-left:2%;width:35%;height:auto;" src="./media/baidu_ernie_bot.png" >
+
+<div style="grid-row:1/3;grid-column:1/3;justify-self:start;">
+<ul style="text-align:left;font-size:0.9em;">
+<li>Founded: 2019</li>
+<li>Market Cap: ?</li>
+<li> Number of Employees: ?</li>
+<li>Project Revenue 2025: ?</li>
+</ul>
+</div>
+
+<div style="grid-row:3/5;grid-column:1/-1;justify-self:start;text-align:left;font-size:0.9em;">
+  <p>Leaders in China, powering applications with rapid user growth. ERNIE models integrate structured knowledge.</p>
+  <p>Papers:<br>
+ERNIE: Enhanced Representation through Knowledge Integration (2019):  <a style="word-break:break-word;" href="https://arxiv.org/abs/1904.09223" target="_blank" rel="noopener">https://arxiv.org/abs/1904.09223</a>
+  </p>
+</div>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-slide8" data-background="./media/slide_deck_background_template.png" data-background-size="contain" data-background-transition="slide">
+<h2 id="slide8">DeepSeek</h2>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<img style="display:block;grid-row:1/3;grid-column:3/5;justify-self:center;margin-left:2%;width:15%;height:auto;" src="./media/deepseek-AI-vector-logo-graphicsinn1-1024x614.webp" >
+
+<div style="grid-row:1/3;grid-column:1/3;justify-self:start;">
+  <ul style="text-align:left;font-size:0.9em;">
+	<li>Founded: July 2023</li>
+<li>Market Cap: ?</li>
+<li>Employees: ?</li>
+<li>Projected 2025 Revenue: $100M</li>
+</ul>
+</div>
+
+<div style="grid-row:3/5;grid-column:1/-1;justify-self:start;text-align:left;font-size:0.9em;">
+  <p>China's large language models with multimodal capabilities and large input token capacity.</p>
+  <p>Papers:
+DeepSeek-V3 Technical Report (2024): <a style="word-break:break-word;" href="https://arxiv.org/abs/2412.19437" target="_blank" rel="noopener">https://arxiv.org/abs/2412.19437</a>
+  </p>
+</div>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-slide9" data-background="./media/slide_deck_background_template.png" data-background-size="contain" data-background-transition="slide">
+<h2 id="slide9">Qwen (Alibaba)</h2>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<img style="display:block;grid-row:1/3;grid-column:3/5;justify-center:start;margin-left:2%;width:35%;height:auto;" src="./media/qwen_3.jpg" >
+
+<div style="grid-row:1/3;grid-column:1/3;justify-self:end;">
+  <ul style="text-align:left;font-size:0.9em;">
+	<li>Founded: April 2023</li>
+	<li>Market Cap: $1.9T</li>
+<li>Employees: 220,000</li>
+<li>Projected 2025 Revenue: ?</li>
+</ul>
+</div>
+
+<div style="grid-row:3/5;grid-column:1/-1;justify-self:end;text-align:left;font-size:0.9em;">
+  <p>Alibaba's push into LLMs, focusing on specialized reasoning capabilities.</p>
+  <p>Papers:
+Qwen 3 Technical Report (2025):<a style="word-break:break-word;" href="https://arxiv.org/abs/2505.09388" target="_blank" rel="noopener">https://arxiv.org/abs/2505.09388</a>
+  </p>
+</div>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-slide10" data-background="./media/slide_deck_background_template.png" data-background-size="contain" data-background-transition="slide">
+<h2 id="slide10">Grok (X - Elon Musk)</h2>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+  <img style="display:block;grid-row:1/3;grid-column:3/5;justify-self:center;margin-left:10px;width:35%;height:auto;" src="./media/Grok-New-Logo.avif">
+  
+<div style="grid-row:1/3;grid-column:1/3;justify-self:end;">
+  <ul style="text-align:left;font-size:0.9em;">
+  <li>Founded: 2023</li>
+    <li>Market Cap: N/A (Private)</li>
+    <li>Employees: 100+</li>
+    <li>Projected 2025 Revenue: $100M+</li>
+</ul>
+</div>
+
+<div style="grid-row:3/5;grid-column:1/-1;justify-self:end;text-align:left;font-size:0.9em;">
+<p>The name "Grok" is inspired by Robert A. Heinlein’s 1961 science fiction novel <i>Stranger in a Strange Land</i>, where "grok" means to understand something deeply and intuitively. [^3]</p>
+</div>
+</div>
+</section>
+<section id="slide-slide10-split" data-background="./media/slide_deck_background_template.png" data-background-size="contain" data-background-transition="slide">
+
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+  <img style="display:block;grid-row:1/3;grid-column:3/5;justify-self:center;margin-left:10px;width:20%;height:auto;" src="./media/Grok-New-Logo.avif">
+  
+<div style="grid-row:1/3;grid-column:1/3;justify-self:end;">
+<p>In various comic book series, however, 'Grok' is a clone created from the body of 'Andre Frost' after the Martian Masters had killed him and forced his daughter Carmilla to replicate him.</p>
+</div>
+
+<div style="grid-row:3/5;grid-column:1/-1;justify-self:end;text-align:left;font-size:0.9em;">
+<p>The Grok models are known for their "witty," "rebellious," and "edgy" responses, designed to answer questions that other AI systems might avoid[^2].</p>
+</div>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-slide11" data-background="./media/slide_deck_background_template.png" data-background-size="contain" data-background-transition="slide">
+<h2 id="slide11">Perplexity</h2>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+  <img style="display:block;grid-row:1/3;grid-column:3/5;justify-self:center;margin-left:10px;width:30%;height:auto;" src="./media/perplexity_ai_logo.webp">
+
+<div style="grid-row:1/3;grid-column:1/3;justify-self:end;">
+  <ul style="text-align:left;font-size:0.9em;">
+<li>Founded: 2022</li>
+<li>Market Cap: $18 billion</li>
+<li>Employees: 247</li>
+<li>Projected 2025 Revenue: $100 million</li>
+</ul>
+</div>
+  
+<div style="grid-row:3/5;grid-column:1/-1;justify-self:start;text-align:left;font-size:0.9em;">
+<p>CEO is former AI researcher at OpenAI. Their vision was to create a conversational AI-powered answer engine that could synthesize information from multiple sources and present it in a concise, verifiable manner (make web search more exact and verifiable).</p>
+  <p>Papers: Retrieval-Augmented Generation Paper (2005) :<a style="word-break:break-word;" href="https://arxiv.org/abs/2005.11401" target="_blank" rel="noopener">https://arxiv.org/abs/2005.11401</a></p>
+</div>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-slide12" data-background="./media/slide_deck_background_template.png" data-background-size="contain" data-background-transition="slide">
+<h2 id="slide12">Slide 12: Other Models</h2>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+  <img style="display:block;grid-row:1/3;grid-column:3/5;justify-self:start;margin-left:10px;width:20%;height:auto;" src="./media/Amazon-Logo.png"> <!-- NOTE: Update with actual Amazon logo path -->
+  
+<div style="grid-row:1/3;grid-column:1/2;justify-self:start;text-align:left;">
+    <span>Released: April 13, 2023</span><br>
+    <span>Market Cap: $1.5–2 trillion (Amazon)</span><br>
+    <span>Employees: 1,556,000</span>
+  </div>
+  <div style="grid-row:3/5;grid-column:1/5;justify-self:start;text-align:left;width:100%;">
+    <ul style="width:100%; text-align:left;font-size:0.9em;">
+      <li>Amazon Bedrock’s Titan models... <a href="https://aws.amazon.com/bedrock/amazon-models/titan/" target="_blank" rel="noopener">[Source]</a></li>
+      <li>Lack of transparency... <a href="https://www.philschmid.de/amazon-titan-embeddings" target="_blank" rel="noopener">[Source]</a></li>
+    </ul>
+  </div>
+</div>
+</section>
+<section id="slide-slide12-split" data-background="./media/slide_deck_background_template.png" data-background-size="contain" data-background-transition="slide">
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+  <img style="display:block;grid-row:1/3;grid-column:1/3;justify-self:start;margin-left:10px;width:20%;height:auto;" src="./media/IBM-Logo.png"> <!-- NOTE: Update with actual IBM logo path -->
+  <div style="grid-row:1/3;grid-column:3/5;justify-self:end;text-align:left;">
+    <span>Founded: 2023</span><br>
+    <span>Market Capitalization: $170 billion</span><br>
+    <span>Employees: 288,000</span>
+  </div>
+  <div style="grid-row:3/5;grid-column:1/5;justify-self:end;text-align:left;width:100%;">
+    <ul style="width:100%; text-align:left;font-size:0.9em;">
+      <li>Granite AI: Decoder-only, GPT-like architecture... <a href="https://aaai.org/ai-magazine/the-ai-behind-watson-the-technical-article/" target="_blank" rel="noopener">[Seminal Paper]</a></li>
+    </ul>
+  </div>
+</div>
+
+
+
+</section>
+</section>
+<section>
+<section id="slide-slide13" data-background="./media/slide_deck_background_template.png" data-background-size="contain" data-background-transition="slide">
+<h2 id="slide13">Collaborative Learning Discussion</h2>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+  
+
+<ul style="width:100%; text-align:left; font-size:0.8em;">
+<li>Is AI an impediment to learning? Does it slow student learning?</li>
+<li>How might we guide students to learn more with AI as a tool?</li>
+<li>What rules might educators want to enforce (if any) with respect to student's use of AI?</li>
+</ul>
+
+</div>
+
+</section>
+<section id="slide-slide13-split" data-background="./media/slide_deck_background_template.png" data-background-size="contain" data-background-transition="slide">
+
+
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+  <img style="display:block;grid-row:1/3;grid-column:1/3;justify-self:start;margin-left:10px;width:20%;height:auto;" src="./media/IBM-Logo.png"> <!-- NOTE: Update with actual IBM logo path -->
+  <div style="grid-row:1/3;grid-column:3/5;justify-self:end;text-align:left;">
+    <span>Founded: 2023</span><br>
+    <span>Market Capitalization: $170 billion</span><br>
+    <span>Employees: 288,000</span>
+  </div>
+  <div style="grid-row:3/5;grid-column:1/5;justify-self:end;text-align:left;width:100%;">
+    <ul style="width:100%; text-align:left;font-size:0.9em;">
+      <li>Granite AI: Decoder-only, GPT-like architecture... <a href="https://aaai.org/ai-magazine/the-ai-behind-watson-the-technical-article/" target="_blank" rel="noopener">[Seminal Paper]</a></li>
+    </ul>
+  </div>
+</div>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+
+</script>
+</body>
+</html>

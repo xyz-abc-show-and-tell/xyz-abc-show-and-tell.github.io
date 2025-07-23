@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title></title>
+<meta name="author" content=""/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/dracula.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdn.jsdelivr.net/npm/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<style type="text/css">#sec-title-slide{display:flex !important;flex-wrap:wrap;align-content:center;justify-content:center;}#sec-title-slide>h3{color:#bd93f9 !important; margin:-80px 0px 0px 0px !important;.present{margin:-50px 0px !important;}.reveal .controls{color:#00f500 !important;} .reveal a:hover .r-frame {color:#00f500 !important;} .reveal a {color:#00f500 !important;} .reveal a:hover{color:#00f500 !important;} .reveal .roll span:after{background:#007e00 !important;} .reveal .progress {color:#00f500 !important;} .figure{display:flex;flex-wrap:wrap;}</style>
+<link rel="stylesheet" type="text/css" href="https://buildhello.ca/orientation/dracula.css" />
+<style type="text/css">.slides{width:1200px !important; height:800px !important}</style>
+<style type="text/css">.present h2{text-align:left;margin-top:1.4em;margin-bottom:-0.1em;font-size:1.5em;}</style>
+<style type="text/css">#slide2{}</style>
+<style type="text/css">#slide0{display:none;}</style>
+<style type="text/css">#slide5 {}</style>
+<style type="text/css">h4 {display:none;}</style>
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide" data-background="./media/high-performance-teams-cover-4.png" data-background-size="cover" data-background-repeat="none" data-background-opacity="0.95"><div style="display:grid;grid-template-rows:1fr 1fr 1fr;grid-template-columns:1fr 1fr 1fr 1fr; height:auto;width:900px;padding:10px 10px;background-color:transparent;opacity:0.8;border-radius:15px;align-self:start;justify-self:start;"><div style="grid-row:1;grid-column:1/-1;display:flex;flex-wrap:wrap;align-self:start;justify-self:start;color:#76c4d6;font-size:0.65em;width:auto;"><span style="color:#66f859;width:auto;height:auto;display:inline-block;font-weight:700;margin-top:9em;margin-bottom:-11em;margin-left:-5em;color:#5cf5f5;">Yuri Tricys&nbsp;&#8226;&nbsp;July 23rd, 2025</span></div></div>
+</section>
+
+
+<section>
+<section id="slide-slide0" data-background="./media/slide_deck_background_template.png" data-background-size="contain" data-background-transition="slide">
+<h2 id="slide0">Land Acknowledgement</h2>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<div style="margin-top:2em;margin-bottom:1.5em;grid-row:1/3;grid-column:-1/1;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;width:100%;height:100%;">
+<img style="width:25%;height:auto;" src="./media/squamish.png">
+<img style="width:25%;height:auto;" src="./media/musquem.png">
+<img style="width:25%;height:auto;" src="./media/TWN_LOGO-VECTOR-no-text-copy.png">
+</div>
+
+<p style="grid-row:3;grid-column:1/-1;width:100%; text-align:left;font-size:0.6em;">VCC, the provider for this course, is located on the unceded and ancestral territories of the Musquem, Squamish, and Tsleil-Waututh Nations, which have been stewarded by them since time immemorial.<br><br>I'm grateful for the opportunity to take this course on these territories.</p>  
+
+</div>
+</section>
+</section>
+<section>
+<section id="slide-slide1" data-background="./media/slide_deck_background_template.png" data-background-size="contain" data-background-transition="slide">
+<h2 id="slide1">Introduction</h2>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<img style="display:block;grid-row:1/3;grid-column:4;width:80%;height:auto;" src="./media/20220215_205135.webp" >
+
+<p style="grid-row:1;grid-column:1/4;width:100%; text-align:left;">A little bit about me: my name is Yuri Tricys. I'm a Canadian from Lithuanian and African American descent.</p>
+
+<p style="grid-row:2;grid-column:1/4;width:100%;text-align:left;">I'm a web developer, researcher, and consultant.</p>
+
+<p style="grid-row:3;grid-column:-1/1;width:100%;text-align:left">I come from a varied educational background, having studied formal sciences, history, literature, economics, and during the last 12 years web development.</p>
+</div>
+
+</section>
+<section id="slide-slide1-split" data-background="./media/slide_deck_background_template.png" data-background-size="contain" data-background-transition="slide">
+
+
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<div style="display:flex;flex-wrap:wrap;justify-content:left;align-content:start;grid-row:1;grid-column:1/-1;width:100%;padding-top:1.5em;">
+
+<p style="width:100%; text-align:left; font-size:0.8em;">
+Today I'm going to talk about talk about <span style="color:#76c4d6;font-family:inherit;font-size:inherit;display:inline-block;">collaboration and cooperative</span> learning strategies that can inspire the formation of high-performance teams.<br><br>
+This talk was inspired by Michael Broom's presentation, 'Three Types of Cooperative Learning Groups,' which he gave on May 30th, 2025 via Comosun College stream.  
+<br><br>
+</p>
+
+</div>
+</div>
+
+
+</section>
+<section id="slide-slide1-split" data-background="./media/slide_deck_background_template.png" data-background-size="contain" data-background-transition="slide">
+
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<div style="display:flex;flex-wrap:wrap;justify-content:left;align-content:start;grid-row:1;grid-column:1/-1;width:100%;padding-top:1.5em;">
+
+<p style="width:100%; text-align:left; font-size:0.8em;">
+
+And here is the link to Michale's talk: <br><br>
+
+<a href="https://camosun-ca.zoom.us/rec/share/rHFXbN44sAnflAdXmRJ2ZCVR4ud8p62wdNSE1uyKyybYwi-ocl-HPHt1umvvET5i.1mVcjXaSIwc0-ZQW?pwd=EVNfaBO3KRzAEVDMZwynm8JhYZGPOBO6" style="word-break:break-word;" target="_blank" rel="noopener">https://camosun-ca.zoom.us/rec/share/rHFXbN44sAnflAdXmRJ2ZCVR4ud8p62wdNSE1uyKyybYwi-ocl-HPHt1umvvET5i.1mVcjXaSIwc0-ZQW?pwd=EVNfaBO3KRzAEVDMZwynm8JhYZGPOBO6</a><br>
+
+<br><br>
+</p>
+
+</div>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-slide2" data-background="./media/slide_deck_background_template.png" data-background-size="contain" data-background-transition="slide">
+<h2 id="slide2">Collaborative Learning vs Cooperative Learning</h2>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<div style="grid-row:1/-1;grid-column:1/-1;justify-self:start;width:100%;">
+<p style="width:100%; text-align:left; font-size:0.7em;line-height:1.7;">Collaborative Learning:</p>
+
+<ul style="margin-top:1em;text-align:left;font-size:0.9em;">
+<li>Focuses on group participation and collective problem-solving.</li>
+<li>Students self-organize: they share ideas, work together without predetermined roles, and build knowledge through open dialogue.</li>
+<li>The process is flexible and learner-centered, emphasizing creativity, critical thinking, and mutual understanding.</li>
+<li>Teachers act mainly as facilitators, guiding discussion and supporting student autonomy.</li>
+</ul>
+
+</div>
+
+</div>
+
+</section>
+<section id="slide-slide2-split" data-background="./media/slide_deck_background_template.png" data-background-size="contain" data-background-transition="slide">
+
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<div style="grid-row:1/-1;grid-column:1/-1;justify-self:start;width:100%;">
+<p style="width:100%; text-align:left; font-size:0.7em;line-height:1.7;">Cooperative Learning:</p>
+
+<ul style="margin-top:1em;text-align:left;font-size:0.9em;">
+    <li>Involves structured teamwork with clearly assigned roles and specific tasks.</li>
+    <li>Each student is accountable for a distinct part of the work, ensuring that all contributions are integral to group success.</li>
+    <li>Emphasizes organization, time management, and positive interdependence.</li>
+    <li>Teachers structure the activity and monitor progress, often providing explicit instructions and evaluation criteria</li>
+  </ul>
+
+</div>
+
+</div>
+</section>
+</section>
+<section>
+<section id="slide-slide3" data-background="./media/slide_deck_background_template.png" data-background-size="contain" data-background-transition="slide">
+<h2 id="slide3">Why Discuss Cooperative Learning (in team context)</h2>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<div style="grid-row:1/-1;grid-column:1/-1;justify-self:start;width:100%;">
+
+<ul style="margin-top:1em;text-align:left;font-size:0.9em;">
+<li>Cooperative learning groups are more performant than individual members or traditional classroom groups</li>
+<li>Importance of teamwork in industry and improving psychological health</li>
+<li>Collaborative learning is not a zero-sum game</li>
+<li>Emphasizes learning in relation to other students and ties everything together</li>
+</ul>
+
+</div>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-slide3" data-background="./media/slide_deck_background_template.png" data-background-size="contain" data-background-transition="slide">
+<h2 id="slide3">Types of Groups</h2>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<div style="grid-row:1/-1;grid-column:1/-1;justify-self:start;width:100%;">
+
+<img style="width:100%;height:auto;" src="./media/types-of-groups-2.jpg">
+
+<p style="width:100%; text-align:left; font-size:0.7em;line-height:1.7;margin-top:0.1em;">Source: <a href="https://www.keka.com/glossary/group-dynamics" style="word-break:break-word;" target="_blank" rel="noopener">https://www.keka.com/glossary/group-dynamics</a></p>
+
+</div>
+</div>
+
+
+</section>
+<section id="slide-slide3-split" data-background="./media/slide_deck_background_template.png" data-background-size="contain" data-background-transition="slide">
+
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<div style="grid-row:1/-1;grid-column:1/-1;justify-self:start;width:100%;">
+
+<ul style="margin-top:1em;text-align:left;font-size:0.9em;">
+<li><span style="color:#76c4d6;">Informal groups:</span> ad hoc, task-based, and disbanded quickly</li>
+<li><span style="color:#76c4d6;">Formal groups:</span> assigned by instructor, may have some thought put into assignment, and last for a lesson to a term</li>
+<li><span style="color:#76c4d6;">Cooperative base groups:</span> formal, assigned by instructor, designed to last for years, and focus on interdependence and long-term relationships</li>
+</ul>
+
+</div>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-slide3" data-background="./media/slide_deck_background_template.png" data-background-size="contain" data-background-transition="slide">
+<h2 id="slide3">Characteristics of Cooperative Learning Groups</h2>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<div style="grid-row:1/-1;grid-column:1/-1;justify-self:start;width:100%;">
+
+<ul style="margin-top:1em;text-align:left;font-size:0.9em;">
+<li>Heterogeneous experience brings more than the sum of individual parts</li>
+<li>Improves understanding through debate and discussion</li>
+<li>Makes learners process and synthesize information instead of rote memorization</li>
+<li>Fosters motivation, and emotional and social growth</li>
+</ul>
+
+</div>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-slide3" data-background="./media/slide_deck_background_template.png" data-background-size="contain" data-background-transition="slide">
+<h2 id="slide3">Care and Feeding of Cooperative Learning Groups</h2>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<div style="grid-row:1/-1;grid-column:1/-1;justify-self:start;width:100%;">
+
+<ul style="margin-top:1em;text-align:left;font-size:0.9em;">
+<li>Avoid student-selected groups as they tend to be homogeneous</li>
+<li>Use random or instructor-assigned grouping methods to promote diversity</li>
+<li>Keep group size small (max 6, ideally 4 or less) to encourage interaction and prevent hiding</li>
+<li>Teach cooperative skills: forming, functioning, formulating, and fermenting</li>
+</ul>
+
+</div>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-slide3" data-background="./media/slide_deck_background_template.png" data-background-size="contain" data-background-transition="slide">
+<h2 id="slide3">Cooperative Skills</h2>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<div style="grid-row:1/-1;grid-column:1/-1;justify-self:start;width:100%;">
+
+<ul style="margin-top:1em;text-align:left;font-size:0.9em;">
+<li><span style="color:#76c4d6;">Forming:</span> organizing the group and establishing norms</li>
+<li><span style="color:#76c4d6;">Functioning:</span> managing the group's efforts and maintaining effective working relationships</li>
+<li><span style="color:#76c4d6;">Formulating:</span> providing mental processes for deeper understanding and stimulating higher quality reasoning strategies</li>
+<li><span style="color:#76c4d6;">Fermenting:</span> stimulating reconceptualization, cognitive conflict, and communication of rationales</li>
+</ul>
+
+</div>
+</div>
+
+</section>
+<section id="slide-slide3-split" data-background="./media/slide_deck_background_template.png" data-background-size="contain" data-background-transition="slide">
+
+
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<div style="grid-row:1/-1;grid-column:1/-1;justify-self:start;width:100%;">
+
+
+<img style="width:60%;height:auto;margin-top:1.5em;" src="./media/storming-norming.jpg">
+
+<p style="width:100%; text-align:left; font-size:0.7em;line-height:1.7;margin-top:0.1em;">
+Source: 
+<a href="https://www.celoxis.com/article/the-psychology-of-project-management" style="word-break:break-word;" target="_blank" rel="noopener">https://www.celoxis.com/article/the-psychology-of-project-management</a>
+</p>
+
+</div>
+</div>
+
+
+</section>
+</section>
+<section>
+<section id="slide-slide3" data-background="./media/slide_deck_background_template.png" data-background-size="contain" data-background-transition="slide">
+<h2 id="slide3">The Problem</h2>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<div style="grid-row:1/-1;grid-column:1/-1;justify-self:start;width:100%;">
+
+
+<p style="width:100%; text-align:left; font-size:0.7em;line-height:1.7;">Students are naturally avoidant.</p>
+
+<ul style="margin-top:1em;text-align:left;font-size:0.9em;">
+    <li>Students may lack awareness of 21st-century skills for effective group formation.</li>
+    <li>'Student-formed' groups tend to be homogeneous</li>
+    <li>It's a challenge to get students to collaborate or cooperate</li>
+    <li>Forcing group behavior may be seen as unconventional</li>
+    <li>Incentivizing students to collaborate and connect, is a natural solution </li>
+  </ul>
+
+</div>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-slide3" data-background="./media/slide_deck_background_template.png" data-background-size="contain" data-background-transition="slide">
+<h2 id="slide3">A Solution: Assignment Configurations</h2>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<div style="grid-row:1/-1;grid-column:1/-1;justify-self:start;width:100%;">
+
+
+<p style="width:100%; text-align:left; font-size:0.7em;line-height:1.7;">Assignment Configurations involve structuring assignments to promote collaboration and optimize learning outcomes.</p>
+
+<ul style="margin-top:1em;text-align:left;font-size:0.9em;">
+    <li>Involves incentive alignment for practical implementation.</li>
+    <li>Consists of <span style="color:#76c4d6;">Assignment Bundles</span> and <span style="color:#76c4d6;">Assignment Trading</span></li>
+    <li>Promotes <span style="color:#76c4d6;">high-performance</span> group behaviors.</li>
+    <li>Design can include characteristics like due dates and technology specifications.</li>
+</ul>
+
+</div>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-slide3" data-background="./media/slide_deck_background_template.png" data-background-size="contain" data-background-transition="slide">
+<h2 id="slide3">Assignment Bundles</h2>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<div style="grid-row:1/-1;grid-column:1/-1;justify-self:start;width:100%;">
+
+<p style="width:100%; text-align:left; font-size:0.7em;line-height:1.7;">Assignment Bundles involve grouping sets of assignments with specific criteria to encourage participation and collaboration.</p>
+
+<ul style="margin-top:1em;text-align:left;font-size:0.9em;">
+    <li>Grouping assignments to promote collaboration</li>
+    <li>Assignments have <span style="color:#76c4d6;">components</span> with specific criteria</li>
+    <li>Encourages students to <span style="color:#76c4d6;">trade components</span> to optimize schedules and specialties</li>
+    <li>Promotes familiarity among students creating effective groups</li>
+</ul>
+
+</div>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-slide3" data-background="./media/slide_deck_background_template.png" data-background-size="contain" data-background-transition="slide">
+<h2 id="slide3">An Example</h2>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<div style="grid-row:1/-1;grid-column:1/-1;justify-self:start;width:100%;">
+
+
+<p style="width:100%; text-align:left; font-size:0.7em;line-height:1.7;">An Example involves a bundle of 9 assignments with 3 components each, traded among group members to complete the bundle.</p>
+
+<ul style="margin-top:1em;text-align:left;font-size:0.9em;">
+    <li>Students assigned a bundle of 9 assignments, each with 3 components</li>
+    <li>Students must trade components at specific intervals</li>
+    <li>Final grouping of components can be relevant to course material</li>
+    <li>For example, on completion each component recieves a letter</li>
+    <li>Instructor evaluates collective work against a 'secret key'</li>
+</ul>
+
+</div>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-slide3" data-background="./media/slide_deck_background_template.png" data-background-size="contain" data-background-transition="slide">
+<h2 id="slide3">Conclusion</h2>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<div style="grid-row:1/-1;grid-column:1/-1;justify-self:start;width:100%;">
+
+<p style="width:100%; text-align:left; font-size:0.7em;line-height:1.7;">
+In conclusion, Gordon Broom's presentation, "Three Types of Learning Teams," underscores the importance of cooperative learning for high-performance outcomes. 
+In this presentation, I summarized and expanded on his presentation and provided as well some possible solutions to the 'forming/storming' problem, as mentioned in the following bulleted summary.  
+</p>
+
+</div>
+</div>
+
+</section>
+<section id="slide-slide3-split" data-background="./media/slide_deck_background_template.png" data-background-size="contain" data-background-transition="slide">
+
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<div style="grid-row:1/-1;grid-column:1/-1;justify-self:start;width:100%;">
+
+<ul style="margin-top:1em;text-align:left;font-size:0.8em;">
+    <li>Cooperative learning is crucial for achieving high-performance outcomes</li>
+    <li>Effective group formation is challenging, requiring innovative strategies</li>
+    <li>An "assignment configurations" approach is one solution to inspire cooperative learning</li>
+    <li>Implementing such strategies fosters skills and behaviors necessary for today's collaborative workplaces</li>
+    <li>Encourage students to explore engaging in self-motivated collaboration and cooperation</li>
+    <li>Importance of exploring and innovating teaching practices for high-performance groups</li>
+</ul>
+
+</div>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-slide3" data-background="./media/slide_deck_background_template.png" data-background-size="contain" data-background-transition="slide">
+<h2 id="slide3">References</h2>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<div style="grid-row:1/-1;grid-column:1/-1;justify-self:start;width:100%;">
+
+<p style="width:100%; text-align:left; font-size:0.6em;line-height:1.4;">
+- Broom, Gordon J. 2025. “Three Types of Cooperative Learning Teams.” <a href="https://camosun-ca.zoom.us/rec/share/rHFXbN44sAnflAdXmRJ2ZCVR4ud8p62wdNSE1uyKyybYwi-ocl-HPHt1umvvET5i.1mVcjXaSIwc0-ZQW?pwd=EVNfaBO3KRzAEVDMZwynm8JhYZGPOBO6" style="word-break:break-word;" target="_blank" rel="noopener">https://camosun-ca.zoom.us/rec/share/rHFXbN44sAnflAdXmRJ2ZCVR4ud8p62wdNSE1uyKyybYwi-ocl-HPHt1umvvET5i.1mVcjXaSIwc0-ZQW?pwd=EVNfaBO3KRzAEVDMZwynm8JhYZGPOBO6</a><br>
+- Johnson, D. W., and R. T. Johnson. 1999. Learning Together and Alone: Cooperative, Competitive, and Individualistic Learning. 5th Edition. Allyn & Bacon. <a href="https://openlibrary.org/books/OL5062916M/Learning_together_and_alone" style="word-break:break-word;" target="_blank" rel="noopener">https://openlibrary.org/books/OL5062916M/Learning_together_and_alone</a><br>
+- Johnson, D., & Johnson, R. (1999). Making cooperative learning work. Theory Into Practice, 38(2), 67-73. doi: 10.1080/00405849909543834 [Retrieved from: <a href="https://www.researchgate.net/publication/243775553_Making_cooperative_learning_work/" style="word-break:break-word;" target="_blank" rel="noopener">https://www.researchgate.net/publication/243775553_Making_cooperative_learning_work/</a>]<br>
+</p>
+
+
+</div>
+</div>
+
+
+</section>
+<section id="slide-slide3-split" data-background="./media/slide_deck_background_template.png" data-background-size="contain" data-background-transition="slide">
+
+
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<div style="grid-row:1/-1;grid-column:1/-1;justify-self:start;width:100%;">
+
+<p style="width:100%; text-align:left; font-size:0.7em;line-height:1.7;">
+References Continued:</p>
+
+<p style="width:100%; text-align:left; font-size:0.6em;line-height:1.4;">
+- Freepik.com (n.d.). Work Team Digital Art [AI Generated Image]. Freepik. <a href="https://www.freepik.com/free-ai-image/work-team-digital-art_196612190.htm" style="word-break:break-word;" target="_blank" rel="noopener">https://www.freepik.com/free-ai-image/work-team-digital-art_196612190.htm</a><br>
+- Testbook. (n.d.). Difference between collaborative learning and cooperative learning. Testbook. <a href="https://testbook.com/key-differences/difference-between-collaborative-learning-and-cooperative-learning" style="word-break:break-word;" target="_blank" rel="noopener">https://testbook.com/key-differences/difference-between-collaborative-learning-and-cooperative-learning</a><br>
+- Dharmadhikari, G. (2024, February 15). Project management psychology: Navigating motivation, leadership & team dynamics. Celoxis. <a href="https://www.celoxis.com/article/the-psychology-of-project-management" style="word-break:break-word;" target="_blank" rel="noopener">https://www.celoxis.com/article/the-psychology-of-project-management</a><br>
+- Keka. (2023, November 24). Group dynamics. Keka. <a href="https://www.keka.com/glossary/group-dynamics" style="word-break:break-word;" target="_blank" rel="noopener">https://www.keka.com/glossary/group-dynamics</a><br>
+</p>
+
+
+</div>
+</div>
+
+
+
+</section>
+</section>
+<section>
+<section id="slide-slide3" data-background="./media/slide_deck_background_template.png" data-background-size="contain" data-background-transition="slide">
+<h2 id="slide3">AI Models Used in Report</h2>
+<div style="display:grid;grid-template-rows:auto;grid-template-columns:1fr 1fr 1fr 1fr;width:100%;height:100%;">
+
+<div style="grid-row:1/-1;grid-column:1/-1;justify-self:start;width:100%;">
+
+<p style="width:100%; text-align:left; font-size:0.6em;line-height:1.4;">
+The ideas, structure, writing, and editing in this paper were performed by the author. Various AI models were used in collecting data, verifying data, and formatting various arguments. The author has not read of or heard of 'assignment configurations', 'assignment bundles', or 'assignment trading', though such practices probably pop-up in the wild, so to speak, from time to time. 
+</p>
+
+<ul style="width:100%;margin-top:1em;text-align:left;font-size:0.6em;">
+<li>Mistral AI Devstral Small 2505</li>
+<li>Qwen 2.5 235b a22b </li>
+<li>Perplexity Sonar Large</li> 
+</ul>
+</div>
+</div>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+
+});
+
+</script>
+</body>
+</html>

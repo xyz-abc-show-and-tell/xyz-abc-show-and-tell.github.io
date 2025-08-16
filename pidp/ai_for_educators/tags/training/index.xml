@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Training on AI in the Classroom: An Introduction to AI for Educators</title>
+    <title>Training on A Professional Practices Blog for Instructors</title>
     <link>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/tags/training/</link>
-    <description>Recent content in Training on AI in the Classroom: An Introduction to AI for Educators</description>
+    <description>Recent content in Training on A Professional Practices Blog for Instructors</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 May 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 05 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/tags/training/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Comment on Brookfield Chapter 2</title>
+      <link>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/post/brookfield-chapter-2/</link>
+      <pubDate>Tue, 05 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/post/brookfield-chapter-2/</guid>
+      <description>&lt;p&gt;Sed id semper risus in hendrerit gravida rutrum quisque non tellus orci, ac auctor augue mauris augue neque, gravida in fermentum et, sollicitudin ac. Cursus metus aliquam eleifend mi in.&#xA;Mattis pellentesque id nibh tortor, id aliquet lectus proin nibh nisl, condimentum id venenatis a, condimentum vitae! Blandit volutpat maecenas volutpat blandit aliquam etiam erat velit, scelerisque in dictum non!&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Teacher Training for AI Integration: Bridging the Knowledge Gap</title>
       <link>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/post/teacher-training-for-ai-integration/</link>

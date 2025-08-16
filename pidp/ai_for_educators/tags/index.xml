@@ -1,32 +1,116 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on AI in the Classroom: An Introduction to AI for Educators</title>
+    <title>Tags on A Professional Practices Blog for Instructors</title>
     <link>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/tags/</link>
-    <description>Recent content in Tags on AI in the Classroom: An Introduction to AI for Educators</description>
+    <description>Recent content in Tags on A Professional Practices Blog for Instructors</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 12 May 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 15 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>AI</title>
-      <link>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/tags/ai/</link>
-      <pubDate>Mon, 12 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/tags/ai/</guid>
+      <title>Instructor</title>
+      <link>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/tags/instructor/</link>
+      <pubDate>Fri, 15 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/tags/instructor/</guid>
       <description></description>
     </item>
     <item>
       <title>Teaching</title>
       <link>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/tags/teaching/</link>
-      <pubDate>Mon, 12 May 2025 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 15 Aug 2025 00:00:00 +0000</pubDate>
       <guid>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/tags/teaching/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Adult-Education</title>
+      <link>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/tags/adult-education/</link>
+      <pubDate>Mon, 11 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/tags/adult-education/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Blog</title>
+      <link>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/tags/blog/</link>
+      <pubDate>Mon, 11 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/tags/blog/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Strategies</title>
+      <link>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/tags/strategies/</link>
+      <pubDate>Mon, 11 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/tags/strategies/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Career-Development</title>
+      <link>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/tags/career-development/</link>
+      <pubDate>Sun, 10 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/tags/career-development/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Future-Plans</title>
+      <link>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/tags/future-plans/</link>
+      <pubDate>Sun, 10 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/tags/future-plans/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Personal-Growth</title>
+      <link>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/tags/personal-growth/</link>
+      <pubDate>Sun, 10 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/tags/personal-growth/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Adult-Learning</title>
+      <link>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/tags/adult-learning/</link>
+      <pubDate>Sat, 09 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/tags/adult-learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ongoing-Learning</title>
+      <link>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/tags/ongoing-learning/</link>
+      <pubDate>Sat, 09 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/tags/ongoing-learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Learning-Strategies</title>
+      <link>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/tags/learning-strategies/</link>
+      <pubDate>Fri, 08 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/tags/learning-strategies/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Motivation-Ted-Talks</title>
+      <link>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/tags/motivation-ted-talks/</link>
+      <pubDate>Fri, 08 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/tags/motivation-ted-talks/</guid>
       <description></description>
     </item>
     <item>
       <title>Learning</title>
       <link>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/tags/learning/</link>
-      <pubDate>Sun, 11 May 2025 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 05 Aug 2025 00:00:00 +0000</pubDate>
       <guid>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/tags/learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Training</title>
+      <link>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/tags/training/</link>
+      <pubDate>Tue, 05 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/tags/training/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AI</title>
+      <link>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/tags/ai/</link>
+      <pubDate>Mon, 12 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/tags/ai/</guid>
       <description></description>
     </item>
     <item>
@@ -41,13 +125,6 @@
       <link>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/tags/tools/</link>
       <pubDate>Sat, 10 May 2025 00:00:00 +0000</pubDate>
       <guid>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/tags/tools/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Training</title>
-      <link>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/tags/training/</link>
-      <pubDate>Thu, 01 May 2025 00:00:00 +0000</pubDate>
-      <guid>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/tags/training/</guid>
       <description></description>
     </item>
   </channel>

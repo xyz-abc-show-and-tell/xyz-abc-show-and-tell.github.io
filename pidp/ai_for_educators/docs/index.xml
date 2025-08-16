@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Documentation on AI in the Classroom: An Introduction to AI for Educators</title>
+    <title>Documentation on A Professional Practices Blog for Instructors</title>
     <link>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/docs/</link>
-    <description>Recent content in Documentation on AI in the Classroom: An Introduction to AI for Educators</description>
+    <description>Recent content in Documentation on A Professional Practices Blog for Instructors</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 12 May 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 15 Aug 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/docs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI Overview &amp; Forum</title>
@@ -21,6 +21,13 @@
       <pubDate>Mon, 24 Jan 2022 14:00:00 +0000</pubDate>
       <guid>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/docs/faq/</guid>
       <description>&lt;p&gt;Browse this FAQ page to find answers to frequently asked questions that have not been covered elsewhere&#xA;in the documentation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Professional Practices Blog</title>
+      <link>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/docs/professional-practices-blog/</link>
+      <pubDate>Fri, 15 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/docs/professional-practices-blog/</guid>
+      <description>&lt;p&gt;What template are we?&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

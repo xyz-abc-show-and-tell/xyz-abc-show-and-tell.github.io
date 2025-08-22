@@ -867,9 +867,13 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 .list__item {
 	padding-bottom: 20px;
 	padding-bottom: 1.25rem;
+	padding: 10px 15px 20px 15px;
+	padding: .8rem .95rem 1.25rem .95rem;
 	margin-bottom: 20px;
 	margin-bottom: 1.25rem;
-	border-bottom: 1px solid #ebebeb;
+	box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+//	border-bottom: 1px solid #ebebeb;
+
 }
 
 .list__header {
@@ -1334,7 +1338,7 @@ text-decoration:underline;
 
 iframe, embed, object, video {
     max-width: 100%;
-    width: 50%;
+    width: 100%;
     aspect-ratio: 1.7777;
 }
 
@@ -1423,3 +1427,11 @@ font-size: 1.2rem;
 
 
 
+.list__item.post > ul, .list__item.post > ol{
+width: 85%;
+margin-left:3em;
+}
+
+.youtube_frame {
+width: 60% !important;
+}

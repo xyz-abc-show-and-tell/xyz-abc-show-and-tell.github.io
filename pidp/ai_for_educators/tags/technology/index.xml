@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Technology on A Professional Practices Blog for Instructors</title>
-    <link>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/tags/technology/</link>
+    <link>http://localhost:1313/pidp/ai_for_educators/tags/technology/</link>
     <description>Recent content in Technology on A Professional Practices Blog for Instructors</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 27 Aug 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/tags/technology/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/pidp/ai_for_educators/tags/technology/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Adaptive Feedback Loops in AI: Transforming Education Through Human-Centered Learning</title>
-      <link>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/post/adaptive-feedback-loops-transforming-education-through-ai/</link>
+      <link>http://localhost:1313/pidp/ai_for_educators/post/adaptive-feedback-loops-transforming-education-through-ai/</link>
       <pubDate>Wed, 27 Aug 2025 00:00:00 +0000</pubDate>
-      <guid>https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/post/adaptive-feedback-loops-transforming-education-through-ai/</guid>
+      <guid>http://localhost:1313/pidp/ai_for_educators/post/adaptive-feedback-loops-transforming-education-through-ai/</guid>
       <description>&lt;h3 id=&#34;nbsp&#34;&gt; &lt;/h3&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;The rise of artificial intelligence (AI) is reshaping how we interact with knowledge, compelling educational systems to evolve beyond outdated models. As the OECD warns in Elliott et al., 2024, AI&amp;rsquo;s ability to outperform humans in reasoning and problem-solving means schools must prioritize intellectual growth, creativity, and civic engagement over mere skill acquisition.&lt;/p&gt;&#xA;&lt;p&gt;Central to this transition are &lt;em&gt;adaptive feedback loops&lt;/em&gt; (AFLs) &amp;ndash; dynamic systems where learners, educators, and AI collaborate to build responsive, ever-improving learning environments.&lt;/p&gt;</description>
     </item>
   </channel>

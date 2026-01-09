@@ -1,11 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-08-21 Thu 20:28 -->
+<!-- 2026-01-09 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Provincial Instructor's Diploma Program</title>
 <meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<!-- Modernized HTML head snippet for Org-mode export -->
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, interactive-widget=resizes-visual'>
+<meta name='referrer' content='strict-origin-when-cross-origin'>
+<meta name='robots' content='index,nofollow'>
+<meta name='theme-color' content='#ffffff' media='(prefers-color-scheme: light)'>
+<meta name='theme-color' content='#1a1a1a' media='(prefers-color-scheme: dark)'> 
+<link rel='stylesheet' type='text/css' href='https://buildhello.ca/downloads/css/gongzhitaaorg.css'/>
+<link rel='stylesheet' type='text/css' href='https://cdn.jsdelivr.net/gh/mailtoharshit/San-Francisco-Font-/sanfrancisco.css' />
+<style type='text/css'>body{line-height:1.5;}.title{color:#000000 !important;text-align:left;}#content{border:none;width:100%}.org-left>img{max-width:200px;}table{border:solid 1px black !important;margin:0 0 2em 0;}colgroup{border:none !important;}td{border:none !important;}tr{border:none !important;}.org-left{border:none;}body{font-family: san-francisco, monospace, monospace;font-weight:400; box-sizing: border-box;}.right-align{text-align: left;width: 30%;margin: 0 0 0 auto;}.subtitle{text-align:left;font-weight:400;}</style>
+<style type='text/css'>.content h2{color:#0d0d0d !important;}.content h3{color:#272727 !important;font-weight:650;}.content h4{color:#414141;font-weight:600;}.content h5{color:#404040 !important;font-weight:550;}.content h4{color:#414141;</style>
+<style type='text/css'>.content h2{color:#0d0d0d;}.content h3{color:#272727;font-weight:650;}.content h4{color:#414141;font-weight:600;}.content h5{color:#404040;font-weight:550;}.content h4{color:#414141;</style>
+<style type='text/css'>.blockquote{ font-style: italic; color: #555555; border:none; position: relative; background: #EDEDED; display:flex; flex-wrap:wrap; justify-items:start; justify-content:start; text-align:left; width:100%; height:auto; margin-bottom:1.5em; padding:0.9em; line-height:1.7; font-family: Arial, Helvetica, 'Open Sans', sans-serif;}@media screen and (min-width: 561px){.blockquote{padding:1.5em}}@media screen and (min-width: 1200){.blockquote{padding:2em}} a{word-wrap:break-word;} li{font-weight: 400;}ul li{font-weight:300;font-family: 'San Franscisco', Arial, sans-serif} </style>
+<style type='text/css'>.icons {max-height:2em;height:auto;width:auto;fill: #e1e1e2; color: #e1e1e2;padding:0;margin:0 1em;}.red-bull-t{color: #d01623;font-size:0.43em;position:absolute;top:1em;}</style>
+<style>
+.container {
+width: 100%;}
+.lesson-info {
+margin-bottom: 30px;
+}
+.info-table { 
+width: 100%; 
+border-collapse: collapse; 
+border: 1px solid #000; }
+.info-table td { 
+border: 1px solid #000; 
+padding: 8px 12px; 
+vertical-align: top; } 
+.info-table .label { 
+font-weight: bold; 
+background-color: #f5f5f5; 
+width: 20%; } 
+.info-table ul { 
+margin: 0; 
+padding-left: 20px; 
+} 
+.info-table li { 
+margin: 4px 0; 
+} .
+activity-section { 
+margin: 25px 0; 
+} 
+.activity-section h2 { 
+font-size: 18px; 
+font-weight: bold; 
+margin-bottom: 12px; 
+} 
+.activity-table { 
+width: 100%; 
+border-collapse: collapse; 
+border: 2px solid #000; 
+margin-bottom: 15px; 
+} 
+.activity-table th, .activity-table td{ 
+border: 1px solid #000; 
+padding: 8px 12px; 
+vertical-align: top; 
+} 
+
+.activity-table th { 
+background-color: #f5f5f5; 
+font-weight: bold; 
+text-align: left; } 
+
+.activity-table th { 
+width: 35%; } 
+.activity-table th(2) { 
+width: 45%; } 
+.activity-table th { 
+width: 20%; } 
+table, table td, table tr { 
+border: 1px solid #000 !important; 
+border-spacing:0; } 
+.participation li{ 
+margin-bottom: 1em; } 
+.description { 
+margin: 15px 0; 
+font-style: italic; } 
+.description p { 
+margin: 8px 0; } 
+.activity-description { 
+margin: 25px 0; 
+padding: 15px 0; } 
+.activity-description p { 
+margin: 12px 0; } 
+.page-break { 
+margin: 40px 0; 
+border-top: 1px solid #ccc; 
+padding-top: 10px; } 
+.page-footer { 
+text-align: center; 
+font-size: 10px; 
+font-weight: bold; 
+color: #666; 
+margin: 20px 0; } 
+.page-footer.final { 
+margin-top: 60px; } 
+</style>
+
+<style>
+.org-src-container{
+background-color: #1b1d1e;
+color:white;
+}
+.content > figure {
+padding:20px;
+background:black;
+}
+.content > figure ~ figure {
+padding:0;background:white;
+}
+</style>
+
+<style>
+.org-src-container>pre{
+white-space:pre-wrap;
+white-space: -moz-pre-wrap;
+white-space: -pre-wrap;
+white-space: -o-pre-wrap;
+word-wrap: break-word; 
+background:transparent;
+border:none;
+} 
+.org-string{color: #468486;}
+.org-sh-escaped-newline{color: #77acbf;}
+.org-variable-name{color:#9b171e ;}
+</style>
+<style type='text/css'>@media print { @page { margin-top: 3cm; margin-right: 2cm; margin-bottom: 3cm; margin-left: 2cm; size: letter portrait;}a::after { content: " (" attr(href) ")"; font-size: 0.9em; }  { page-break-before: always; border-top: none; padding-top: 0; margin-top: 0; }}</style>
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta http-equiv="x-ua-compatible" content="IE=edge">
 <meta name="robots" content="noindex, nofollow" />
@@ -28,10 +340,9 @@
 <div id="content" class="content">
 <header>
 <h1 class="title">Provincial Instructor&rsquo;s Diploma Program</h1>
-</header>
-<section id="outline-container-orgc23a9f4" class="outline-2">
-<h2 id="orgc23a9f4">PROFILE</h2>
-<div class="outline-text-2" id="text-orgc23a9f4">
+</header><section id="outline-container-orgade2238" class="outline-2">
+<h2 id="orgade2238">PROFILE</h2>
+<div class="outline-text-2" id="text-orgade2238">
 <details>
 <summary class="level_1">Profile &nbsp;+</summary>
 <div>
@@ -117,10 +428,9 @@
 </br></br></details>
 </div>
 </section>
-
-<section id="outline-container-org5c57a57" class="outline-2">
-<h2 id="org5c57a57">PIDP 3100 [Foundations of Adult Education]</h2>
-<div class="outline-text-2" id="text-org5c57a57">
+<section id="outline-container-org2d88c59" class="outline-2">
+<h2 id="org2d88c59">PIDP 3100 [Foundations of Adult Education]</h2>
+<div class="outline-text-2" id="text-org2d88c59">
 <details>
 <summary class="level_1" style="margin-top:-0.25em;">[PIDP 3100] Foundations of Adult Education &nbsp;+</summary>
 <div>
@@ -342,10 +652,9 @@
 </br></br></details>
 </div>
 </section>
-
-<section id="outline-container-org97d5cb2" class="outline-2">
-<h2 id="org97d5cb2">PIDP 3220 [Delivery of Instruction]</h2>
-<div class="outline-text-2" id="text-org97d5cb2">
+<section id="outline-container-orgd66314a" class="outline-2">
+<h2 id="orgd66314a">PIDP 3220 [Delivery of Instruction]</h2>
+<div class="outline-text-2" id="text-orgd66314a">
 <details>
 <summary class="level_1" style="margin-top:-0.25em;">[PIDP 3220] Delivery of Instruction &nbsp;+</summary>
 <div>
@@ -544,9 +853,9 @@
 </br></br></details>
 </div>
 </section>
-<section id="outline-container-org84b00bd" class="outline-2">
-<h2 id="org84b00bd">PIDP 3300 [Learning With The Adult Brain in Mind]</h2>
-<div class="outline-text-2" id="text-org84b00bd">
+<section id="outline-container-org4972396" class="outline-2">
+<h2 id="org4972396">PIDP 3300 [Learning With The Adult Brain in Mind]</h2>
+<div class="outline-text-2" id="text-org4972396">
 <details>
 <summary class="level_1" style="margin-top:-0.25em;">[PIDP 3300] Learning With The Adult Brain in Mind &nbsp;+</summary>
 <div>
@@ -936,9 +1245,9 @@ okay <span style="background-color:#bbfc20;">so</span> if you're watching this v
 </br></br></details>
 </div>
 </section>
-<section id="outline-container-org8fc5933" class="outline-2">
-<h2 id="org8fc5933">PIDP 3210 [Curriculum Development]</h2>
-<div class="outline-text-2" id="text-org8fc5933">
+<section id="outline-container-org32cb259" class="outline-2">
+<h2 id="org32cb259">PIDP 3210 [Curriculum Development]</h2>
+<div class="outline-text-2" id="text-org32cb259">
 <details>
 <summary class="level_1" style="margin-top:-0.25em;">[PIDP 3210] Curriculum Development &nbsp;+</summary>
 <div>
@@ -1051,10 +1360,9 @@ okay <span style="background-color:#bbfc20;">so</span> if you're watching this v
 </br></br></details>
 </div>
 </section>
-
-<section id="outline-container-org5206138" class="outline-2">
-<h2 id="org5206138">PIDP 3250 [Instructional Strategies]</h2>
-<div class="outline-text-2" id="text-org5206138">
+<section id="outline-container-orgfacb161" class="outline-2">
+<h2 id="orgfacb161">PIDP 3250 [Instructional Strategies]</h2>
+<div class="outline-text-2" id="text-orgfacb161">
 <details>
 <summary class="level_1" style="margin-top:-0.25em;">[PIDP 3250] Instructional Strategies &nbsp;+</summary>
 <div>
@@ -1157,10 +1465,9 @@ okay <span style="background-color:#bbfc20;">so</span> if you're watching this v
 </br></br></details>
 </div>
 </section>
-
-<section id="outline-container-org47cc2bb" class="outline-2">
-<h2 id="org47cc2bb">PIDP 3320 [Fundamentals of Facilitating Learning Online]</h2>
-<div class="outline-text-2" id="text-org47cc2bb">
+<section id="outline-container-orge171b12" class="outline-2">
+<h2 id="orge171b12">PIDP 3320 [Fundamentals of Facilitating Learning Online]</h2>
+<div class="outline-text-2" id="text-orge171b12">
 <details>
 <summary class="level_1" style="margin-top:-0.25em;">[PIDP 3320] Fundamentals of Facilitating Learning Online &nbsp;+</summary>
 <div>
@@ -1348,9 +1655,9 @@ There are many instructors who succeed in captivating students and optimizing le
 </br></br></details>
 </div>
 </section>
-<section id="outline-container-orgf05d635" class="outline-2">
-<h2 id="orgf05d635">PIDP 3230 [evaluation of learning]</h2>
-<div class="outline-text-2" id="text-orgf05d635">
+<section id="outline-container-org5a23448" class="outline-2">
+<h2 id="org5a23448">PIDP 3230 [evaluation of learning]</h2>
+<div class="outline-text-2" id="text-org5a23448">
 <details>
 <summary class="level_1" style="margin-top:-0.25em;">[PIDP 3230] Evaluation of Learning &nbsp;+</summary>
 <div>
@@ -1521,12 +1828,21 @@ There are many instructors who succeed in captivating students and optimizing le
 
 <p>I chose a video for this assignment, and elected to focus on 'Concept Questions', a subset of 'Concept Quizzes.'</p>
 
-<div>
-</br>
-<iframe class="youtube_frame" src="https://www.youtube-nocookie.com/embed/BsjeuZiWr44?modestbranding=1&playsinline=1&rel=0" title="Concept Questions: An Informal Assessment Technique" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;fullscreen"></iframe>
+<div style="display:flex;flex-wrap:wrap;grid-column:1/3;grid-row:1;width:100%;height:100%;padding:0 0 0 0;">
+
+<a style="text-decoration:none;justify-content:center;background:#3137ae;border-radius:5px;height:max-content;width:100%;margin-bottom:15px;margin-top:10px;padding:0;" href="https://www.youtube.com/watch?v=BsjeuZiWr44"  rel="noopener" target="_blank">
+<img src="./media/concept_questions.jpg" style="border:none;width:100%;margin:0 auto;">
+</a>
+
+<p style="font-weight:400;font-size:1em;text-align:left;margin:0em 0em 0em 0em;width:100%;margin-bottom:0.5em;">Source<br>
+<a style="color:#3137ae;font-weight:400;font-size:1em;" href="https://www.youtube.com/watch?v=zPecpze_T6M" target="_blank" rel="noopener">https://www.youtube.com/watch?v=BsjeuZiWr44</a></p>
+
 <p style="text-align:left;">[Concept Questions: An Informal Assessment Strategy]</p>
 </br></br>
-</div
+
+</div>
+
+
 
 <p>Here is my IAS Self-Assessment:<br> 
 <a style="margin:0;word-break:break-word;" href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3230_ias_self_assessment_tricys_comp.pdf"  rel="noopener" target="_blank">https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3230_ias_self_assessment_tricys_comp.pdf</a>
@@ -1604,10 +1920,9 @@ There are many instructors who succeed in captivating students and optimizing le
 </br></br></details>
 </div>
 </section>
-
-<section id="outline-container-org4ab3824" class="outline-2">
-<h2 id="org4ab3824">PIDP 3340 [Collaborative learning in the college classroom]</h2>
-<div class="outline-text-2" id="text-org4ab3824">
+<section id="outline-container-org5157531" class="outline-2">
+<h2 id="org5157531">PIDP 3340 [Collaborative learning in the college classroom]</h2>
+<div class="outline-text-2" id="text-org5157531">
 <details>
 <summary class="level_1" style="margin-top:-0.25em;">[PIDP 3340] Collaborative Learning in the College Classroom &nbsp;+</summary>
 <div>
@@ -1778,10 +2093,9 @@ There are many instructors who succeed in captivating students and optimizing le
 </br></br></details>
 </div>
 </section>
-
-<section id="outline-container-org9f00df3" class="outline-2">
-<h2 id="org9f00df3">PIDP 3240 [Media Enhanced Learning]</h2>
-<div class="outline-text-2" id="text-org9f00df3">
+<section id="outline-container-org611bbe5" class="outline-2">
+<h2 id="org611bbe5">PIDP 3240 [Media Enhanced Learning]</h2>
+<div class="outline-text-2" id="text-org611bbe5">
 <details>
 <summary class="level_1" style="margin-top:-0.25em;">[PIDP 3240] Media Enhanced Learning &nbsp;+</summary>
 <div>
@@ -1864,9 +2178,9 @@ There are many instructors who succeed in captivating students and optimizing le
 </br></br></details>
 </div>
 </section>
-<section id="outline-container-org4d614b1" class="outline-2">
-<h2 id="org4d614b1">PIDP 3351 [Feedback Strategies]</h2>
-<div class="outline-text-2" id="text-org4d614b1">
+<section id="outline-container-org8cb7cf6" class="outline-2">
+<h2 id="org8cb7cf6">PIDP 3351 [Feedback Strategies]</h2>
+<div class="outline-text-2" id="text-org8cb7cf6">
 <details>
 <summary class="level_1" style="margin-top:-0.25em;">[PIDP 3351] Feedback Strategies &nbsp;+</summary>
 <div>
@@ -1874,44 +2188,66 @@ There are many instructors who succeed in captivating students and optimizing le
 <details>
 <summary class="level_2">Overview [PIDP 3351] &nbsp;+</summary>
 
+<p>PIDP 3351, Feedback Strategies, focuses on two main ideas: helping students learn by changing their mindset and understanding of how the brain can change and grow, and improving their ability to understand assessments. The course teaches that feedback should help students improve, not just comment on their work.</p>
 
-<p>Enim, sed faucibus turpis in eu. Pharetra, massa massa ultricies mi, quis hendrerit dolor magna eget est lorem ipsum dolor sit amet, consectetur adipiscing elit pellentesque habitant morbi tristique senectus!</p>
+<p>Instead of seeing learning as fixed, the idea is that it can change and improve over time.</p>
+
+<p>There were four general modules (activies), are three modules. Module 1: preparing learners to learn, Module 2: assessment of/for/as learning, Module 3: audio/video feedforward, and Module 4: A reflection on the other modules</p>
 </details>
 
 <details>
-<summary class="level_2"> [PIDP 3351] &nbsp;+</summary>
+<summary class="level_2">Preparing Learners To Learn [PIDP 3351] &nbsp;+</summary>
 
-<p>Enim, sed faucibus turpis in eu. Pharetra, massa massa ultricies mi, quis hendrerit dolor magna eget est lorem ipsum dolor sit amet, consectetur adipiscing elit pellentesque habitant morbi tristique senectus!<p> 
+<p>Module 1 is about "getting learners ready to learn". We do this by creating a blog post and video that helps students switch from thinking they can't change (a fixed mindset) to believing they can grow and improve (a growth mindset).<p> 
 
+<p>When we turn an idea into something digital and share it publicly, it's like having a real conversation. This means the person creating the content has to make sure their message makes sense, is easy to read, and looks good. They also figure out how to 'put it out there', which means publish it to a website. <p>
 
+<p>Of course as a technical writer and a web developer, I love assignments like this one 😏.<p>
 
-<p>Here is my: habitant morbi tristique senectus!<br> 
-<a style="margin:0;word-break:break-word;" href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3340_presentation_observations_2025_06_29.pdf"  rel="noopener" target="_blank">habitant morbi tristique senectus!</a>
-</p>
+<p>Here's a link to the webpage:<br><br>
+
+<a style="margin:0;word-break:break-word;" href="href="https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/post/get-smart-leveraging-intelligence-and-growth/" target="_blank" rel="noopener">
+<img class="org-image" alt="motivating_students.webp" src="./media/motivating_students.webp" loading="lazy">
+</a></br></p>
+
+<p style="text-align:left;">[Source: <a style="margin:0;word-break:break-word;" href="https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/post/get-smart-leveraging-intelligence-and-growth/" target="_blank" rel="noopener">https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/post/get-smart-leveraging-intelligence-and-growth/</a>]</p>
 </details>
 
 <details>
-<summary class="level_2"> [PIDP 3351] &nbsp;+</summary>
+<summary class="level_2">Assessment For/Of/As Learning [PIDP 3351] &nbsp;+</summary>
 
 <p>
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus mauris vitae ultricies leo integer. Nunc mattis enim ut tellus elementum sagittis vitae et leo duis ut diam.
+The assessment 'For/Of/As' Learning project is again a publication or infographic, along with a video explaining it. I wrote another blog post. You can see it below:   
+</p>
+
+<p><a style="margin:0;word-break:break-word;" href="href="https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/tags/adaptive-feedback-loops/" target="_blank" rel="noopener">
+<img class="org-image" alt="feedback_loops.webp" src="./media/feedback_loops.webp" loading="lazy">
+</a></br></p>
+
+<p style="text-align:left;">[Source: <a style="margin:0;word-break:break-word;" href="https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/tags/adaptive-feedback-loops/" target="_blank" rel="noopener">https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/tags/adaptive-feedback-loops/</a>]</p>
+</details>
+
+<details>
+<summary class="level_2"> Audio/Video Feedforward [PIDP 3351] &nbsp;+</summary>
+
+
+<p>
+The feedforward was a video review of another student's work. I reviewed another student's video presentation. The idea was to apply the principles of feedback we learned in the course in the video. While I think I did a prett good job, again the sound was terrible. Since then, I've purchased a Yeti Nano, taken a course on Davinci Resolve, and done a fair amount of experimentation with the Yeti Nano (a mediocre microphone), to come up with manageable audio.   
 </p>
 </details>
 
 <details>
-<summary class="level_2"> [PIDP 3351] &nbsp;+</summary>
+<summary class="level_2">A reflection on the other modules [PIDP 3351] &nbsp;+</summary>
 
-<p>Purus viverra accumsan in nisl nisi, scelerisque eu ultrices vitae, auctor eu augue ut lectus arcu, bibendum at varius vel, pharetra! Sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi!</p>
-
-<p></p>
+<p>My reflection was a video reflection of around 10 minutes. I'm not including it here becaues I still hadn't figured the sound enough to get anything reasonable out of my Yeti Nano (a mediocre microphone at best).</p>
 </details>
 
 </br></br></details>
 </div>
 </section>
-<section id="outline-container-org12340a2" class="outline-2">
-<h2 id="org12340a2">PIDP 3260 [Professional Practice]</h2>
-<div class="outline-text-2" id="text-org12340a2">
+<section id="outline-container-org808bacf" class="outline-2">
+<h2 id="org808bacf">PIDP 3260 [Professional Practice]</h2>
+<div class="outline-text-2" id="text-org808bacf">
 <details>
 <summary class="level_1" style="margin-top:-0.25em;">[PIDP 3260] Professional Practice &nbsp;+</summary>
 <div>
@@ -1919,11 +2255,11 @@ Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
 <details>
 <summary class="level_2">Overview [PIDP 3260] &nbsp;+</summary>
 
-<p>Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc sed velit dignissim sodales ut eu sem integer vitae justo eget magna fermentum iaculis? Magna fringilla urna, porttitor rhoncus dolor!
-Quis blandit turpis cursus in. Tortor, id aliquet lectus proin nibh nisl, condimentum id venenatis a, condimentum vitae sapien pellentesque habitant morbi tristique senectus et netus et malesuada fames ac.</p>
+<p>PIDP 3260, Professional Practice, consolidates an instructor's professional responsibilities, emphasizing reflective practice, ethical decision-making, and evidence-informed course improvement. This course demands significant intellectual engagement and personal reflection, making it quite rigorous for those committed to professional growth.</p> 
 
+<p>The workload requires consistent time investment throughout the semester, with students needing to produce multiple reflective pieces, complete self-assessments, and engage with evaluation strategies while maintaining a regular blogging presence. The course's rigor stems from its emphasis on practical application and continuous self-evaluation, which requires substantial effort to maintain quality and depth across all assignments.</p>
 
-<p>Anyway, here is a list of the papers required for PIDP 3260</p>
+<p>Required Papers</p>
 
 <ul>
 <li>ORID Reflection 1</li>
@@ -1936,10 +2272,6 @@ Quis blandit turpis cursus in. Tortor, id aliquet lectus proin nibh nisl, condim
 <li>7 Blog Posts</li>
 <li>Blog Posts Self-Assessment</li>
 </ul>
-
-
-
-<p>Suspendisse in est ante in nibh mauris, cursus mattis molestie a, iaculis at erat pellentesque adipiscing commodo elit, at imperdiet dui accumsan sit. Etiam dignissim diam quis enim lobortis scelerisque.</p>
 
 <p><br><br></p>
 </details>
@@ -1957,18 +2289,13 @@ Quis blandit turpis cursus in. Tortor, id aliquet lectus proin nibh nisl, condim
 </ul>
 
 
-<p>ORID Reflection 1 discussess Etiam dignissim diam quis enim lobortis scelerisque. </p>
-
-
 <p>Here is ORID Reflection 1:<br> 
-<a style="margin:0;word-break:break-word;" href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3230_orid_1_tricys_final_comp.pdf"  rel="noopener" target="_blank">https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3230_orid_1_tricys_final_comp.pdf</a>
+<a style="margin:0;word-break:break-word;" href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3260_reflective_writing_1_compressed_tricys.pdf"  rel="noopener" target="_blank">https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3260_reflective_writing_1_compressed_tricys.pdf</a>
 </p>
 
 
-<p>ORID Reflection 2 say is Suspendisse in est ante in nibh mauris </p>
-
 <p>Here is ORID Reflection 2:<br> 
-<a style="margin:0;word-break:break-word;" href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3230_orid_2_tricys_final_comp.pdf"  rel="noopener" target="_blank">https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3230_orid_2_tricys_final_comp.pdf</a>
+<a style="margin:0;word-break:break-word;" href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3260_reflective_writing_2_compressed_tricys.pdf"  rel="noopener" target="_blank">https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3260_reflective_writing_2_compressed_tricys.pdf</a>
 </p>
 
 <p><br><br></p>
@@ -1977,27 +2304,18 @@ Quis blandit turpis cursus in. Tortor, id aliquet lectus proin nibh nisl, condim
 <details>
 <summary class="level_2">Feedback Instrument [PIDP 3260] &nbsp;+</summary>
 
+<p>The feedback instrument assignment is essentially the drafting of a feedback form. There is a methodology for creating the form, which is more or less straightforward to follow.</p>  
 
-<p>Egestas erat imperdiet sed euismod nisi porta lorem mollis aliquam. Neque, gravida in fermentum et, sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam nulla facilisi.</p>
+<p>The rationale paper, explains the process of creating the feedback instrument.</p>  
 
-<p>Here are a few examples:</p>
-
-<ol>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-</ol>
+<p>Both documents are below.</p>
 
 <p>Here is the feedback instrument<br> 
-<a style="margin:0;word-break:break-word;" href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3230_kai_rationale_tricys_final_comp.pdf"  rel="noopener" target="_blank">https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3230_kai_rationale_tricys_final_comp.pdf</a>
+<a style="margin:0;word-break:break-word;" href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3260_feedback_instrument_compressed_tricys.pdf"  rel="noopener" target="_blank">https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3260_feedback_instrument_compressed_tricys.pdf</a>
 </p>
 
 <p>And here is the feedback instrument Rationale Report:<br> 
-<a style="margin:0;word-break:break-word;" href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3230_kai_self_assessment_tricys_final_comp.pdf"  rel="noopener" target="_blank">https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3230_kai_self_assessment_tricys_final_comp.pdf</a>
+<a style="margin:0;word-break:break-word;" href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3260_feedback_instrument_compressed_tricys.pdf"  rel="noopener" target="_blank">https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3260_feedback_instrument_compressed_tricys.pdf</a>
 </p>
 
 
@@ -2007,10 +2325,21 @@ Quis blandit turpis cursus in. Tortor, id aliquet lectus proin nibh nisl, condim
 <details>
 <summary class="level_2">Ethical Dilemma Report [PIDP 3260] &nbsp;+</summary>
 
-<p>Egestas erat imperdiet sed euismod nisi porta lorem mollis aliquam. Neque, gravida in fermentum et, sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam nulla facilisi.</p>
+<p>The Ethical Dilemma report deals with an ethical situation that a leader could face in schools environment. It shows how instructional leadership -- helping teachers and staff improve their workplace experience -- should be based on strong values rather than just rules.</p>
+
+<p>The idea seems to be to bring the notion of ethics into the mind of the future instructor. It seems to me this is a pretty good idea. Just making specific types of terminology conscious is likely quite effective when compared to omitting the subject.   
+
+<p>Here are some of the talking points:</p>
+
+<ul>
+<li>Taking care of people (care)</li>
+<li>Keeping secrets when needed (confidentiality)</li> 
+<li>Treating everyone fairly (equity)</li>
+<li>Making sure things are just and right (justice)</li>
+</ul>
 
 <p>Here is the Ethical Dilmma Paper<br> 
-<a style="margin:0;word-break:break-word;" href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3230_kai_rationale_tricys_final_comp.pdf"  rel="noopener" target="_blank">https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3230_kai_rationale_tricys_final_comp.pdf</a>
+<a style="margin:0;word-break:break-word;" href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3260_ethical_dilemma_compressed_tricys.pdf"  rel="noopener" target="_blank">https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3260_ethical_dilemma_compressed_tricys.pdf</a>
 </p>
 
 
@@ -2021,11 +2350,19 @@ Quis blandit turpis cursus in. Tortor, id aliquet lectus proin nibh nisl, condim
 <summary class="level_2">(Teacher) Evaluation Strategies [PIDP 3260] &nbsp;+</summary>
 
 
-<p>Evaluating your own work Egestas erat imperdiet sed euismod nisi porta lorem mollis aliquam. Neque, gravida in fermentum et, sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor aliquam nulla facilisi.</p>
+<p>This self-assessment paper uses actual teaching examples to show how evaluation works. It helps teachers observe their own teaching methods and improve them.</p>
 
-<p>Here are several strategies for evaluating your own teaching.</p>
+<p>The process includes:</p>
 
+<ul>
+<li>Writing with an audience in mind</li>
+<li>Revising to make ideas clearer</li>
+<li>Taking communication seriously as a professional duty</li>
+</ul>
 
+<p>Video self-review helps teachers examine their pacing, clarity, engagement, and delivery skills. While peer observation has some limitations, this approach still supports professional development.</p>
+
+<p>Methods used for self-assessment:</p>
 
 <ol>
 <li>Small Group Instructional Feedback</li>
@@ -2037,21 +2374,28 @@ Quis blandit turpis cursus in. Tortor, id aliquet lectus proin nibh nisl, condim
 </ol>
 
 
-<p> I chose 'Video of your own teaching' because iaculis at erat pellentesque adipiscing commodo elit</p>
-
+<p>I chose 'Video of your own teaching' because it provides concrete evidence of teaching performance and allows for focused self-analysis.</p>
 
 <p>Here is the video:</p>
 
-<div>
-</br>
-<iframe class="youtube_frame" src="https://www.youtube-nocookie.com/embed/BsjeuZiWr44?modestbranding=1&playsinline=1&rel=0" title="Concept Questions: An Informal Assessment Technique" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;fullscreen"></iframe>
+
+<div style="display:flex;flex-wrap:wrap;grid-column:1/3;grid-row:1;width:100%;height:100%;padding:0 0 0 0;">
+
+<a style="text-decoration:none;justify-content:center;background:#3137ae;border-radius:5px;height:max-content;width:100%;margin-bottom:15px;margin-top:10px;padding:0;" href="https://www.youtube.com/watch?v=zPecpze_T6M"  rel="noopener" target="_blank">
+<img src="./media/reviewing-the-tape.jpg" style="border:none;width:100%;margin:0 auto;">
+</a>
+
+<p style="font-weight:400;font-size:1em;text-align:left;margin:0em 0em 0em 0em;width:100%;margin-bottom:0.5em;">Source<br>
+<a style="color:#3137ae;font-weight:400;font-size:1em;" href="https://www.youtube.com/watch?v=zPecpze_T6M" target="_blank" rel="noopener">https://www.youtube.com/watch?v=zPecpze_T6M</a></p>
+
 <p style="text-align:left;">[Video Taping Your Own Teaching]</p>
 </br></br>
-</div
+
+</div>
 
 
-<p>And here is the evalution strategies self-assessment: <br> 
-<a style="margin:0;word-break:break-word;" href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3230_aai_self_assessment_tricys_final_comp.pdf"  rel="noopener" target="_blank">https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3230_aai_self_assessment_tricys_final_comp.pdf</a>
+<p>And here is the evalution strategies self-assessment: <br><br> 
+<a style="margin:0;word-break:break-word;" href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3260_evaluation_self_assessment_compressed_tricys.pdf"  rel="noopener" target="_blank">https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3260_evaluation_self_assessment_compressed_tricys.pdf</a>
 </p>
 
 <p><br><br></p>
@@ -2075,14 +2419,15 @@ Quis blandit turpis cursus in. Tortor, id aliquet lectus proin nibh nisl, condim
 </ol>
 
 <p>I chose to expand on the website I used for the 'Fundamentals of Facilitating Learning Online' course, rather than this page, since it's got more of a 'professional' blog feel. Here is a link to the blog page.</p>
-
+<br>
+<br>
 <a style="margin:0;word-break:break-word;" href="https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/docs/professional-practices-blog/" target="_blank" rel="noopener">
 <img class="org-image" alt="ai_for_educators_screenshot.jpg" src="./media/ai_for_educators_screenshot.jpg" loading="lazy">
 </a></br>
 <p style="text-align:left;">[Source: <a style="margin:0;word-break:break-word;" href="https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/docs/professional-practices-blog" target="_blank" rel="noopener">https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/docs/ai-info-and-forum/</a>]</p>
 
 <p>Here is the self-assessment for the blog assignment:<br> 
-<a style="margin:0;word-break:break-word;" href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3230_evaluation_plan_self_assessment_tricys_comp.pdf"  rel="noopener" target="_blank">https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3230_evaluation_plan_self_assessment_tricys_comp.pdf</a>
+<a style="margin:0;word-break:break-word;" href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3260_blog_self_assessment_compressed_tricys.pdf"  rel="noopener" target="_blank">https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3260_blog_self_assessment_compressed_tricys.pdf</a>
 </p>
 
 
@@ -2092,9 +2437,99 @@ Quis blandit turpis cursus in. Tortor, id aliquet lectus proin nibh nisl, condim
 </br></br></details>
 </div>
 </section>
-<section id="outline-container-org3cb603a" class="outline-2">
-<h2 id="org3cb603a">PIDP PDF LOUNGE [IAS Self-Assessment][Evaluation Plan Self-Assessment][PIDP 3340 Presentation Reflection]</h2>
-<div class="outline-text-2" id="text-org3cb603a">
+<section id="outline-container-org26c09f6" class="outline-2">
+<h2 id="org26c09f6">PIDP 3270 [Capstone Project]</h2>
+<div class="outline-text-2" id="text-org26c09f6">
+<details>
+<summary class="level_1" style="margin-top:-0.25em;">[PIDP 3270] Capstone Project &nbsp;+</summary>
+<div>
+
+<details>
+<summary class="level_2">Overview [PIDP 3270] &nbsp;+</summary>
+
+<p>If I understand correctly, the goal of the Capstone project is to recap the PIDP program, in order to remember better.</p>  
+
+<p>To be honest, I had a ton of things to do during the time allotted for the capstone project, and most of them were computer related, creating a direct trade off, between other projects and the PIDP project.</p>    
+
+<p>I then spent a lot of my PIDP project time on various related course work, like a Davinci Resolve course, an Ollama course, and an Ubuntu course.</p>  
+
+<p>By the time I got around to the 'final paper', I was under time pressure.</p>  
+
+<p>There shouldn't have been any double days (24 shifts 😄), but that kind of stuff just happens when you're 'flow zoning tech.' Anyway, I'm sure you're all used to tech complexity!</p>
+
+<p>Here is the assignment list:</p>
+
+<p>There is a lesson plan, a lesson to be delivered, a lesson rationale, and a review of the PIDP program.</p>
+
+<ul>
+<li>Lesson Plan</li>
+<li>Lesson</li>
+<li>Lesson Rational</li>
+<li>PIPD Review</li>
+</ul>
+
+<p><br><br></p>
+</details>
+
+<details>
+<summary class="level_2">Lesson Plan [PIDP 3270] &nbsp;+</summary>
+
+<p>The lesson plan follows the BOPPPS format. It's pretty good, have a look.<br><br> 
+
+<a style="margin:0;word-break:break-word;" href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3270_lesson_plan_final.pdf"  rel="noopener" target="_blank">pidp_3270_lesson_plan_final.pdf</a>
+</p>
+
+
+<p><br><br></p>
+</details>
+
+<details>
+<summary class="level_2">Lesson [PIDP 3270] &nbsp;+</summary>
+
+<p>The lesson was the most exciting part. There are eight videos. They're all up on YouTube;howevever, here is a link to a webpage with links you can click to each of the videos: <br><br> 
+
+<a style="margin:0;word-break:break-word;" href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3270_lesson.pdf"  rel="noopener" target="_blank">pidp_3270_lesson.pdf</a>
+</p>
+
+
+
+<p><br><br></p>
+</details>
+
+<details>
+<summary class="level_2">Lesson Reflection [PIDP 3270] &nbsp;+</summary>
+
+<p>The lesson reflection is more of the journal style writing you might be used to if you've been reading this page. </p>
+
+
+<p>Here is a reflection on the lesson: <br><br> 
+
+<a style="margin:0;word-break:break-word;" href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3270_reflection_on_lesson.pdf"  rel="noopener" target="_blank">pidp_3270_reflection_on_lesson.pdf</a>
+</p>
+
+<p><br><br></p>
+</details>
+
+<details>
+<summary class="level_2">Reflection on PIDP [PIDP 3270] &nbsp;+</summary>
+
+
+<p>The reflection on the PIDP was supposed to be more of a self-reflection; however, I wanted to do something a bit more academic in tone.</p>
+
+<p>It reads the way I want it to;however, I could I have given it another day or two to work out some of the bugs. Anyway, here it is: <br><br>
+<a style="margin:0;word-break:break-word;" href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3270_reflection_on_pidp.pdf"  rel="noopener" target="_blank">https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3270_reflection_on_pidp.pdf</a>
+</p>
+
+
+<p><br><br></p>
+</details>
+
+</br></br></details>
+</div>
+</section>
+<section id="outline-container-orga49b66c" class="outline-2">
+<h2 id="orga49b66c">PIDP PDF LOUNGE [IAS Self-Assessment][Evaluation Plan Self-Assessment][PIDP 3340 Presentation Reflection]</h2>
+<div class="outline-text-2" id="text-orga49b66c">
 <details>
 <summary class="level_1" style="margin-top:-0.25em;">[PIDP Assignments] PDF Lounge &nbsp;+</summary>
 <div>
@@ -2103,94 +2538,94 @@ Quis blandit turpis cursus in. Tortor, id aliquet lectus proin nibh nisl, condim
     <a class="lounge-link"  href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3100_learning_theory_report_tricys_final_comp.pdf" target="_blank" rel="noopener">
       <img src="https://xyz-abc-show-and-tell.github.io/pidp/media/pidp_3100_learning_theory_report_tricys_final_comp.webp" alt="PIDP 3100 Learning Theory Report" loading="lazy" class="lounge-image-1">
     </a><br>
-    <p class="lounge-text" >PIDP 3100 Learning Theory Report</p>
+    <p class="lounge-text" >PIDP: 3100 Learning Theory Report</p>
   </div>
   <div>
     <a class="lounge-link"  href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3100_orid_1_tricys_final_comp.pdf" target="_blank" rel="noopener">
       <img src="https://xyz-abc-show-and-tell.github.io/pidp/media/pidp_3100_orid_1_tricys_final_comp.webp" alt="PIDP 3100 Orid 1" loading="lazy" class="lounge-image-1">
     </a><br>
-    <p class="lounge-text" >PIDP 3100 ORID 1</p>
+    <p class="lounge-text" >PIDP: 3100 ORID 1</p>
   </div>
   <div>
     <a class="lounge-link"  href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3100_orid_2_tricys_final_comp.pdf" target="_blank" rel="noopener">
       <img src="https://xyz-abc-show-and-tell.github.io/pidp/media/pidp_3100_orid_2_tricys_final_comp.webp" alt="PIDP 3100 Orid 2" loading="lazy" class="lounge-image-1">
     </a><br>
-    <p class="lounge-text" >PIDP 3100 ORID 2</p>
+    <p class="lounge-text" >PIDP: 3100 ORID 2</p>
   </div>
   <div>
     <a class="lounge-link"  href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3210_alignment_exercise_final_comp.pdf" target="_blank" rel="noopener">
       <img src="https://xyz-abc-show-and-tell.github.io/pidp/media/pidp_3210_alignment_exercise_final_comp.webp" alt="PIDP 3210 Alignment Exercise" loading="lazy" class="lounge-image-1">
     </a><br>
-    <p class="lounge-text" >PIDP 3210 Alignment Exercise</p>
+    <p class="lounge-text" >PIDP: 3210 Alignment Exercise</p>
   </div>
   <div>
     <a class="lounge-link"  href="https://tricys.gumroad.com/l/iwiff" target="_blank" rel="noopener">
       <img src="https://xyz-abc-show-and-tell.github.io/pidp/media/pidp_3210_course_outline_final_comp.webp" alt="PIDP 3210 Course Outline" loading="lazy" class="lounge-image-1">
     </a><br>
-    <p class="lounge-text" >PIDP 3210 Course Outline [part of the <span class="bucks">$29.99</span> pkg]</p>
+    <p class="lounge-text" >PIDP: 3210 Course Outline [part of the <span class="bucks">$29.99</span> pkg]</p>
   </div>
  <div>
     <a class="lounge-link"  href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3210_course_profile_final_comp.pdf" target="_blank" rel="noopener">
       <img src="https://xyz-abc-show-and-tell.github.io/pidp/media/pidp_3210_course_profile_final_comp.webp" alt="PIDP 3210 Course Profile" loading="lazy" class="lounge-image-1">
     </a><br>
-    <p class="lounge-text" >PIDP 3210 Course Profile</p>
+    <p class="lounge-text" >PIDP: 3210 Course Profile</p>
   </div>
   <div>
     <a class="lounge-link"  href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3210_orid_1_final_comp.pdf" target="_blank" rel="noopener">
       <img src="https://xyz-abc-show-and-tell.github.io/pidp/media/pidp_3210_orid_1_final_comp.webp" alt="PIDP 3210 Orid 1" loading="lazy" class="lounge-image-1">
     </a><br>
-    <p class="lounge-text" >PIDP 3210 ORID 1</p>
+    <p class="lounge-text" >PIDP: 3210 ORID 1</p>
   </div>
   <div>
     <a class="lounge-link"  href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3210_orid_2_final_comp.pdf" target="_blank" rel="noopener">
       <img src="https://xyz-abc-show-and-tell.github.io/pidp/media/pidp_3210_orid_2_final_comp.webp" alt="PIDP 3210 Orid 2" loading="lazy" class="lounge-image-1">
     </a><br>
-    <p class="lounge-text" >PIDP 3210 ORID 2</p>
+    <p class="lounge-text" >PIDP: 3210 ORID 2</p>
   </div>
   <div>
     <a class="lounge-link"  href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3210_workshop_plan_final_comp.pdf" target="_blank" rel="noopener">
       <img src="https://xyz-abc-show-and-tell.github.io/pidp/media/pidp_3210_workshop_plan_final_comp.webp" alt="PIDP 3210 Workshop Plan" loading="lazy" class="lounge-image-1">
     </a><br>
-    <p class="lounge-text" >PIDP 3210 Workshop Plan</p>
+    <p class="lounge-text" >PIDP: 3210 Workshop Plan</p>
   </div>
 <div>
     <a class="lounge-link"  href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3230_orid_1_tricys_final_comp.pdf" target="_blank" rel="noopener">
       <img src="https://xyz-abc-show-and-tell.github.io/pidp/media/pidp_3230_orid_1_tricys_final_comp.webp" alt="PIDP 3230 Orid 1" loading="lazy" class="lounge-image-2">
     </a><br>
-    <p class="lounge-text" >PIDP 3230 ORID 1</p>
+    <p class="lounge-text" >PIDP: 3230 ORID 1</p>
   </div>
 
   <div>
     <a class="lounge-link"  href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3230_orid_2_tricys_final_comp.pdf" target="_blank" rel="noopener">
       <img src="https://xyz-abc-show-and-tell.github.io/pidp/media/pidp_3230_orid_2_tricys_final_comp.webp" alt="PIDP 3230 Orid 2" loading="lazy" class="lounge-image-2">
     </a><br>
-    <p class="lounge-text" >PIDP 3230 ORID 2</p>
+    <p class="lounge-text" >PIDP: 3230 ORID 2</p>
   </div>
 
 <div>
     <a class="lounge-link"  href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3230_kai_rationale_tricys_final_comp.pdf" target="_blank" rel="noopener">
       <img src="https://xyz-abc-show-and-tell.github.io/pidp/media/pidp_3230_kai_rationale_tricys_final_comp.webp" alt="PIDP 3230 Kai Rationale" loading="lazy" class="lounge-image-2">
     </a><br>
-    <p class="lounge-text" >PIDP 3230 KAI Rationale</p>
+    <p class="lounge-text" >PIDP: 3230 KAI Rationale</p>
   </div>
   <div>
     <a class="lounge-link"  href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3230_kai_self_assessment_tricys_final_comp.pdf" target="_blank" rel="noopener">
       <img src="https://xyz-abc-show-and-tell.github.io/pidp/media/pidp_3230_kai_self_assessment_tricys_final_comp.webp" alt="PIDP 3230 Kai Self Assessment" loading="lazy" class="lounge-image-2">
     </a><br>
-    <p class="lounge-text" >PIDP 3230 KAI Self-Assessment</p>
+    <p class="lounge-text" >PIDP: 3230 KAI Self-Assessment</p>
   </div>
   <div>
     <a class="lounge-link"  href="https://tricys.gumroad.com/l/iwiff" target="_blank" rel="noopener">
       <img src="https://xyz-abc-show-and-tell.github.io/pidp/media/pidp_3230_kai_tricys_final_comp.webp" alt="PIDP 3230 Kai" loading="lazy" class="lounge-image-2">
     </a><br>
-    <p class="lounge-text" >PIDP 3230 KAI [part of the <span class="bucks">$29.99</span> pkg]</p>
+    <p class="lounge-text" >PIDP: 3230 KAI [part of the <span class="bucks">$29.99</span> pkg]</p>
   </div>
 
   <div>
     <a class="lounge-link"  href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3230_ias_self_assessment_tricys_comp.pdf" target="_blank" rel="noopener">
       <img src="https://xyz-abc-show-and-tell.github.io/pidp/media/pidp_3230_evaluation_plan_tricys_final_comp.webp" alt="PIDP 3230 Evaluation Plan Self-Assessment" loading="lazy" class="lounge-image-2">
     </a><br>
-    <p class="lounge-text" >PIDP 3230 IAS Self-Assessment</p>
+    <p class="lounge-text" >PIDP: 3230 IAS Self-Assessment</p>
   </div>
 
 
@@ -2198,103 +2633,217 @@ Quis blandit turpis cursus in. Tortor, id aliquet lectus proin nibh nisl, condim
     <a class="lounge-link"  href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3230_aai_rationale_tricys_final_comp.pdf" target="_blank" rel="noopener">
       <img src="https://xyz-abc-show-and-tell.github.io/pidp/media/pidp_3230_aai_rationale_tricys_final_comp.webp" alt="PIDP 3230 Aai Rationale" loading="lazy" class="lounge-image-2">
     </a><br>
-    <p class="lounge-text" >PIDP 3230 AAI Rationale</p>
+    <p class="lounge-text" >PIDP: 3230 AAI Rationale</p>
   </div>
   <div>
     <a class="lounge-link"  href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3230_aai_self_assessment_tricys_final_comp.pdf" target="_blank" rel="noopener">
       <img src="https://xyz-abc-show-and-tell.github.io/pidp/media/pidp_3230_aai_self_assessment_tricys_final_comp.webp" alt="PIDP 3230 Aai Self Assessment" loading="lazy" class="lounge-image-2">
     </a><br>
-    <p class="lounge-text" >PIDP 3230 AAI Self-Assessment</p>
+    <p class="lounge-text" >PIDP: 3230 AAI Self-Assessment</p>
   </div>
   <div>
     <a class="lounge-link"  href="https://tricys.gumroad.com/l/iwiff" target="_blank" rel="noopener">
       <img src="https://xyz-abc-show-and-tell.github.io/pidp/media/pidp_3230_aai_tricys_final_comp.webp" alt="PIDP 3230 Aai" loading="lazy" class="lounge-image-2">
     </a><br>
-    <p class="lounge-text" >PIDP 3230 AAI [part of the <span class="bucks">$29.99</span> pkg]</p>
+    <p class="lounge-text" >PIDP: 3230 AAI [part of the <span class="bucks">$29.99</span> pkg]</p>
   </div>
 
   <div>
     <a class="lounge-link"  href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3230_evaluation_plan_tricys_final_comp.pdf" target="_blank" rel="noopener">
       <img src="https://xyz-abc-show-and-tell.github.io/pidp/media/pidp_3230_evaluation_plan_tricys_final_comp.webp" alt="PIDP 3230 Evaluation Plan" loading="lazy" class="lounge-image-2">
     </a><br>
-    <p class="lounge-text" >PIDP 3230 Evaluation Plan</p>
+    <p class="lounge-text" >PIDP: 3230 Evaluation Plan</p>
   </div>
 
   <div>
     <a class="lounge-link"  href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3230_evaluation_plan_self_assessment_tricys_comp.pdf" target="_blank" rel="noopener">
       <img src="https://xyz-abc-show-and-tell.github.io/pidp/media/pidp_3230_evaluation_plan_tricys_final_comp.webp" alt="PIDP 3230 Evaluation Plan Self-Assessment" loading="lazy" class="lounge-image-2">
     </a><br>
-    <p class="lounge-text" >PIDP 3230 Evaluation Plan Self-Assessment</p>
+    <p class="lounge-text" >PIDP: 3230 Evaluation Plan Self-Assessment</p>
   </div>
 
 <div>
     <a class="lounge-link"  href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3250_class_mngm_case_study_final_comp.pdf" target="_blank" rel="noopener">
       <img src="https://xyz-abc-show-and-tell.github.io/pidp/media/pidp_3250_class_mngm_case_study_final_comp.webp" alt="PIDP 3250 Class Mngm Case Study" loading="lazy" class="lounge-image-1">
     </a><br>
-    <p class="lounge-text" >PIDP 3250 Class Management Case Study</p>
+    <p class="lounge-text" >PIDP: 3250 Class Management Case Study</p>
   </div>
   <div>
     <a class="lounge-link"  href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3250_instructional_strategies_report_final_comp.pdf" target="_blank" rel="noopener">
       <img src="https://xyz-abc-show-and-tell.github.io/pidp/media/pidp_3250_instructional_strategies_report_final_comp.webp" alt="PIDP 3250 Instructional Strategies Report" loading="lazy" class="lounge-image-1">
     </a><br>
-    <p class="lounge-text" >PIDP 3250 Instructional Strategies Report</p>
+    <p class="lounge-text" >PIDP: 3250 Instructional Strategies Report</p>
   </div>
   <div>
     <a class="lounge-link"  href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3250_motivation_report_final_comp.pdf" target="_blank" rel="noopener">
       <img src="https://xyz-abc-show-and-tell.github.io/pidp/media/pidp_3250_motivation_report_final_comp.webp" alt="PIDP 3250 Motivation Report" loading="lazy" class="lounge-image-1">
     </a><br>
-    <p class="lounge-text" >PIDP 3250 Motivation Report</p>
+    <p class="lounge-text" >PIDP: 3250 Motivation Report</p>
   </div>
   <div>
     <a class="lounge-link"  href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3250_orid_1_final_comp.pdf" target="_blank" rel="noopener">
       <img src="https://xyz-abc-show-and-tell.github.io/pidp/media/pidp_3250_orid_1_final_comp.webp" alt="PIDP 3250 Orid 1" loading="lazy" class="lounge-image-1">
     </a><br>
-    <p class="lounge-text" >PIDP 3250 ORID 1</p>
+    <p class="lounge-text" >PIDP: 3250 ORID 1</p>
   </div>
   <div>
     <a class="lounge-link"  href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3250_orid_2_final_comp.pdf" target="_blank" rel="noopener">
       <img src="https://xyz-abc-show-and-tell.github.io/pidp/media/pidp_3250_orid_2_final_comp.webp" alt="PIDP 3250 Orid 2" loading="lazy" class="lounge-image-1">
     </a><br>
-    <p class="lounge-text" >PIDP 3250 ORID 2</p>
+    <p class="lounge-text" >PIDP: 3250 ORID 2</p>
   </div>
 <div>
     <a class="lounge-link"  href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3300_orid_1_tricys_final_comp.pdf" target="_blank" rel="noopener">
       <img src="https://xyz-abc-show-and-tell.github.io/pidp/media/pidp_3300_orid_1_tricys_final_comp.webp" alt="PIDP 3300 Orid 1" loading="lazy" class="lounge-image-1">
     </a><br>
-    <p class="lounge-text">PIDP 3300 ORID 1</p>
+    <p class="lounge-text">PIDP: 3300: ORID 1</p>
   </div>
 
 <div>
     <a class="lounge-link"  href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3340_presentation_observations_2025_06_29.pdf" target="_blank" rel="noopener">
       <img src="https://xyz-abc-show-and-tell.github.io/pidp/media/pidp_3340_presentation_observations_final_tricys_comp.webp" alt="PIDP 3340 Presentation Observation" loading="lazy" class="lounge-image-1">
     </a><br>
-    <p class="lounge-text">PIDP 3340 Presentation Observations</p>
+    <p class="lounge-text">PIDP: 3340: Presentation Observations</p>
   </div>
 
 <div>
     <a class="lounge-link"  href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3340_presentation_reflection_tricys_compressed_1.pdf" target="_blank" rel="noopener">
       <img src="https://xyz-abc-show-and-tell.github.io/pidp/media/pidp_3340_presentation_observations_final_tricys_comp.webp" alt="PIDP 3340 Presentation Observation" loading="lazy" class="lounge-image-1">
     </a><br>
-    <p class="lounge-text">PIDP 3340 Presentation Reflection</p>
+    <p class="lounge-text">PIDP: 3340: Presentation Reflection</p>
   </div>
 
+<div>
+    <a class="lounge-link"  href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3240_teaching_obs_final_compressed.pdf" target="_blank" rel="noopener">
+      <img src="https://xyz-abc-show-and-tell.github.io/pidp/media/pidp_3240_teaching_obs_final_compressed.webp" alt="PIDP 3240 Teaching With OBS" loading="lazy" class="lounge-image-1">
+    </a><br>
+    <p class="lounge-text">PIDP: 3240: Research Project [Teaching With OBS]</p>
+</div>
+
+<div>
+    <a class="lounge-link"  href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3240_research_report_self_assessment_tricys_comp.pdf" target="_blank" rel="noopener">
+      <img src="https://xyz-abc-show-and-tell.github.io/pidp/media/pidp_3240_research_report_self_assessment_tricys_comp.webp" alt="PIDP 3240 Research Project Self-Assessment" loading="lazy" class="lounge-image-1">
+    </a><br>
+    <p class="lounge-text">PIDP: 3240: Research Project Self-Assessment</p>
+</div>
+
+
+<div>
+    <a class="lounge-link"  href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3240_lesson_plan_tricys_compressed_2.pdf" target="_blank" rel="noopener">
+      <img src="https://xyz-abc-show-and-tell.github.io/pidp/media/pidp_3240_lesson_plan_tricys_compressed_2.webp" alt="PIDP 3240 Lesson Plan" loading="lazy" class="lounge-image-1">
+    </a><br>
+    <p class="lounge-text">PIDP: 3240: Lesson Plan</p>
+</div>
+
+<div>
+    <a class="lounge-link"  href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3240_lesson_plan_rationale_tricys_compressed.pdf" target="_blank" rel="noopener">
+      <img src="https://xyz-abc-show-and-tell.github.io/pidp/media/pidp_3240_lesson_plan_rationale_tricys_compressed.webp" alt="PIDP 3240 Lesson Plan" loading="lazy" class="lounge-image-1">
+    </a><br>
+    <p class="lounge-text">PIDP: 3240: Lesson Plan Rationale</p>
+</div>
+
+<div>
+    <a class="lounge-link"  href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3240_call_to_action_compressed.pdf" target="_blank" rel="noopener">
+      <img src="https://xyz-abc-show-and-tell.github.io/pidp/media/pidp_3240_call_to_action_compressed.webp" alt="PIDP 3240 Call to Action" loading="lazy" class="lounge-image-1">
+    </a><br>
+    <p class="lounge-text">PIDP: 3240: Call to Action </p>
+</div>
+
+
+<div>
+    <a class="lounge-link"  href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3260_reflective_writing_1_compressed_tricys.pdf" target="_blank" rel="noopener">
+      <img src="https://xyz-abc-show-and-tell.github.io/pidp/media/pidp_3260_reflective_writing_1_compressed_tricys.webp" alt="PIDP 3260 Reflective Writing 1" loading="lazy" class="lounge-image-1">
+    </a><br>
+    <p class="lounge-text">PIDP: 3260: Reflective Writing 1 </p>
+</div>
+
+<div>
+    <a class="lounge-link"  href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3260_reflective_writing_2_compressed_tricys.pdf" target="_blank" rel="noopener">
+      <img src="https://xyz-abc-show-and-tell.github.io/pidp/media/pidp_3260_reflective_writing_2_compressed_tricys.webp" alt="PIDP 3260 Reflective Writing 2" loading="lazy" class="lounge-image-1">
+    </a><br>
+    <p class="lounge-text">PIDP: 3260: Reflective Writing 2 </p>
+</div>
+
+<div>
+    <a class="lounge-link"  href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3260_feedback_instrument_compressed_tricys.pdf" target="_blank" rel="noopener">
+      <img src="https://xyz-abc-show-and-tell.github.io/pidp/media/pidp_3260_feedback_instrument_compressed_tricys.webp" alt="PIDP 3260 Feedback Instrument" loading="lazy" class="lounge-image-1">
+    </a><br>
+    <p class="lounge-text">PIDP: 3260: Feedback Instrument </p>
+</div>
+
+<div>
+    <a class="lounge-link"  href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3260_feedback_instrument_rationale_compressed_tricys.pdf" target="_blank" rel="noopener">
+      <img src="https://xyz-abc-show-and-tell.github.io/pidp/media/pidp_3260_feedback_instrument_rationale_compressed_tricys.webp" alt="PIDP 3260 Feedback Instrument Rationale" loading="lazy" class="lounge-image-1">
+    </a><br>
+    <p class="lounge-text">PIDP: 3260: Feedback Instrument Rationale</p>
+</div>
+
+<div>
+    <a class="lounge-link"  href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3260_blog_self_assessment_compressed_tricys.pdf" target="_blank" rel="noopener">
+      <img src="https://xyz-abc-show-and-tell.github.io/pidp/media/pidp_3260_blog_self_assessment_compressed_tricys.webp" alt="PIDP 3260 Blog Self-Assessment" loading="lazy" class="lounge-image-1">
+    </a><br>
+    <p class="lounge-text">PIDP: 3260: Blog Self-Assessment</p>
+</div>
+
+
+<div>
+    <a class="lounge-link"  href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3260_ethical_dilemma_compressed_tricys.pdf" target="_blank" rel="noopener">
+      <img src="https://xyz-abc-show-and-tell.github.io/pidp/media/pidp_3260_ethical_dilemma_compressed_tricys.webp" alt="PIDP 3260 Ethical Dilemma" loading="lazy" class="lounge-image-1">
+    </a><br>
+    <p class="lounge-text">PIDP: 3260: Ethical Dilemma</p>
+</div>
+
+<div>
+    <a class="lounge-link"  href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3260_evaluation_self_assessment_compressed_tricys.pdf" target="_blank" rel="noopener">
+      <img src="https://xyz-abc-show-and-tell.github.io/pidp/media/pidp_3260_evaluation_self_assessment_compressed_tricys.webp" alt="PIDP 3260 Evaluation Self-Assessment" loading="lazy" class="lounge-image-1">
+    </a><br>
+    <p class="lounge-text">PIDP: 3260: Evaluation Self-Assessment</p>
+</div>
+
+
+<div>
+    <a class="lounge-link"  href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3270_lesson_plan_final.pdf" target="_blank" rel="noopener">
+      <img src="https://xyz-abc-show-and-tell.github.io/pidp/media/pidp_3270_lesson_plan_final.webp" alt="PIDP 3270 Lesson Plan" loading="lazy" class="lounge-image-1">
+    </a><br>
+    <p class="lounge-text">PIDP: 3270: Lesson Plan</p>
+</div>
+
+<div>
+    <a class="lounge-link"  href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3270_lesson.pdf" target="_blank" rel="noopener">
+      <img src="https://xyz-abc-show-and-tell.github.io/pidp/media/pidp_3270_lesson.webp" alt="PIDP 3270 Lesson" loading="lazy" class="lounge-image-1">
+    </a><br>
+    <p class="lounge-text">PIDP: 3270: Lesson</p>
+</div>
+
+<div>
+    <a class="lounge-link"  href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3270_reflection_on_lesson.pdf" target="_blank" rel="noopener">
+      <img src="https://xyz-abc-show-and-tell.github.io/pidp/media/pidp_3270_reflection_on_lesson.webp" alt="PIDP 3270 Lesson Reflection" loading="lazy" class="lounge-image-1">
+    </a><br>
+    <p class="lounge-text">PIDP: 3270: Reflection on Lesson</p>
+</div>
+
+<div>
+    <a class="lounge-link"  href="https://xyz-abc-show-and-tell.github.io/pidp/downloads/pidp_3270_reflection_on_pidp.pdf" target="_blank" rel="noopener">
+      <img src="https://xyz-abc-show-and-tell.github.io/pidp/media/pidp_3270_reflection_on_pidp.webp" alt="PIDP 3270 PIDP Reflection" loading="lazy" class="lounge-image-1">
+    </a><br>
+    <p class="lounge-text">PIDP: 3270: PIDP Reflection</p>
+  </div>
 
 </div>
 </div>
 </br></br></details>
 </div>
 </section>
-
-<section id="outline-container-orga73687d" class="outline-2">
-<h2 id="orga73687d">PIDP Course Blog</h2>
-<div class="outline-text-2" id="text-orga73687d">
+<section id="outline-container-org813a2b4" class="outline-2">
+<h2 id="org813a2b4">PIDP Course Blog</h2>
+<div class="outline-text-2" id="text-org813a2b4">
 <details>
 <summary class="level_1" style="margin-top:-0.25em;">[PIDP] Blog for Various Course Assignments &nbsp;+</summary>
 <div>
 
-In several courses we were asked to create and maintain a blog. I used this blog, as you can see, for general updates. However, one afternoon I used AI and my Hugo expertise to push out a new blog.    
+<p>In several courses we were asked to create and maintain a blog. I used this blog, as you can see, for general updates. However, one afternoon I used AI and my Hugo expertise to push out a new blog.</p>    
 
-Here it is: 
+<p>Here it is:</p> 
 
 
 <a style="margin:0;word-break:break-word;" href="https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/docs/ai-info-and-forum//" target="_blank" rel="noopener">
@@ -2303,10 +2852,9 @@ Here it is:
 <p style="text-align:left;">[Source: <a style="margin:0;word-break:break-word;" href="https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/docs/professional-practices-blog" target="_blank" rel="noopener">https://xyz-abc-show-and-tell.github.io/pidp/ai_for_educators/docs/ai-info-and-forum/</a>]</p>
 </div>
 </section>
-
-<section id="outline-container-org40498f4" class="outline-2">
-<h2 id="org40498f4">Closing</h2>
-<div class="outline-text-2" id="text-org40498f4">
+<section id="outline-container-org9b8c5e1" class="outline-2">
+<h2 id="org9b8c5e1">Closing</h2>
+<div class="outline-text-2" id="text-org9b8c5e1">
 <section id="copyright" style="width:100%;">
  </br></br>
  </br></br>

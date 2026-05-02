@@ -1,11 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- 2025-05-10 Sat 12:37 -->
+<!-- 2026-05-02 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Photos Yuri Tricys</title>
 <meta name="generator" content="Org Mode" />
+<style type="text/css">
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { }
+</style>
+<!-- Modernized HTML head snippet for Org-mode export -->
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, interactive-widget=resizes-visual'>
+<meta name='referrer' content='strict-origin-when-cross-origin'>
+<meta name='robots' content='index,nofollow'>
+<meta name='theme-color' content='#ffffff' media='(prefers-color-scheme: light)'>
+<meta name='theme-color' content='#1a1a1a' media='(prefers-color-scheme: dark)'> 
+<link rel='stylesheet' type='text/css' href='https://buildhello.ca/downloads/css/gongzhitaaorg.css'/>
+<link rel='stylesheet' type='text/css' href='https://cdn.jsdelivr.net/gh/mailtoharshit/San-Francisco-Font-/sanfrancisco.css' />
+<style type='text/css'>body{line-height:1.5;}.title{color:#000000 !important;text-align:left;}#content{border:none;width:100%}.org-left>img{max-width:200px;}table{border:solid 1px black !important;margin:0 0 2em 0;}colgroup{border:none !important;}td{border:none !important;}tr{border:none !important;}.org-left{border:none;}body{font-family: san-francisco, monospace, monospace;font-weight:400; box-sizing: border-box;}.right-align{text-align: left;width: 30%;margin: 0 0 0 auto;}.subtitle{text-align:left;font-weight:400;}</style>
+<style type='text/css'>.content h2{color:#0d0d0d !important;}.content h3{color:#272727 !important;font-weight:650;}.content h4{color:#414141;font-weight:600;}.content h5{color:#404040 !important;font-weight:550;}.content h4{color:#414141;</style>
+<style type='text/css'>.content h2{color:#0d0d0d;}.content h3{color:#272727;font-weight:650;}.content h4{color:#414141;font-weight:600;}.content h5{color:#404040;font-weight:550;}.content h4{color:#414141;</style>
+<style type='text/css'>.blockquote{ font-style: italic; color: #555555; border:none; position: relative; background: #EDEDED; display:flex; flex-wrap:wrap; justify-items:start; justify-content:start; text-align:left; width:100%; height:auto; margin-bottom:1.5em; padding:0.9em; line-height:1.7; font-family: Arial, Helvetica, 'Open Sans', sans-serif;}@media screen and (min-width: 561px){.blockquote{padding:1.5em}}@media screen and (min-width: 1200){.blockquote{padding:2em}} a{word-wrap:break-word;} li{font-weight: 400;}ul li{font-weight:300;font-family: 'San Franscisco', Arial, sans-serif} </style>
+<style type='text/css'>.icons {max-height:2em;height:auto;width:auto;fill: #e1e1e2; color: #e1e1e2;padding:0;margin:0 1em;}.red-bull-t{color: #d01623;font-size:0.43em;position:absolute;top:1em;}</style>
+<style>
+.container {
+width: 100%;}
+.lesson-info {
+margin-bottom: 30px;
+}
+.info-table { 
+width: 100%; 
+border-collapse: collapse; 
+border: 1px solid #000; }
+.info-table td { 
+border: 1px solid #000; 
+padding: 8px 12px; 
+vertical-align: top; } 
+.info-table .label { 
+font-weight: bold; 
+background-color: #f5f5f5; 
+width: 20%; } 
+.info-table ul { 
+margin: 0; 
+padding-left: 20px; 
+} 
+.info-table li { 
+margin: 4px 0; 
+} .
+activity-section { 
+margin: 25px 0; 
+} 
+.activity-section h2 { 
+font-size: 18px; 
+font-weight: bold; 
+margin-bottom: 12px; 
+} 
+.activity-table { 
+width: 100%; 
+border-collapse: collapse; 
+border: 2px solid #000; 
+margin-bottom: 15px; 
+} 
+.activity-table th, .activity-table td{ 
+border: 1px solid #000; 
+padding: 8px 12px; 
+vertical-align: top; 
+} 
+
+.activity-table th { 
+background-color: #f5f5f5; 
+font-weight: bold; 
+text-align: left; } 
+
+.activity-table th { 
+width: 35%; } 
+.activity-table th(2) { 
+width: 45%; } 
+.activity-table th { 
+width: 20%; } 
+table, table td, table tr { 
+border: 1px solid #000 !important; 
+border-spacing:0; } 
+.participation li{ 
+margin-bottom: 1em; } 
+.description { 
+margin: 15px 0; 
+font-style: italic; } 
+.description p { 
+margin: 8px 0; } 
+.activity-description { 
+margin: 25px 0; 
+padding: 15px 0; } 
+.activity-description p { 
+margin: 12px 0; } 
+.page-break { 
+margin: 40px 0; 
+border-top: 1px solid #ccc; 
+padding-top: 10px; } 
+.page-footer { 
+text-align: center; 
+font-size: 10px; 
+font-weight: bold; 
+color: #666; 
+margin: 20px 0; } 
+.page-footer.final { 
+margin-top: 60px; } 
+</style>
+
+<style>
+.org-src-container{
+background-color: #1b1d1e;
+color:white;
+}
+.content > figure {
+padding:20px;
+background:black;
+}
+.content > figure ~ figure {
+padding:0;background:white;
+}
+</style>
+
+<style>
+.org-src-container>pre{
+white-space:pre-wrap;
+white-space: -moz-pre-wrap;
+white-space: -pre-wrap;
+white-space: -o-pre-wrap;
+word-wrap: break-word; 
+background:transparent;
+border:none;
+} 
+.org-string{color: #468486;}
+.org-sh-escaped-newline{color: #77acbf;}
+.org-variable-name{color:#9b171e ;}
+</style>
+<style type='text/css'>@media print { @page { margin-top: 3cm; margin-right: 2cm; margin-bottom: 3cm; margin-left: 2cm; size: letter portrait;}a::after { content: " (" attr(href) ")"; font-size: 0.9em; }  { page-break-before: always; border-top: none; padding-top: 0; margin-top: 0; }}</style>
 <meta name="robots" content="index, follow">
 <meta name="author" content="Yuri Tricys">
 <meta name="msvalidate.01" content="960F8155B6BC3164C51A15F257394A3E" />
@@ -32,25 +344,21 @@
 <div id="content" class="content">
 <header>
 <h1 class="title">Photos Yuri Tricys</h1>
-</header>
-
-
-<section id="outline-container-orgcb9934b" class="outline-2">
-<h2 id="orgcb9934b">Profile Yuri Tricys</h2>
-<div class="outline-text-2" id="text-orgcb9934b">
-<a href="./uploads/resume_yuri_tricys_web_developer_2022.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View Yuri's Curriculum Vitae</a><br>
+</header><section id="outline-container-org242024c" class="outline-2">
+<h2 id="org242024c">Profile Yuri Tricys</h2>
+<div class="outline-text-2" id="text-org242024c">
+<a href="./uploads/resume_yuri_tricys_2026_technology_consulting.pdf" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View Yuri's Curriculum Vitae</a><br>
 <a href="./services/services_videos.html" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Services Yuri offers (videos)</a><br>
 <a href="./pidp/index.html" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">PIDP 2025</a><br>
 <a href="./courses_taken/courses_taken_iii.html" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Courses to 2023</a><br>
 <a href="./uploads/zoom_to_go_2022_09_09.pdf" class="btn btn-secondary" target="_blank"  rel="nofollow" rel="noopener noreferrer">Cover Letter</a><br>
 <a href="https://trends-global.blogspot.com/" class="btn btn-secondary" target="_blank"  rel="nofollow" rel="noopener noreferrer">Sample Articles</a><br>
+<a href="https://readingworldmagazine.com/game-on/" class="btn btn-secondary" target="_blank"  rel="nofollow" rel="noopener noreferrer">No-Emag</a><br>
 </div>
 </section>
-
-
-<section id="outline-container-orge0adf98" class="outline-2">
-<h2 id="orge0adf98">List Page Photos</h2>
-<div class="outline-text-2" id="text-orge0adf98">
+<section id="outline-container-orgfe354c4" class="outline-2">
+<h2 id="orgfe354c4">List Page Photos</h2>
+<div class="outline-text-2" id="text-orgfe354c4">
 <p>
 Click the links below to visit photo repositories<br>
 </p>
@@ -68,11 +376,9 @@ Click the links below to visit photo repositories<br>
 <br>
 </div>
 </section>
-
-
-<section id="outline-container-org7caaa11" class="outline-2">
-<h2 id="org7caaa11">List Page Videos</h2>
-<div class="outline-text-2" id="text-org7caaa11">
+<section id="outline-container-org9b89984" class="outline-2">
+<h2 id="org9b89984">List Page Videos</h2>
+<div class="outline-text-2" id="text-org9b89984">
 <p>
 Click the links below to visit video repositories<br>
 </p>

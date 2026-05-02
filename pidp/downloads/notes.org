@@ -1,0 +1,25 @@
+* 3230
+- reflective_writing_two.html
+/home/aegaeus/Documents/business_management/pidp/3230_evaluation_of_learning/reflective_writing/reflective_writing_two.html
+- reflective_writing_one.html
+/home/aegaeus/Documents/business_management/pidp/3230_evaluation_of_learning/reflective_writing/reflective_writing_one.html
+
+** - knowledge_assessment_instrument.html 
+file:///c:/Users/JonasIII/Dropbox/documents/teaching_javascript/pidp/3230_evaluation_of_learning/test_knowledge_assessment_instrument_resources/knowledge_assessment_instrument.html
+** - table_of_specifications.html 
+file:///c:/Users/JonasIII/Dropbox/documents/teaching_javascript/pidp/3230_evaluation_of_learning/test_knowledge_assessment_instrument_resources/table_of_specifications.html
+** - kai_self_assessment.html 
+file:///c:/Users/JonasIII/Dropbox/documents/teaching_javascript/pidp/3230_evaluation_of_learning/test_knowledge_assessment_instrument_resources/kai_self_assessment.html
+** - rubric.html 
+file:///c:/Users/JonasIII/Dropbox/documents/teaching_javascript/pidp/3230_evaluation_of_learning/authentic_assessment_instrument/rubric.html
+** - rubric_rationale_report.html 
+file:///c:/Users/JonasIII/Dropbox/documents/teaching_javascript/pidp/3230_evaluation_of_learning/authentic_assessment_instrument/rubric_rationale_report.html
+** - aai_rubric_self_assessment_content_tricys.html 
+file:///c:/Users/JonasIII/Dropbox/documents/teaching_javascript/pidp/3230_evaluation_of_learning/authentic_assessment_instrument/aai_rubric_self_assessment_content_tricys.html
+** - evaluation_plan.html 
+file:///c:/Users/JonasIII/Dropbox/documents/teaching_javascript/pidp/3230_evaluation_of_learning/evaluation_plan_resources/evaluation_plan.html
+** - informal_assessment_strategy_self_assessment.html 
+file:///c:/Users/JonasIII/Dropbox/documents/teaching_javascript/pidp/3230_evaluation_of_learning/informal_assessment_strategy_resources/informal_assessment_strategy_self_assessment.html
+** - evaluation_self_assessment.html 
+file:///c:/Users/JonasIII/Dropbox/documents/teaching_javascript/pidp/3230_evaluation_of_learning/evaluation_plan_resources/evaluation_self_assessment.html
+
